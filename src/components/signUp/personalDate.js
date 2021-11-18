@@ -8,7 +8,11 @@ import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import { useStyles } from "./personalDateStyles";
 import Button from "@material-ui/core/Button";
+import { useHistory } from "react-router-dom";
+
 export default function PersonalDate() {
+  let history = useHistory();
+
   const classes = useStyles();
   const AvatartIcon = () => (
     <div className={classes.avatarIcon}>
@@ -38,7 +42,7 @@ export default function PersonalDate() {
       </Typography>
     </div>
   );
-  const YourName = ({ question, fill }) => (
+  const FieldTofilled  = ({ question, fill }) => (
     <div>
       <Grid className={classes.chooseAvatarAndName}>
         <Typography component="h1" variant="h5">
@@ -52,33 +56,37 @@ export default function PersonalDate() {
       </Grid>
     </div>
   );
+    const submitPersonForm=(e)=>{
+      e.preventDefault()
+      history.push("/universitySection");
 
+    }
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
       <Grid item className={classes.image} />
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          <div className={classes.rightSide}>
+          <form  onSubmit={submitPersonForm}className={classes.rightSide}>
             <Typography component="h1" variant="h3">
               Let's get to know each other better!
             </Typography>
             <div className={classes.oneLaneToFill}>
-              <YourName question="Your name" fill={"Name"} />
-              <YourName question="Your surname" fill={"surname"} />
+              <FieldTofilled question="Your name" fill={"Name"} />
+              <FieldTofilled  question="Your surname" fill={"surname"} />
             </div>
             <div className={classes.oneLaneToFill}>
-              <YourName question="Your e-mail" fill={"email"} />
-              <YourName question="Your Password" fill={"password"} />
+              <FieldTofilled  question="Your e-mail" fill={"email"} />
+              <FieldTofilled  question="Your Password" fill={"password"} />
             </div>
 
             <AvatartIcon />
             <div className={classes.submitSection}>
-              <Button className={classes.submitButton} variant="contained">
-                Submit
+              <Button type="submit" className={classes.submitButton} variant="contained">
+                Next
               </Button>
             </div>
-          </div>
+          </form>
         </div>
       </Grid>
     </Grid>

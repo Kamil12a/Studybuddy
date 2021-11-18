@@ -1,6 +1,8 @@
 import SignIn from "./components/signIn/SignIn";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import PersonalDate from "./components/signUp/personalDate";
+import UniversitySection from "./components/signUp/universitySection";
+import AboutYouForm from "./components/signUp/AboutYourForm";
 function App() {
   return (
     <>
@@ -9,6 +11,9 @@ function App() {
           <Route exact path="/" component={SignIn}></Route>
           <Route path="/signIn" component={SignIn}></Route>
           <Route path="/signUp"component={PersonalDate}></Route>
+          <Route path="/universitySection"component={UniversitySection}></Route>
+          <Route path="/aboutYouForm"component={AboutYouForm}></Route>
+
         </Switch>
       </Router>
     </>

@@ -47,13 +47,11 @@ export const useStyles = makeStyles((theme) => ({
     margin: "10px",
   },
   oneLaneToFill: {
+    marginTop:"20px",
     display: "flex",
     alignItems: "center",
   },
-  avatarIcon: {
-    display: "flex",
-    alignItems: "center",
-  },
+
   submitButton: {
     textAlign: "center",
     height: "50px",
@@ -61,7 +59,19 @@ export const useStyles = makeStyles((theme) => ({
     background: theme.palette.primary.main,
   },
   submitSection: {
+    marginTop:"50px",
     display: "flex",
     justifyContent: "center",
   },
+  selectUniversity:{
+      margin:"5px"
+  },
+    selectYourPosition:{
+      display:"flex",
+      alignItems:"center",
+      margin:"5px"
+  },
+  checkbox:{
+      marginLeft:"5px"
+  }
 }));
