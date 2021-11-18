@@ -14,39 +14,36 @@ export const Navbar = () => {
       background: "green",
     },
   }));
-  
 
   const classes = useStyles();
 
   return (
     <>
       {" "}
-
-        <AppBar  position="static">
-          <Toolbar variant="dense">
-            <Typography
-              position="fixed"
-              variant="h5"
-              color="inherit"
-              component="div"
-            >
-              TwójKorepetytor
-            </Typography>
-            <Toolbar variant="dense" className={classes.toolBar}>
-              <Button variant="contained" color="default" >
-                KALENDARZ
-              </Button>
-              <Button variant="contained" color="default">
-                {" "}
-                DAILY ZADANKA
-              </Button>
-              <Button variant="contained" color="secondary">
-                MÓJ PROFIL
-              </Button>
-            </Toolbar>
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <Typography
+            position="fixed"
+            variant="h5"
+            color="inherit"
+            component="div"
+          >
+            TwójKorepetytor
+          </Typography>
+          <Toolbar variant="dense" className={classes.toolBar}>
+            <Button variant="contained" color="default">
+              KALENDARZ
+            </Button>
+            <Button variant="contained" color="default">
+              {" "}
+              DAILY ZADANKA
+            </Button>
+            <Button variant="contained" color="secondary">
+              MÓJ PROFIL
+            </Button>
           </Toolbar>
-        </AppBar>
-
+        </Toolbar>
+      </AppBar>
     </>
   );
 };
