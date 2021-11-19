@@ -3,14 +3,11 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { useStyles } from "./universitySectionStyles";
 import { useHistory } from "react-router-dom";
-import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
@@ -40,9 +37,7 @@ export default function AboutYouForm() {
     e.preventDefault();
     history.push("/forum");
   };
-  const handleChange = (e) => {
-    setMyState(e.target.value);
-  };
+
   const handleChangeCheckbox = (e) => {
     if (e.target.value === "1") {
       setChecked([false, true]);

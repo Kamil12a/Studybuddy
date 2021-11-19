@@ -13,6 +13,11 @@ export const Navbar = () => {
     btnCalendar: {
       background: "green",
     },
+    navBar:{
+      display:"flex",
+      alignItems:"center",
+      height:"60px"
+    }
   }));
 
   const classes = useStyles();
@@ -23,23 +28,23 @@ export const Navbar = () => {
       <AppBar position="static">
         <Toolbar variant="dense">
           <Typography
-            position="fixed"
+            className={classes.navBar}
             variant="h5"
             color="inherit"
             component="div"
           >
-            TwójKorepetytor
+            STUDDY-BUDDY!
           </Typography>
           <Toolbar variant="dense" className={classes.toolBar}>
             <Button variant="contained" color="default">
-              KALENDARZ
+              Create group
             </Button>
             <Button variant="contained" color="default">
               {" "}
-              DAILY ZADANKA
+              FORUM
             </Button>
             <Button variant="contained" color="secondary">
-              MÓJ PROFIL
+              MY PROFILE
             </Button>
           </Toolbar>
         </Toolbar>
