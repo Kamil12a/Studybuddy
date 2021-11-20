@@ -34,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     background: theme.palette.primary.main,
   },
+  
   ifnormationRight: {
     background: theme.palette.primary.main,
     padding: "10px",
@@ -46,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Groups({ title, question, amountOfPatripitian }) {
+export default function Groups({idOfButton,groupEvent,btnText,title, question, amountOfPatripitian }) {
   const classes = useStyles();
 
   return (
@@ -90,8 +91,8 @@ export default function Groups({ title, question, amountOfPatripitian }) {
           </Typography>
         </div>
         <div className={classes.submitButtonSection} >
-          <Button className={classes.submitButton} variant="contained">
-            Join to event
+          <Button id={idOfButton} onClick={groupEvent} className={classes.submitButton} variant="contained">
+            {btnText}
           </Button>
         </div>
       </Paper>

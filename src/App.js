@@ -4,6 +4,7 @@ import PersonalDate from "./components/signUp/personalDate";
 import UniversitySection from "./components/signUp/universitySection";
 import AboutYouForm from "./components/signUp/AboutYourForm";
 import Forum from "./components/forum/Forum";
+import { YourGroups } from "./components/yourGroups/YourGroups";
 import SearchingGroups from "./components/searchingGroups/SearchingGroups";
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/aboutYouForm" component={AboutYouForm}></Route>
           <Route path="/forum" component={Forum}></Route>
           <Route path="/searchinggroups" component={SearchingGroups}></Route>
+          <Route path="/yourGroups" component={YourGroups}></Route>
         </Switch>
       </Router>
     </>

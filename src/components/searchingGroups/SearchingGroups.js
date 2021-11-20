@@ -1,7 +1,7 @@
 import ModalSearching from "./ModalSearching";
 import { Navbar } from "../NavBar";
 import { useState } from "react";
-import Groups from "./Groups";
+import Groups from "../global/Groups";
 import Typography from "@material-ui/core/Typography";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -17,9 +17,9 @@ export default function SearchingGroups() {
     titleOfGroupsSearching: {
       marginTop: "100px",
     },
-    groupsContainer:{
-      textAlign:"center"
-    }
+    groupsContainer: {
+      textAlign: "center",
+    },
   }));
   const classes = useStyles();
 
@@ -31,7 +31,7 @@ export default function SearchingGroups() {
       )}
       {statusOfSearching && (
         <>
-          <div   className={classes.groupsContainer} >
+          <div className={classes.groupsContainer}>
             <Typography
               className={classes.titleOfGroupsSearching}
               component="h1"
@@ -48,6 +48,7 @@ export default function SearchingGroups() {
               question={
                 "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
               }
+              btnText={"join to group"}
             />
             <Groups
               title={"Mathematical Analasis"}
@@ -62,6 +63,7 @@ export default function SearchingGroups() {
               question={
                 "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
               }
+              btnText={"join to group"}
             />
           </div>
           <div className={classes.containerOfGroups}>
@@ -71,6 +73,7 @@ export default function SearchingGroups() {
               question={
                 "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
               }
+              btnText={"join to group"}
             />
             <Groups
               title={"WE LOVE MATH"}
@@ -78,6 +81,7 @@ export default function SearchingGroups() {
               question={
                 "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
               }
+              btnText={"join to group"}
             />
             <Groups
               title={"Mathematical Analasis"}
@@ -85,6 +89,7 @@ export default function SearchingGroups() {
               question={
                 "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
               }
+              btnText={"join to group"}
             />
           </div>
           <div className={classes.containerOfGroups}>
@@ -94,6 +99,7 @@ export default function SearchingGroups() {
               question={
                 "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
               }
+              btnText={"join to group"}
             />
             <Groups
               title={"Mathematical Discrete"}
@@ -101,6 +107,7 @@ export default function SearchingGroups() {
               question={
                 "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
               }
+              btnText={"join to group"}
             />
             <Groups
               title={"Mathematical "}
@@ -108,6 +115,7 @@ export default function SearchingGroups() {
               question={
                 "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
               }
+              btnText={"join to group"}
             />
           </div>
         </>

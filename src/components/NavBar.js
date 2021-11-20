@@ -29,9 +29,12 @@ export const Navbar = () => {
   const navToForum = () => {
     history.push("/forum");
   };
-  const navToProfile= () => {
+  const navToProfile = () => {
     history.push("/");
   };
+ const navToYourGroups=()=>{
+  history.push("/yourGroups");
+ }
   return (
     <>
       {" "}
@@ -47,14 +50,25 @@ export const Navbar = () => {
           </Typography>
           <Toolbar className={classes.toolBar}>
             <Button onClick={navToGroup} variant="contained" color="default">
-              Group
+             find Group
             </Button>
+
             <Button onClick={navToForum} variant="contained" color="default">
               {" "}
               FORUM
             </Button>
-            <Button onClick={navToProfile} variant="contained" color="secondary">
-             Log out
+
+            <Button onClick={navToYourGroups} variant="contained" color="default">
+              {" "}
+              Your Groups
+            </Button>
+
+            <Button
+              onClick={navToProfile}
+              variant="contained"
+              color="secondary"
+            >
+              Log out
             </Button>
           </Toolbar>
         </Toolbar>
