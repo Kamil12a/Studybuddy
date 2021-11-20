@@ -1,49 +1,74 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import { useStyles } from "./ForumLook";
 import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
 import TextField from "@material-ui/core/TextField";
 import { Button } from "@material-ui/core/";
-
-export default function ModalToCreatePost() {
+import CloseIcon from "@material-ui/icons/Close";
+export default function ModalToCreatePost({ setState, setStateOfPosts }) {
   const classes = useStyles();
-  const FieldTofilled = ({ question, fill }) => (
-    <div>
-      <Grid className={classes.chooseAvatarAndName}>
-        <Typography component="p" variant="p">
-          {question}
-        </Typography>
-        <TextField
-          className={classes.chooseName}
-          label={fill}
-          variant="outlined"
-        />
-      </Grid>
-    </div>
-  );
+  const [data, setData] = useState({
+    title: "",
+    question: "",
+    hasztag: "",
+  });
+
+  const openModal = () => {
+    setState(false);
+  };
+  const createPost = (e) => {
+    setStateOfPosts((prev) => [...prev, data]);
+    setState(false);
+  };
+  const handleChange = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+    let object = { ...data, [name]: value };
+    setData(object);
+  };
   return (
     <>
       <div className={classes.modal}>
         <Paper className={classes.paper} elevation={6}>
-          <Box>
+          <Box className={classes.boxOfModal}>
             <Typography variant="h6" component="h2">
               Create post{" "}
             </Typography>
-            <FieldTofilled
-              fill={"Tittle of your post"}
-              question={"Tittle of your post"}
+
+            <TextField
+              onChange={handleChange}
+              className={classes.chooseName}
+              label="Tittle of your post"
+              variant="outlined"
+              name={"title"}
             />
-            <FieldTofilled
-              fill={"Your question"}
-              question={"What question do u have?"}
+            <TextField
+              onChange={handleChange}
+              className={classes.chooseName}
+              label="What question do u have?"
+              variant="outlined"
+              name={"question"}
+              multiline
+              rows={3}
+              rowsMax={6}
             />
-            <div className={classes.createPostBtnSection}  >
-              <Button className={classes.createPostButton} variant="contained">
-                Create Post
-              </Button>
-            </div>
+            <TextField
+              onChange={handleChange}
+              className={classes.chooseName}
+              label="ADD HASZTAGS!"
+              variant="outlined"
+              name={"hasztag"}
+            />
+
+            <Button
+              onClick={createPost}
+              className={classes.createPostButton}
+              variant="contained"
+            >
+              Create Post
+            </Button>
+            <CloseIcon onClick={openModal} className={classes.closeIcon} />
           </Box>
         </Paper>
       </div>

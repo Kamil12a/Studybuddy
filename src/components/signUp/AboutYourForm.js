@@ -13,7 +13,6 @@ import Button from "@material-ui/core/Button";
 
 export default function AboutYouForm() {
   let history = useHistory();
-  const [myState, setMyState] = React.useState("");
   const [checked, setChecked] = React.useState([false, false]);
   const [checked1, setChecked1] = React.useState([false, false]);
   const [checked2, setChecked2] = React.useState([false, false]);

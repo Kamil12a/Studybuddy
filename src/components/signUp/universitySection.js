@@ -3,7 +3,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { useStyles } from "./universitySectionStyles";
@@ -117,3 +116,26 @@ export default function UniversitySection() {
     </Grid>
   );
 }
+// import React, { useEffect, useState } from 'react';
+
+// import ControlledSelect from '../global/ControlledSelect';
+
+// export const App = () => {
+//     const [value, setValue] = useState('react'); // selected option
+//     const options = [
+//         {label: 'React',      value: 'react'},
+//         {label: 'JavaScript', value: 'js'   },
+//         {label: 'TypeScript', value: 'ts'   }
+//     ];
+//     const handleChange = (value) => {
+//         setValue(value);
+//     };
+//     return (
+//         <div>
+//           <label>Technology:</label>
+//           <ControlledSelect value={value} options={options} onChange={handleChange} />
+//         </div>
+//     );
+// };
+
+// export default App;
