@@ -34,20 +34,27 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     background: theme.palette.primary.main,
   },
-  
+
   ifnormationRight: {
     background: theme.palette.primary.main,
     padding: "10px",
     borderRadius: "20px",
   },
-  submitButtonSection:{
-      marginTop:"20px",
-      display:"flex",
-      justifyContent:"center"
-  }
+  submitButtonSection: {
+    marginTop: "20px",
+    display: "flex",
+    justifyContent: "center",
+  },
 }));
 
-export default function Groups({idOfButton,groupEvent,btnText,title, question, amountOfPatripitian }) {
+export default function Groups({
+  idOfButton,
+  groupEvent,
+  btnText,
+  title,
+  question,
+  amountOfPatripitian,
+}) {
   const classes = useStyles();
 
   return (
@@ -72,8 +79,7 @@ export default function Groups({idOfButton,groupEvent,btnText,title, question, a
           <Typography
             className={classes.ifnormationRight}
             component="h1"
-            variantp
-            ="h5"
+            variantp="h5"
           >
             20 zł
           </Typography>
@@ -90,8 +96,13 @@ export default function Groups({idOfButton,groupEvent,btnText,title, question, a
             {question}
           </Typography>
         </div>
-        <div className={classes.submitButtonSection} >
-          <Button id={idOfButton} onClick={groupEvent} className={classes.submitButton} variant="contained">
+        <div className={classes.submitButtonSection}>
+          <Button
+            id={idOfButton}
+            onClick={groupEvent}
+            className={classes.submitButton}
+            variant="contained"
+          >
             {btnText}
           </Button>
         </div>
