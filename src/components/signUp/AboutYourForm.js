@@ -63,7 +63,9 @@ export default function AboutYouForm() {
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <Grid item className={classes.image} />
+      <div className={classes.imageBackground}>
+        <Grid item className={classes.image} />
+      </div>{" "}
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <form onSubmit={submitPersonForm} className={classes.rightSide}>
@@ -128,20 +130,17 @@ export default function AboutYouForm() {
                 <InputLabel>
                   What would you like to achieve with this application?{" "}
                 </InputLabel>
-                <FormControlLabel
-                  value={0}
-                  checked={checked1[0]}
-                  onChange={handleChangeCheckbox1}
-                  className={classes.checkbox}
-                  control={<Checkbox />}
-                  label="Yes"
-                />
-                <FormControlLabel
-                  value={1}
-                  checked={checked1[1]}
-                  onChange={handleChangeCheckbox1}
-                  control={<Checkbox />}
-                  label="No"
+
+                <TextField
+                  style={{ marginLeft: "20px", width: "400px" }}
+                  variant="outlined"
+                  margin="normal"
+                  fullWidth
+                  name="password"
+                  label="achieve"
+                  type="password"
+                  id="password"
+                  autoComplete="current-password"
                 />
               </div>
             </div>

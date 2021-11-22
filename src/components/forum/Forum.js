@@ -7,7 +7,9 @@ import ModalToCreatePost from "./ModalToCreatePost";
 import { useState } from "react";
 export default function Forum() {
   const [modalStatus, setModalStatus] = useState(false);
-  const [stateOfPosts, setStateOfPosts] = useState([{title:"What do you think about Pitagoras?",question:"Does his statement work in all cases? Even if we take quantum space?"}]);
+  const [stateOfPosts, setStateOfPosts] = useState([
+   
+  ]);
 
   const classes = useStyles();
   useEffect(() => {
@@ -38,9 +40,24 @@ export default function Forum() {
         )}
         {!modalStatus && (
           <div className={classes.containerOfPost}>
+            <Post
+              userName={"Patryk Kowalski"}
+              
+                title= {"What do you think about Pitagoras?"}
+                question=
+                  {"Does his statement work in all cases? Even if we take quantum space?"}
+                      
+            />
             {console.log(stateOfPosts)}
             {stateOfPosts.map((item, index) => {
-              return <Post key={index} title={item.title} question={item.question}/>;
+              return (
+                <Post
+                  userName={"Kamil Plewka"}
+                  key={index}
+                  title={item.title}
+                  question={item.question}
+                />
+              );
             })}
           </div>
         )}

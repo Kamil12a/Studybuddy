@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Post({title,question}) {
+export default function Post({title,question,userName}) {
   const classes = useStyles();
 
   return (
@@ -42,7 +42,7 @@ export default function Post({title,question}) {
             className={classes.large}
           />
           <Typography component="h1" variant="h5">
-            Patryk Kowalski
+            {userName}
           </Typography>
         </div>
         <div className={classes.informationAboutPost}>

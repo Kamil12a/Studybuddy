@@ -42,7 +42,7 @@ export default function PersonalDate() {
       </Typography>
     </div>
   );
-  const FieldTofilled  = ({ question, fill }) => (
+  const FieldTofilled = ({ question, fill }) => (
     <div>
       <Grid className={classes.chooseAvatarAndName}>
         <Typography component="h1" variant="h5">
@@ -56,33 +56,39 @@ export default function PersonalDate() {
       </Grid>
     </div>
   );
-    const submitPersonForm=(e)=>{
-      e.preventDefault()
-      history.push("/universitySection");
-
-    }
+  const submitPersonForm = (e) => {
+    e.preventDefault();
+    history.push("/universitySection");
+  };
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <Grid item className={classes.image} />
+      <div className={classes.imageBackground} >
+        <Grid item className={classes.image} />
+      </div>
+
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          <form  onSubmit={submitPersonForm}className={classes.rightSide}>
+          <form onSubmit={submitPersonForm} className={classes.rightSide}>
             <Typography component="h1" variant="h3">
               Let's get to know each other better!
             </Typography>
             <div className={classes.oneLaneToFill}>
               <FieldTofilled question="Your name" fill={"Name"} />
-              <FieldTofilled  question="Your surname" fill={"surname"} />
+              <FieldTofilled question="Your surname" fill={"surname"} />
             </div>
             <div className={classes.oneLaneToFill}>
-              <FieldTofilled  question="Your e-mail" fill={"email"} />
-              <FieldTofilled  question="Your Password" fill={"password"} />
+              <FieldTofilled question="Your e-mail" fill={"email"} />
+              <FieldTofilled question="Your Password" fill={"password"} />
             </div>
 
             <AvatartIcon />
             <div className={classes.submitSection}>
-              <Button type="submit" className={classes.submitButton} variant="contained">
+              <Button
+                type="submit"
+                className={classes.submitButton}
+                variant="contained"
+              >
                 Next
               </Button>
             </div>

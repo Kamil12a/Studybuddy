@@ -30,7 +30,7 @@ export const Navbar = () => {
     history.push("/forum");
   };
   const navToProfile = () => {
-    history.push("/");
+    history.push("/my-app");
   };
  const navToYourGroups=()=>{
   history.push("/yourGroups");

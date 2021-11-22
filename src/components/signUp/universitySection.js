@@ -49,8 +49,9 @@ export default function UniversitySection() {
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <Grid item className={classes.image} />
-      <Grid item component={Paper} elevation={6} square>
+      <div className={classes.imageBackground} >
+        <Grid item className={classes.image} />
+      </div>      <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <form onSubmit={submitPersonForm} className={classes.rightSide}>
             <Typography component="h5" variant="h3">
@@ -116,26 +117,4 @@ export default function UniversitySection() {
     </Grid>
   );
 }
-// import React, { useEffect, useState } from 'react';
 
-// import ControlledSelect from '../global/ControlledSelect';
-
-// export const App = () => {
-//     const [value, setValue] = useState('react'); // selected option
-//     const options = [
-//         {label: 'React',      value: 'react'},
-//         {label: 'JavaScript', value: 'js'   },
-//         {label: 'TypeScript', value: 'ts'   }
-//     ];
-//     const handleChange = (value) => {
-//         setValue(value);
-//     };
-//     return (
-//         <div>
-//           <label>Technology:</label>
-//           <ControlledSelect value={value} options={options} onChange={handleChange} />
-//         </div>
-//     );
-// };
-
-// export default App;

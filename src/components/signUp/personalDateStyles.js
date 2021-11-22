@@ -5,14 +5,25 @@ export const useStyles = makeStyles((theme) => ({
   root: {
     height: "100vh",
   },
-  image: {
+  imageBackground:{
+    display:"flex",
+    justifyContent:"center",
+    
+    backgroundColor: theme.palette.primary.main,
     width: "50vw",
+    height:"100vh"
+
+  },
+  image: {
+    marginTop:"150px",
     backgroundImage: `url(${logo})`,
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
-    backgroundColor: theme.palette.primary.main,
-    backgroundSize: "80%",
-    height: "100%",
+    backgroundColor: "white",
+    backgroundSize: "55%",
+    width:"600px",
+    height:"600px",
+    borderRadius:"100%"
   },
   paper: {
     position: "absolute",

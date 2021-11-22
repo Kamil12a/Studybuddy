@@ -46,7 +46,7 @@ export default function SearchingGroups() {
               title={"Mathematical Analasis"}
               amountOfPatripitian={"0"}
               question={
-                "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
+                "We study math and it's super cool on campus on Fridays Saturdays online"
               }
               btnText={"join to group"}
             />
@@ -54,14 +54,16 @@ export default function SearchingGroups() {
               title={"Mathematical Analasis"}
               amountOfPatripitian={"1"}
               question={
-                "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
+                "We study math and it's super cool on campus on Fridays Saturdays online"
               }
+              btnText={"join to group"}
+
             />
             <Groups
               title={"Mathematical Analasis"}
               amountOfPatripitian={"7"}
               question={
-                "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
+                "We study math and it's super cool on campus on Fridays Saturdays online"
               }
               btnText={"join to group"}
             />
@@ -71,7 +73,7 @@ export default function SearchingGroups() {
               title={"Mathematical Analasis"}
               amountOfPatripitian={"2"}
               question={
-                "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
+                "We study math and it's super cool on campus on Fridays Saturdays online"
               }
               btnText={"join to group"}
             />
@@ -79,7 +81,7 @@ export default function SearchingGroups() {
               title={"WE LOVE MATH"}
               amountOfPatripitian={"3"}
               question={
-                "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
+                "We study math and it's super cool on campus on Fridays Saturdays online"
               }
               btnText={"join to group"}
             />
@@ -87,7 +89,7 @@ export default function SearchingGroups() {
               title={"Mathematical Analasis"}
               amountOfPatripitian={"3"}
               question={
-                "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
+                "We study math and it's super cool on campus on Fridays Saturdays online"
               }
               btnText={"join to group"}
             />
@@ -97,7 +99,7 @@ export default function SearchingGroups() {
               title={"Mathematical Analasis"}
               amountOfPatripitian={"51"}
               question={
-                "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
+                "We study math and it's super cool on campus on Fridays Saturdays online"
               }
               btnText={"join to group"}
             />
@@ -105,7 +107,7 @@ export default function SearchingGroups() {
               title={"Mathematical Discrete"}
               amountOfPatripitian={"7"}
               question={
-                "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
+                "We study math and it's super cool on campus on Fridays Saturdays online"
               }
               btnText={"join to group"}
             />
@@ -113,7 +115,7 @@ export default function SearchingGroups() {
               title={"Mathematical "}
               amountOfPatripitian={"2"}
               question={
-                "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online"
+                "We study math and it's super cool on campus on Fridays Saturdays online"
               }
               btnText={"join to group"}
             />
