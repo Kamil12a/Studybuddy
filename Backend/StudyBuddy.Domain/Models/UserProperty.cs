@@ -1,6 +1,6 @@
 namespace StudyBuddy.Domain.Models
 {
-    public class UserProperties
+    public class UserProperty
     {
         public int Id { get; set; }
         public string Email { get; set; }
