@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace StudyBuddy.Domain.Models
 {
     public class User
@@ -9,6 +11,7 @@ namespace StudyBuddy.Domain.Models
         public string Course { get; set; }
         public string Fullname { get => $"{Name} {Surname}"; }
        
-        public virtual UserProperties UserProperties { get; set; }
+        public virtual ICollection<Group> Groups { get; set; }
+        public virtual UserProperty UserProperty { get; set; }
     }
 }
