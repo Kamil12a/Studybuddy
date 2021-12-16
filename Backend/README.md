@@ -158,7 +158,7 @@ IF STUDY BUDDY WAS OPEN SOURCE ONLY!!!
 
 | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> | <a href="http://fvcproductions.com" target="_blank">**FVCproductions**</a> |
 | :---: |:---:| :---:|
-| [![FVCproductions](https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/260411700_4821945487867459_7771848346026704164_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=GszpJVA6MdAAX_r4Nb2&_nc_ht=scontent-waw1-1.xx&oh=00_AT_Pf9rKC1uYOfRKk0k3px847TCSTe3upIFHjpbg9rvkkg&oe=61BFC5F5)](http://fvcproductions.com)    | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
+| [![FVCproductions]()](http://fvcproductions.com)    | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) | [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com)  |
 | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> | <a href="http://github.com/fvcproductions" target="_blank">`github.com/fvcproductions`</a> |
 
 - You can just grab their GitHub profile image URL
