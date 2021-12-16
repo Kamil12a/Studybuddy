@@ -1,11 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <ItemGroup>
-    <ProjectReference Include="..\StudyBuddy.Domain\StudyBuddy.Domain.csproj" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
+	<ItemGroup>
+		<ProjectReference Include="..\StudyBuddy.Domain\StudyBuddy.Domain.csproj"/>
+	</ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="10.1.1"/>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1"/>
+		<PackageReference Include="FluentValidation" Version="10.3.6"/>
+		<PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6"/>
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.6"/>
+	</ItemGroup>
 </Project>
