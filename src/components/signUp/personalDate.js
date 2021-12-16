@@ -45,7 +45,7 @@ export default function PersonalDate() {
   const FieldTofilled = ({ question, fill }) => (
     <div>
       <Grid className={classes.chooseAvatarAndName}>
-        <Typography component="h1" variant="h5">
+        <Typography  className={classes.question} component="h1" variant="h5">
           {question}
         </Typography>
         <TextField
@@ -70,16 +70,16 @@ export default function PersonalDate() {
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <form onSubmit={submitPersonForm} className={classes.rightSide}>
-            <Typography component="h1" variant="h3">
+            <Typography component="h1" variant="h3" className={classes.title}>
               Let's get to know each other better!
             </Typography>
             <div className={classes.oneLaneToFill}>
-              <FieldTofilled question="Your name" fill={"Name"} />
-              <FieldTofilled question="Your surname" fill={"surname"} />
+              <FieldTofilled question="Name" fill={"Name"} />
+              <FieldTofilled question="Surname" fill={"surname"} />
             </div>
             <div className={classes.oneLaneToFill}>
-              <FieldTofilled question="Your e-mail" fill={"email"} />
-              <FieldTofilled question="Your Password" fill={"password"} />
+              <FieldTofilled question="E-mail" fill={"email"} />
+              <FieldTofilled question="Password" fill={"password"} />
             </div>
 
             <AvatartIcon />

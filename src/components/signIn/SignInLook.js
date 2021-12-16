@@ -17,14 +17,21 @@ import Avatar from "@material-ui/core/Avatar";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 const useStyles = makeStyles((theme) => ({
   root: {
-    height: "100vh",
+    display: "flex",
+    flexDirection: "column",
   },
   imageBackground: {
     display: "flex",
     justifyContent: "center",
+
     backgroundColor: theme.palette.primary.main,
     width: "50vw",
     height: "100vh",
+    [theme.breakpoints.down(780)]: {
+      width: "100vw",
+      height: "40vh",
+      alignItems:"center"
+    },
   },
   image: {
     marginTop: "150px",
@@ -36,19 +43,36 @@ const useStyles = makeStyles((theme) => ({
     width: "600px",
     height: "600px",
     borderRadius: "100%",
+    [theme.breakpoints.down(780)]: {
+      width: "60vw",
+      height: "60vw",
+      margin:"0"
+    },
   },
   paper: {
-    position: "absolute",
-    top: 0,
-    right: 0,
+    [theme.breakpoints.up(780)]: {
+      position: "absolute",
+      top: 0,
+      right: 0,
+      width: "50vw",
+    },
     paddingTop: "200px",
-    width: "50vw",
+
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    [theme.breakpoints.down(780)]: {
+      paddingTop: "50px",
+      marginRight:"20px",
+      marginLeft:"20px",
+      height: "auto",
+    },
+  },
+  accountAction: {
+    display: "flex",
+    alignItems: "center",
   },
   form: {
-    width: "50vw",
     marginTop: theme.spacing(1),
   },
 }));
@@ -108,7 +132,7 @@ export default function SignInLook() {
               id="password"
               autoComplete="current-password"
             />
-            <Grid container>
+            <Grid container className={classes.accountAction}>
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
