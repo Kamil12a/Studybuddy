@@ -1,25 +1,39 @@
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
+import MenuIcon from '@material-ui/icons/Menu';
 
 export const Navbar = () => {
   let history = useHistory();
   const useStyles = makeStyles((theme) => ({
+  
     toolBar: {
       position: "absolute",
       right: "0",
       gap: "10px",
       display: "flex",
       justifyContent: " space-between",
+      [theme.breakpoints.down(780)]: {
+        display:"none"
+      },
+     
     },
     btnCalendar: {
       background: "green",
     },
     navBar: {
-      display: "flex",
+      display:"flex",
+      width:"100vw",
       alignItems: "center",
       height: "60px",
     },
+    menuIcon:{
+      width:"30px",
+      height:"30px",
+      position:"absolute",
+      right:"10px",
+      top:"10px"
+    }
   }));
 
   const classes = useStyles();
@@ -38,7 +52,7 @@ export const Navbar = () => {
   return (
     <>
       {" "}
-      <AppBar>
+      <AppBar  >
         <Toolbar>
           <Typography
             className={classes.navBar}
@@ -72,6 +86,7 @@ export const Navbar = () => {
             </Button>
           </Toolbar>
         </Toolbar>
+        < MenuIcon className={classes.menuIcon}/>
       </AppBar>
     </>
   );

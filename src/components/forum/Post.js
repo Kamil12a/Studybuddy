@@ -7,6 +7,11 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: "40px",
     width: "550px",
+    [theme.breakpoints.down(780)]: {
+      marginTop:"50px",
+      width:"80vw",
+      padding: "20px",
+    },
   },
   large: {
     width: "50px",
@@ -16,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     gap: "20px",
+    [theme.breakpoints.down(780)]: {
+      gap:"10px"
+     },
   },
   informationAboutPost: {
     display: "flex",
@@ -23,10 +31,17 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     marginTop: "20px",
+    [theme.breakpoints.down(780)]: {
+      marginTop: "5px",
+    },
   },
   textContent:{
       marginTop:"20px",
-      textAlign:"justify"
+      textAlign:"justify",
+      [theme.breakpoints.down(780)]: {
+        marginTop: "5px",
+      },
+      
   }
 }));
 

@@ -11,6 +11,9 @@ export const useStyles = makeStyles((theme) => ({
     height: "50px",
     width: "150px",
     background: theme.palette.primary.main,
+    [theme.breakpoints.down(780)]: {
+      display:"none"
+  },
   },
   createPostButton: {
     textAlign: "center",
@@ -20,6 +23,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   modal: {
+   
     position: "absolute",
     top: "200px",
     display: "flex",
@@ -28,6 +32,9 @@ export const useStyles = makeStyles((theme) => ({
   },
   boxOfModal: {
     textAlign: "center",
+    [theme.breakpoints.down(780)]: {
+      display:"none"
+  },
   },
   chooseAvatarAndName: {
     marginTop: "20px",
@@ -38,6 +45,7 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     padding: "20px",
     width: "470px",
+    
   },
   chooseName: {
     width: "400px",
@@ -49,6 +57,7 @@ export const useStyles = makeStyles((theme) => ({
     bottom: "280px",
     left: "145px",
     cursor: "pointer",
+  
   },
   containerOfPost: {
     display: "flex",
