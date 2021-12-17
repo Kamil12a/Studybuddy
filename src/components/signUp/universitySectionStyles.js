@@ -3,7 +3,8 @@ import logo from "../../photos/studdyBuddy.png";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
-    height: "100vh",
+    display: "flex",
+    flexDirection: "column",
   },
   imageBackground: {
     display: "flex",
@@ -12,6 +13,11 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.primary.main,
     width: "50vw",
     height: "100vh",
+    [theme.breakpoints.down(780)]: {
+      width: "100vw",
+      height: "40vh",
+      alignItems:"center"
+    },
   },
   image: {
     marginTop: "150px",
@@ -23,24 +29,36 @@ export const useStyles = makeStyles((theme) => ({
     width: "600px",
     height: "600px",
     borderRadius: "100%",
+    [theme.breakpoints.down(780)]: {
+      width: "60vw",
+      height: "60vw",
+      margin:"0"
+    },
   },
   paper: {
-    position: "absolute",
-    top: 0,
-    right: 0,
+    [theme.breakpoints.up(780)]: {
+      position: "absolute",
+      top: 0,
+      right: 0,
+      width: "50vw",
+    },
     paddingTop: "200px",
-    width: "50vw",
+
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    [theme.breakpoints.down(780)]: {
+      paddingTop: "50px",
+      marginRight:"20px",
+      marginLeft:"20px",
+      height: "auto",
+      paddingBottom:"20px"
+    },
   },
   avatar: {
     margin: theme.spacing(1),
   },
-  form: {
-    width: "50vw",
-    marginTop: theme.spacing(1),
-  },
+ 
   input: {
     display: "none",
   },
@@ -52,16 +70,32 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "20px",
     display: "flex",
     alignItems: "center",
+   
+  },
+  question:{
+    width:"110px",
+    [theme.breakpoints.down(780)]: {
+      fontSize:"1.2em"
+     },
   },
   chooseName: {
     margin: "10px",
   },
+  title:{
+    fontSize:"2em",
+    marginBottom:"20px",
+    textAlign:"center",
+    
+  },
   oneLaneToFill: {
-    marginTop: "20px",
+    width:"90vw",
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.down(780)]: {
+      flexDirection:"column",
+      alignItems:"flex-start",
+    },
   },
-
   submitButton: {
     textAlign: "center",
     height: "50px",
@@ -77,6 +111,7 @@ export const useStyles = makeStyles((theme) => ({
     margin: "5px",
   },
   selectYourPosition: {
+    width:"80vw",
     display: "flex",
     alignItems: "center",
     margin: "5px",
@@ -84,4 +119,7 @@ export const useStyles = makeStyles((theme) => ({
   checkbox: {
     marginLeft: "5px",
   },
+  rightSide:{
+    width:"100%"
+  }
 }));

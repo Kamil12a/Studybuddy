@@ -17,6 +17,7 @@ import Avatar from "@material-ui/core/Avatar";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 const useStyles = makeStyles((theme) => ({
   root: {
+    minHeight:"100vh",
     display: "flex",
     flexDirection: "column",
   },
@@ -50,6 +51,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   paper: {
+    minHeight:"60vh",
     [theme.breakpoints.up(780)]: {
       position: "absolute",
       top: 0,

@@ -69,7 +69,7 @@ export default function AboutYouForm() {
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <form onSubmit={submitPersonForm} className={classes.rightSide}>
-            <Typography component="h5" variant="h3">
+            <Typography className={classes.title}  component="h5" variant="h3">
               Let's get to know each other better!
             </Typography>
 
