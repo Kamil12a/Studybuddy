@@ -2,7 +2,12 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   forum: {
+    minHeight: "100vh",
     marginTop: "50px",
+    backgroundColor: "white",
+    transition: "all 0.8s ease",
+    WebkitTransition: "all 0.8s ease",
+    MozTransition: "all 0.8s ease",
   },
   submitButton: {
     marginTop: "50px",
@@ -12,8 +17,8 @@ export const useStyles = makeStyles((theme) => ({
     width: "150px",
     background: theme.palette.primary.main,
     [theme.breakpoints.down(780)]: {
-      display:"none"
-  },
+      display: "none",
+    },
   },
   createPostButton: {
     textAlign: "center",
@@ -23,18 +28,17 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   modal: {
-   
     position: "absolute",
     top: "200px",
     display: "flex",
     justifyContent: "center",
-    width: "99vw",
+    width: "100vw",
   },
   boxOfModal: {
     textAlign: "center",
     [theme.breakpoints.down(780)]: {
-      display:"none"
-  },
+      display: "none",
+    },
   },
   chooseAvatarAndName: {
     marginTop: "20px",
@@ -45,27 +49,34 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     padding: "20px",
     width: "470px",
-    
   },
   chooseName: {
     width: "400px",
     margin: "5px",
-    
   },
   closeIcon: {
     position: "relative",
     bottom: "280px",
     left: "145px",
     cursor: "pointer",
-  
   },
   containerOfPost: {
     display: "flex",
-    alignItems:"center",
-    gap:"50px",
-    flexDirection:"column"
+    alignItems: "center",
+    gap: "50px",
+    flexDirection: "column",
+    transition: "all 0.8s ease",
+    WebkitTransition: "all 0.8s ease",
+    MozTransition: "all 0.8s ease",
   },
-  questionContent:{
-    height:"200px"
-  }
+  questionContent: {
+    height: "200px",
+  },
+  hamburgerMenu: {
+    width: "200px",
+    height: "200px",
+    position: "absolute",
+    top: "0",
+    right: "0",
+  },
 }));

@@ -1,12 +1,11 @@
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
-import MenuIcon from '@material-ui/icons/Menu';
+import Hamburger from "hamburger-react";
 
-export const Navbar = () => {
+export const Navbar = ({ openMenu }) => {
   let history = useHistory();
   const useStyles = makeStyles((theme) => ({
-  
     toolBar: {
       position: "absolute",
       right: "0",
@@ -14,26 +13,26 @@ export const Navbar = () => {
       display: "flex",
       justifyContent: " space-between",
       [theme.breakpoints.down(780)]: {
-        display:"none"
+        display: "none",
       },
-     
     },
     btnCalendar: {
       background: "green",
     },
     navBar: {
-      display:"flex",
-      width:"100vw",
+      display: "flex",
+      width: "100vw",
       alignItems: "center",
       height: "60px",
     },
-    menuIcon:{
-      width:"30px",
-      height:"30px",
-      position:"absolute",
-      right:"10px",
-      top:"10px"
-    }
+    menuIcon: {
+      width: "30px",
+      height: "30px",
+      position: "absolute",
+      right: "10px",
+      top: "10px",
+    },
+  
   }));
 
   const classes = useStyles();
@@ -46,13 +45,14 @@ export const Navbar = () => {
   const navToProfile = () => {
     history.push("/my-app");
   };
- const navToYourGroups=()=>{
-  history.push("/yourGroups");
- }
+  const navToYourGroups = () => {
+    history.push("/yourGroups");
+  };
+
   return (
     <>
       {" "}
-      <AppBar  >
+      <AppBar>
         <Toolbar>
           <Typography
             className={classes.navBar}
@@ -62,9 +62,13 @@ export const Navbar = () => {
           >
             STUDDY-BUDDY!
           </Typography>
+          <div onClick={openMenu} >
+            <Hamburger />
+          </div>
+
           <Toolbar className={classes.toolBar}>
             <Button onClick={navToGroup} variant="contained" color="default">
-             find Group
+              find Group
             </Button>
 
             <Button onClick={navToForum} variant="contained" color="default">
@@ -72,7 +76,11 @@ export const Navbar = () => {
               FORUM
             </Button>
 
-            <Button onClick={navToYourGroups} variant="contained" color="default">
+            <Button
+              onClick={navToYourGroups}
+              variant="contained"
+              color="default"
+            >
               {" "}
               Your Groups
             </Button>
@@ -86,8 +94,8 @@ export const Navbar = () => {
             </Button>
           </Toolbar>
         </Toolbar>
-        < MenuIcon className={classes.menuIcon}/>
       </AppBar>
+     
     </>
   );
 };
