@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
-import logo from "../../photos/studdybuddy.png";
+import logo from "../../photos/studyBuddy.jpg";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
