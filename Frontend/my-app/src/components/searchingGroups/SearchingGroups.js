@@ -13,6 +13,10 @@ export default function SearchingGroups() {
       display: "flex",
       justifyContent: "space-around",
       gap: "20px",
+      [theme.breakpoints.down(780)]: {
+        flexDirection:"column",
+        alignItems:"center"
+      },
     },
     titleOfGroupsSearching: {
       marginTop: "100px",

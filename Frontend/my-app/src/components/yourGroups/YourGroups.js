@@ -12,9 +12,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-around",
     gap: "20px",
+    [theme.breakpoints.down(780)]: {
+      flexDirection: "column",
+      alignItems: "center",
+    },
   },
   titleOfGroupsSearching: {
     marginTop: "100px",
+  
   },
   groupsContainer: {
     textAlign: "center",
@@ -24,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
     background: theme.palette.primary.main,
     width: "200px",
     height: "70px",
+    [theme.breakpoints.down(780)]: {
+      display: "none",
+    },
   },
   submitButtonSection: {
     position: "absolute",
@@ -154,7 +162,9 @@ export const YourGroups = () => {
                 name={"hasztag"}
               />
               <SubjectToChoose />
-              <Button onClick={createGroupOpenModal}variant="contained">Submit </Button>
+              <Button onClick={createGroupOpenModal} variant="contained">
+                Submit{" "}
+              </Button>
             </Paper>
           </div>
         </>

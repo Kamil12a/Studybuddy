@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "100px",
     padding: "40px",
     width: "550px",
+    [theme.breakpoints.down(780)]: {
+      marginTop: "40px",
+      padding: "40px",
+      width: "90%",
+    },
   },
 
   informatiomAboutUser: {
