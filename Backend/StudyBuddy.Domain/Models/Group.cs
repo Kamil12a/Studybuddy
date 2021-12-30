@@ -8,7 +8,7 @@ namespace StudyBuddy.Domain.Models
         public bool IsActive { get; set; }
 
         public int TutorId { get; set; }
-        public ICollection<User> StudentIds { get; set; }
+        public virtual ICollection<User> StudentIds { get; set; }
 
         public int AdminId { get; set; }
         public User Admin { get; set; }
