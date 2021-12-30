@@ -30,6 +30,8 @@ namespace StudyBuddy.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplication();
+            services.AddInfrastructure();
+
             services.AddDbContext<Context>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -44,6 +46,8 @@ namespace StudyBuddy.API
             services.AddControllers() //
                 .AddControllersAsServices(); //
             services.AddHttpClient(); //
+            services.AddMvc()
+                .AddXmlDataContractSerializerFormatters(); //
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,6 +69,13 @@ namespace StudyBuddy.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
