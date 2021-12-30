@@ -21,9 +21,9 @@ namespace StudyBuddy.API.Controllers
         [HttpGet]
         public IActionResult AddGroup()
         {
-            return new JsonResult(1);
-            var group = _groupService.AddGroup(new Application.ViewModels.GroupVm());
-            return new JsonResult(group);
+            return new JsonResult(_groupService.AddGroup(new Application.ViewModels.GroupVm()));
+            // var group = _groupService.AddGroup(new Application.ViewModels.GroupVm());
+            // return new JsonResult(group);
         }
 
         [HttpGet]

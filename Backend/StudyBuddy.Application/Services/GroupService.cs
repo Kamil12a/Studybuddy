@@ -1,46 +1,58 @@
+using AutoMapper;
 using StudyBuddy.Application.Interfaces;
 using StudyBuddy.Application.ViewModels;
 using StudyBuddy.Domain.Interfaces;
+using StudyBuddy.Domain.Models;
 
 namespace StudyBuddy.Application.Services
 {
     public class GroupService : IGroupService
     {
         private readonly IGroupRepository _groupRepo;
+        private readonly IMapper _mapper;
 
-        public GroupService(IGroupRepository groupRepo)
+        public GroupService(IGroupRepository groupRepo, IMapper mapper)
         {
             _groupRepo = groupRepo;
+            _mapper = mapper;
         }
 
-        public int AddGroup(GroupVm group)
+        public int AddGroup(GroupVm groupVm)
         {
-            return _groupRepo.AddGroup(new Domain.Models.Group());
+            var group = _mapper.Map<Group>(groupVm);
+            var id = _groupRepo.AddGroup(group);
+            return id;
         }
 
-        public int AddGroupPropertyVm(GroupPropertyVm groupProperty)
+        public int AddGroupPropertyVm(GroupPropertyVm groupPropertyVm)
         {
-            throw new System.NotImplementedException();
+            var groupProperty = _mapper.Map<GroupProperty>(groupPropertyVm);
+            var id = _groupRepo.AddGroupProperty(groupProperty);
+            return id;
         }
 
         public void DeleteGroup(int groupId)
         {
-            throw new System.NotImplementedException();
+            _groupRepo.DeleteGroup(groupId);
         }
 
         public void DeleteGroupProperty(int groupPropertyId)
         {
-            throw new System.NotImplementedException();
+            _groupRepo.DeleteGroupProperty(groupPropertyId);
         }
 
         public GroupVm GetGroup(int groupId)
         {
-            throw new System.NotImplementedException();
+            var group = _groupRepo.GetGroupById(groupId);
+            var groupVm = _mapper.Map<GroupVm>(group);
+            return groupVm;
         }
 
-        public GroupPropertyVm GetGroupPropertyVm(int groupProperty)
+        public GroupPropertyVm GetGroupPropertyVm(int groupPropertyId)
         {
-            throw new System.NotImplementedException();
+            var groupProperty = _groupRepo.GetGroupProperty(groupPropertyId);
+            var groupVm = _mapper.Map<GroupPropertyVm>(groupProperty);
+            return groupVm;
         }
 
         public void UpdateGroup(GroupVm group)
