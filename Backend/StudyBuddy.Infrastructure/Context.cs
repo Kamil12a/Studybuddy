@@ -5,11 +5,11 @@ namespace StudyBuddy.Infrastructure
 {
     public class Context : DbContext
     {
-        public DbSet<Group> Group { get; set; }
+        public DbSet<Group> Groups { get; set; }
         public DbSet<GroupProperty> GroupProperties { get; set; }
         //public DbSet<Post> Post { get; set; }
         public DbSet<Subject> Subject { get; set; }
-        public DbSet<Topic> Topic { get; set; }
+        public DbSet<Topic> Topics { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserProperty> UserProperties { get; set; }
 
