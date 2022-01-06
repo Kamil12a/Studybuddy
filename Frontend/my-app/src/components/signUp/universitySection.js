@@ -10,28 +10,14 @@ import { useHistory } from "react-router-dom";
 import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
-import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-
+import FieldTofilled from "../global/FieldTofilled";
+import LogoLook from "../global/LogoLook";
 export default function UniversitySection() {
   let history = useHistory();
   const [myState, setMyState] = React.useState("");
   const [checked, setChecked] = React.useState([false, false]);
   const classes = useStyles();
-  const FieldTofilled = ({ question, fill }) => (
-    <div>
-      <Grid className={classes.chooseAvatarAndName}>
-        <Typography  className={classes.question}  component="h1" variant="h5">
-          {question}
-        </Typography>
-        <TextField
-          className={classes.chooseName}
-          label={fill}
-          variant="outlined"
-        />
-      </Grid>
-    </div>
-  );
   const submitPersonForm = (e) => {
     e.preventDefault();
     history.push("/aboutYouForm");
@@ -49,9 +35,8 @@ export default function UniversitySection() {
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <div className={classes.imageBackground} >
-        <Grid item className={classes.image} />
-      </div>      <Grid item component={Paper} elevation={6} square>
+      <LogoLook/>
+        <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <form onSubmit={submitPersonForm} className={classes.rightSide}>
             <Typography className={classes.title} component="h5" variant="h3">

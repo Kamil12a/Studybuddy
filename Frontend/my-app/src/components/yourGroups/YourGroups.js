@@ -19,6 +19,11 @@ const useStyles = makeStyles((theme) => ({
   },
   titleOfGroupsSearching: {
     marginTop: "100px",
+ 
+      [theme.breakpoints.down(780)]: {
+        fontSize:"2em"
+      },
+  
   
   },
   groupsContainer: {
@@ -96,7 +101,7 @@ export const YourGroups = () => {
   };
   return (
     <>
-      <Navbar />
+
       <div className={classes.submitButtonSection}>
         <Button
           onClick={createGroupOpenModal}

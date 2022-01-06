@@ -1,8 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
-import logo from "../../photos/studdybuddy.png";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
+    position:"absolute",
+    zIndex:"10",
     display: "flex",
     flexDirection: "column",
     [theme.breakpoints.down(780)]: {
@@ -10,37 +11,11 @@ export const useStyles = makeStyles((theme) => ({
       backgroundColor: "white",
     },
   },
-  imageBackground: {
-    display: "flex",
-    justifyContent: "center",
+ 
 
-    backgroundColor: theme.palette.primary.main,
-    width: "50vw",
-    height: "100vh",
-    [theme.breakpoints.down(780)]: {
-      width: "100vw",
-      height: "40vh",
-      alignItems: "center",
-    },
-  },
-  image: {
-    marginTop: "150px",
-    backgroundImage: `url(${logo})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center center",
-    backgroundColor: "white",
-    backgroundSize: "55%",
-    width: "600px",
-    height: "600px",
-    borderRadius: "100%",
-    [theme.breakpoints.down(780)]: {
-      width: "60vw",
-      height: "60vw",
-      margin: "0",
-    },
-  },
   paper: {
     [theme.breakpoints.up(780)]: {
+      background:"white",
       position: "absolute",
       top: 0,
       right: 0,
@@ -80,17 +55,6 @@ export const useStyles = makeStyles((theme) => ({
   large: {
     width: "100px",
     height: "100px",
-  },
-  chooseAvatarAndName: {
-    marginTop: "20px",
-    display: "flex",
-    alignItems: "center",
-  },
-  question: {
-    width: "110px",
-  },
-  chooseName: {
-    marginLeft: "10px",
   },
   oneLaneToFill: {
     display: "flex",

@@ -9,7 +9,8 @@ import TextField from "@material-ui/core/TextField";
 import { useStyles } from "./personalDateStyles";
 import Button from "@material-ui/core/Button";
 import { useHistory } from "react-router-dom";
-
+import LogoLook from "../global/LogoLook";
+import FieldTofilled from "../global/FieldTofilled";
 export default function PersonalDate() {
   let history = useHistory();
 
@@ -42,20 +43,6 @@ export default function PersonalDate() {
       </Typography>
     </div>
   );
-  const FieldTofilled = ({ question, fill }) => (
-    <div>
-      <Grid className={classes.chooseAvatarAndName}>
-        <Typography  className={classes.question} component="h1" variant="h5">
-          {question}
-        </Typography>
-        <TextField
-          className={classes.chooseName}
-          label={fill}
-          variant="outlined"
-        />
-      </Grid>
-    </div>
-  );
   const submitPersonForm = (e) => {
     e.preventDefault();
     history.push("/universitySection");
@@ -63,9 +50,7 @@ export default function PersonalDate() {
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <div className={classes.imageBackground} >
-        <Grid item className={classes.image} />
-      </div>
+      <LogoLook/>
 
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>

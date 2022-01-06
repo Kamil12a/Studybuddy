@@ -6,10 +6,14 @@ import AboutYouForm from "./components/signUp/AboutYourForm";
 import Forum from "./components/forum/Forum";
 import { YourGroups } from "./components/yourGroups/YourGroups";
 import SearchingGroups from "./components/searchingGroups/SearchingGroups";
+import {ToolBar} from "../src/components/global/ToolBar"
+import { Navbar } from "./components/NavBar";
 function App() {
   return (
     <>
+    
       <Router>
+      <Navbar/>
         <Switch>
           <Route exact path="/my-app" component={SignIn}></Route>
           <Route path="/signIn" component={SignIn}></Route>
@@ -22,6 +26,8 @@ function App() {
           <Route path="/forum" component={Forum}></Route>
           <Route path="/searchinggroups" component={SearchingGroups}></Route>
           <Route path="/yourGroups" component={YourGroups}></Route>
+          <Route path="/nativeMenu" component={ToolBar}></Route>
+
         </Switch>
       </Router>
     </>
