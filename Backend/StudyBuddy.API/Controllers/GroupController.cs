@@ -6,8 +6,8 @@ using System.Web;
 
 namespace StudyBuddy.API.Controllers
 {
-    // [ApiController]
-    // [Route("/api/[controller]")]
+    [ApiController]
+    [Route("/[controller]")]
     public class GroupController : Controller
     {
         private readonly ILogger<GroupController> _logger;
@@ -19,11 +19,11 @@ namespace StudyBuddy.API.Controllers
             _groupService = groupService;
         }
 
-        [HttpGet]
-        public IActionResult AddGroup()
-        {
-            return new JsonResult(new Application.ViewModels.GroupVm());
-        }
+        // [HttpGet]
+        // public IActionResult AddGroup()
+        // {
+        //     return new JsonResult(new Application.ViewModels.GroupVm());
+        // }
 
         [HttpPost]
         public IActionResult AddGroup([FromBody] GroupVm model)
