@@ -24,7 +24,7 @@ namespace StudyBuddy.API.Controllers
         // {
         //     return new JsonResult(new Application.ViewModels.GroupVm());
         // }
-    dupa
+
         [HttpPost]
         public IActionResult AddGroup([FromBody] GroupVm model)
         {
