@@ -39,7 +39,23 @@ namespace StudyBuddy.API
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "StudyBuddy.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { 
+                    Title = "StudyBuddy.API", 
+                    Version = "v1",
+                    Description = "A simple web application",
+                    TermsOfService = new Uri("https://RegulaminUzyciaLicencja.com"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Kamil",
+                        Email = string.Empty,
+                        Url = new Uri("https://google.com")
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Used License",
+                        Url = new Uri("https://example.com")
+                    }
+                });
             });
 
             services.AddMemoryCache(); //
@@ -57,7 +73,11 @@ namespace StudyBuddy.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "StudyBuddy.API v1"));
+                app.UseSwaggerUI(c => 
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "StudyBuddy.API v1");
+                    c.RoutePrefix = string.Empty;
+                });
             }
 
             app.UseHttpsRedirection();

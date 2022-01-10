@@ -11,25 +11,15 @@ export default function Forum() {
   const [modalStatus, setModalStatus] = useState(false);
   const [stateOfPosts, setStateOfPosts] = useState([]);
   const [menuStatus, setMenuStatus] = useState(false);
-  const forumBackground = useRef();
   const classes = useStyles();
   const openModal = () => {
     modalStatus ? setModalStatus(false) : setModalStatus(true);
   };
-  const openMenu = () => {
-    if (!menuStatus) {
-      setMenuStatus(true);
-      forumBackground.current.style.backgroundColor = "#3f51b5";
-    } else {
-      setMenuStatus(false);
-      forumBackground.current.style.backgroundColor = "white";
-    }
-  };
   return (
     <>
-      <Navbar openMenu={openMenu} />
-      <ToolBar menuStatus={menuStatus} />
-      <div ref={forumBackground} className={classes.forum}>
+      {/* <Navbar/> */}
+  
+      <div  className={classes.forum}>
         <Button
           onClick={openModal}
           className={classes.submitButton}
@@ -46,7 +36,7 @@ export default function Forum() {
             />
           </>
         )}
-        {!menuStatus && !menuStatus && (
+        {!menuStatus &&  (
           <div className={classes.containerOfPost}>
             <Post
               userName={"Patryk Kowalski"}

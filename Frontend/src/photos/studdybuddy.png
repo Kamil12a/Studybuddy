@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://poczta.wp.pl/w/#/mails/show?id=45f0a18aad81e20c277e0ac1&label=1 -->
+<html app-version="EXWP
+                   
+                   build
+                   5.33.0 d5c08a3ea7c66ddc13b4b9b3ebb78807" ng-app="app" ng-controller="CommonController as CommonController" data-brand-type="WP" lang="pl" data-lt-installed="true" data-text="normal" data-layout="normal"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>  <meta name="viewport" content="width=device-width,initial-scale=1"> <!----><title ng-bind="$state.current.data.metaTitle + &#39; - WP Poczta&#39;" ng-if="$state.current.data.metaTitle">Fwd: logo - WP Poczta</title><!----> <!----> <link rel="manifest" href="https://poczta.wp.pl/w/manifest.WP.json" crossorigin="use-credentials"> <link rel="stylesheet" href="./studdybuddy_files/style-bundle_abddd543.css"> <link rel="stylesheet" href="./studdybuddy_files/style-bundle_6e960826.css"> <link rel="shortcut icon" href="https://poczta.wp.pl/w/common/favicon-WP.ico" type="image/x-icon"> <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/oafehcpjkmcajaddkiokiolhebnfhcmg"> <script async="" src="./studdybuddy_files/tr.js.download"></script><script src="./studdybuddy_files/jquery.min.js.download"></script><link id="chromealerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://dacdinoicboceafielngnmjjplncljhj/content.css"> <script> var wp_abtest_programmatic = "PRG-2970";
+      window.wp_sn = 'poczta_nh'
+      window.rekid = '234782'
+      window.wp_dot_type = 'time'
+      window.wp_dot_send = false
+      window.wp_cookie_info = false
+      window.wp_gemius_send = false
+      window.habahaba = 'bxvarxemxixsampxstrongxcite'
+      window.isMobile = false </script> <script> !(function(d, m, e, v, n, t, s) {
+        d['WphTrackObject'] = n
+        ;(d[n] =
+          window[n] ||
+          function() {
+            ;(d[n].queue = d[n].queue || []).push(arguments)
+          }),
+          (d[n].l = 1 * new Date()),
+          (t = m.createElement(e)),
+          (s = m.getElementsByTagName(e)[0]),
+          (t.async = 1)
+        t.src = v
+        s.parentNode.insertBefore(t, s)
+      })(window, document, 'script', 'https://pixel.wp.pl/w/tr.js', 'wph')
+      wph('init', 'WP-UVDTIU7C4C-Y91-0LJ') </script> <script> !function(){if('PerformanceLongTaskTiming' in window){var g=window.__tti={e:[]};
+      g.o=new PerformanceObserver(function(l){g.e=g.e.concat(l.getEntries())});
+      g.o.observe({entryTypes:['longtask']})}}(); </script> <script crossorigin="" src="./studdybuddy_files/ZWJiNzg4dTYrCzhJSE94I2hTbBkXXAUkPg1sVkVreG1oNhElOGsFCBU2ESU4awUIFTYRJThrBQgVNhElOGsFCBU2ESU4awUIFTYRJThrBQgVNhElOGsFCBU2ESU4awUIFTYRJThrBQgVNhElOGsFCBU2ESU4awUIFTYRJThrBQgVNhElOGs" id="wpjslib"></script><style type="text/css" data-id="wpcss">.vup8iz7>img,[vup8iz7]>img{display:none!important;}.pnuztsn>div,[pnuztsn]>div{background-color:transparent!important;background-image:none!important;}.d7po5n2,[d7po5n2]{display:block;}.z21o1u1,[z21o1u1]{display:block!important;width:inherit;height:inherit;}.s22s0sk,[s22s0sk]{width:100%;}.o2rtp86,[o2rtp86]{display:none;}.pzqljvt,[pzqljvt]{--adv-bg-color:black;--adv-txt-color:white;--adv-opacity:0.75;--adv-pp-shadow:linear-gradient(to top, rgba(255,255,255,0.25), rgba(255,255,255,0.0));}.lvvl8y3,[lvvl8y3]{--adv-bg-color:white;--adv-txt-color:black;--adv-opacity:1;--adv-pp-shadow:linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.0));}.qcf5h01,[qcf5h01]{position:relative;height:0px!important;min-height:0px!important;padding:0px!important;margin:0px!important;overflow:hidden!important;background-image:none!important;}.qcf5h01 [xs06cph],[qcf5h01] [xs06cph]{width:100%;position:absolute;top:0px;left:0px;}.zhiqfoa,[zhiqfoa]{position:relative;height:0px!important;min-height:0px!important;padding:0px!important;margin:0px!important;overflow:hidden!important;}.zhiqfoa [xs06cph],[zhiqfoa] [xs06cph]{width:100%;position:absolute;top:0px;left:0px;}.kgkogcm,[kgkogcm]{position:relative;padding:8px 12px!important;}.kgkogcm [xs06cph],[kgkogcm] [xs06cph]{width:100%;position:absolute;top:0px;left:0px;}.u3t49i1,[u3t49i1]{position:relative;height:0px!important;min-height:0px!important;padding:0px!important;margin:0px!important;overflow:hidden!important;background-image:none!important;}.u3t49i1 [xs06cph],[u3t49i1] [xs06cph]{width:100%;position:absolute;top:0px;left:0px;}.kls4y7k,[kls4y7k]{position:relative;height:0px!important;min-height:0px!important;padding:0px!important;margin:0px!important;overflow:hidden!important;}.kls4y7k [xs06cph],[kls4y7k] [xs06cph]{width:100%;position:absolute;top:0px;left:0px;}.scs1v2e,[scs1v2e]{position:relative;top:0px;display:block;overflow:hidden;}.xeq8znh,[xeq8znh]{display:none;}.a8kw2z7,[a8kw2z7]{position:relative;display:block;width:100%;overflow:hidden;z-index:310;background-color:#fff;}.a8kw2z7 > iframe,[a8kw2z7] > iframe{position:absolute;}.iijewyx,[iijewyx]{position:relative;display:block;overflow:hidden;z-index:0;height:auto;}.gdmpi0h,[gdmpi0h]{position:absolute;bottom:0px;left:0px;width:100%;height:6px;background:var(--adv-pp-shadow, linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.0)));-webkit-background:var(--adv-pp-shadow, linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.0)));-moz-background:var(--adv-pp-shadow, linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.0)));-ms-background:var(--adv-pp-shadow, linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.0)));-o-background:var(--adv-pp-shadow, linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.0)));z-index:1;}.sp06v44,[sp06v44]{position:absolute;right:0px;top:0px;width:80px;height:40px;z-index:1;}.a852qp4,[a852qp4]{position:absolute;right:0px;top:0px;cursor:pointer;z-index:2;}.e3lc99n,[e3lc99n]{display:block;width:auto;margin-left:50%;transform:translate3d(-50%, 0, 0);-webkit-transform:translate3d(-50%, 0, 0);-moz-transform:translate3d(-50%, 0, 0);-ms-transform:translate3d(-50%, 0, 0);-o-transform:translate3d(-50%, 0, 0);max-width:none;}.vs8j1wv,[vs8j1wv]{background-image:url(https://v.wpimg.pl/eV8oMSkuSjdZDTtgRA5HIhpVbzAbHTo7WQIucUdXEHQCTWJmW01SbxcBIiQOWg0_XwYoPQoqDzdVFhImGAELM1JADB8nMCIEdzB_Y1lEOgZ5IQgfNAUXM1UGOD40RFxkCBd-ZVsDVyZAMC48Gww6fglGYzkbEkcr);background-repeat:no-repeat;width:1920px;height:360px;background-size:auto;background-position:center center;image-rendering:-webkit-optimize-contrast;}.klom004,[klom004]{position:relative;height:0px!important;min-height:0px!important;padding:0px!important;margin:0px!important;overflow:hidden!important;background-image:none!important;}.klom004 [xs06cph],[klom004] [xs06cph]{width:100%;position:absolute;top:0px;left:0px;}.s6ddzz1,[s6ddzz1]{position:relative;min-height:250px!important;padding:0!important;background-image:none!important;}.s6ddzz1 [xs06cph],[s6ddzz1] [xs06cph]{width:100%;position:absolute;top:0px;left:0px;}.wnb8r0h,[wnb8r0h]{width:300px;height:250px;margin-left:auto;margin-right:auto;position:relative;background-color:transparent;border:0 none;}.mxuy6su,[mxuy6su]{display:block!important;text-align:center;align-items:center;clear:both;margin:auto;position:relative;width:300px;height:250px;max-width:100%;}.z625xto,[z625xto]{overflow:hidden;border:0 none;display:block;margin:auto;max-width:none;max-height:none;width:100%;height:100%;}</style><iframe name="__tcfapiLocator" style="visibility: hidden; display: none;" src="./studdybuddy_files/saved_resource(13).html"></iframe><iframe src="./studdybuddy_files/OTgwNzk4YDUGFThJRE9tIEVNbBkbXBAnExNsVklBbW5FWDkKAUcjPQVYJg8JGicgChtsBw.html" style="visibility: hidden; display: none;"></iframe> <script src="./studdybuddy_files/ZWJiNzg4dTYrCzhJSE94I2hTbBkXXAU4JAwiFQBdNHVmSztYXRZ1OCQMIhUAXTR4JQU5EwNTPyNkAz1YGg"></script><style type="text/css">.styles-module_Button__1bJy1{align-items:center;background-color:#2019f5;border:none;border-radius:4px;color:#fff;cursor:pointer;display:flex;font-size:14px;justify-content:center;max-width:270px;outline:none;padding:10px 12px 10px 30px;position:relative;width:100%}.styles-module_Button__1bJy1 span{position:relative}.styles-module_Button__1bJy1:hover{background-color:#333cf6}.styles-module_Icon__1t6X6{left:12px;position:absolute;top:50%;transform:translateY(-50%)}</style><style type="text/css">.styles-module_Text__2N4ci{display:block;max-width:95px}.styles-module_Text__2N4ci.styles-module_Overlay__aUjWP{left:50%;position:absolute;transform:translateX(-50%)}.styles-module_Text__2N4ci.styles-module_Bold__27ljj{font-weight:600;visibility:hidden}.styles-module_Button__3Bq4n{align-items:center;background:none;border:0;cursor:pointer;display:flex;flex-direction:column;font-size:12px;font-weight:500;justify-content:center;outline:0;text-transform:uppercase}.styles-module_Button__3Bq4n>*{position:relative}.styles-module_Button__3Bq4n:hover .styles-module_Overlay__aUjWP{visibility:hidden}.styles-module_Button__3Bq4n:hover .styles-module_Bold__27ljj{visibility:visible}.styles-module_Button__3Bq4n .styles-module_TextWrapper__3szJT{margin-top:8px}@media (max-width:768px){.styles-module_Button__3Bq4n .styles-module_TextWrapper__3szJT{display:none}}</style><style type="text/css">.styles-module_Wrapper__28I5v{border-top:1px solid rgba(0,0,0,.1);display:flex;flex-direction:column;padding:0 20px 16px}.styles-module_Link__7LnyB{align-items:center;color:#1a1a1a;cursor:pointer;display:flex;font-size:14px;margin-top:16px}.styles-module_Link__7LnyB:hover{text-decoration:underline}.styles-module_Icon__2j5nC{align-items:center;display:flex;justify-content:center;margin-right:15px;width:20px}</style><style type="text/css">.styles-module_Wrapper__2g7OW{align-items:center;box-sizing:border-box;display:flex;flex-direction:column;padding:20px 20px 0;width:100%}.styles-module_AvatarWrapper__pJPgY{position:relative}.styles-module_Avatar__2n7RQ{border-radius:50%;height:60px;width:60px}@media (max-width:768px){.styles-module_Avatar__2n7RQ{height:43px;width:43px}}.styles-module_OneLoginLogo__2RFnu{bottom:0;left:-10px;position:absolute}.styles-module_PersonalData__p1q4n{font-size:14px;font-weight:500;margin-top:10px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.styles-module_Email__3ZhPR{color:#656565;font-size:12px;margin-bottom:10px}.styles-module_Link__1nZwl{color:#2019f5;cursor:pointer;font-size:14px;font-weight:600;margin-bottom:15px;text-decoration:none}.styles-module_Link__1nZwl:hover{text-decoration:underline}.styles-module_Link__1nZwl:last-child{margin-bottom:10px}.styles-module_DisplayNone__1dBmu{display:none}</style><style type="text/css">.styles-module_Wrapper__3Ue2n{color:#1a1a1a;position:relative}.styles-module_Dropdown__22z2G{background-color:#fff;border-radius:5px;box-shadow:0 0 10px 0 rgba(0,0,0,.2);opacity:0;position:absolute;right:0;top:-5px;transform:scale(.2);transform-origin:top right;transition:transform .2s ease-in-out,opacity .2s ease-in-out,top .2s ease-in-out;width:350px;z-index:999}.styles-module_Dropdown__22z2G.styles-module_Open__qza-y{opacity:1;top:100%;transform:scale(1)}.styles-module_Dropdown__22z2G.styles-module_Closed__12SQg{display:none}@media (max-width:768px){.styles-module_Dropdown__22z2G{left:50%;position:fixed;top:10px;transform:scale(.2) translateX(-50%);transform-origin:top center;width:300px}.styles-module_Dropdown__22z2G.styles-module_Open__qza-y{top:10px;transform:scale(1) translateX(-50%)}}.styles-module_Backdrop__3E_yg{background-color:rgba(88,88,88,.83);bottom:0;display:none;left:0;position:fixed;right:0;top:0;z-index:998}@media (max-width:768px){.styles-module_Backdrop__3E_yg.styles-module_Visible__3WocK{display:block}}.styles-module_Content__2QMnt{position:relative}.styles-module_CloseButton__OZ9N-{background:none;border:none;display:none;margin:0;outline:none;padding:0;position:absolute;right:20px;top:20px}@media (max-width:768px){.styles-module_CloseButton__OZ9N-{display:block}}.styles-module_Placeholder__GOJhG:not(:empty){border-top:1px solid rgba(0,0,0,.1)}.styles-module_AvatarWrapper__2IFqp{align-items:center;background-color:#e0e0e0;border-radius:50%;display:flex;height:30px;justify-content:center;width:30px}.styles-module_AvatarWrapper__2IFqp img{border-radius:50%;height:24px;width:24px}</style><style type="text/css">.styles-module_Tooltip__1L5Q1{height:258px;opacity:1;position:absolute;transition:opacity .2s ease-in-out,visibility 0s linear;visibility:visible;width:410px;z-index:10}@media (max-width:768px){.styles-module_Tooltip__1L5Q1{display:none}}.styles-module_Hide__10Suq{opacity:0;transition:opacity .2s ease-in-out,visibility 0s linear .2s;visibility:hidden}.styles-module_BarContainer__j9Z8W{align-items:center;background-color:#3665f6;display:flex;justify-content:space-around;padding:4px;position:relative;width:100%}.styles-module_Arrow__1yXvB{border:8px solid rgba(136,183,213,0);border-bottom-color:#3665f6;bottom:100%;content:"";display:none;height:0;margin-right:-8px;pointer-events:none;position:absolute;width:0}.styles-module_BarTitle__Rv5Oq{display:flex;flex:1;justify-content:flex-end;min-width:0;padding:0 16px}.styles-module_BarTitle__Rv5Oq>img{min-width:0}.styles-module_BarButton__2hLeU{cursor:pointer;display:flex;flex:1;min-width:0}.styles-module_BarButton__2hLeU>img{min-width:0}.styles-module_CloseBar__3xhMz{cursor:pointer;display:flex;flex:0 0 34px;justify-content:center;width:34px}</style><style type="text/css">.styles_Container__1iNFm{background-color:#fff;height:0;pointer-events:none;transition:opacity .5s ease-in-out;user-select:none;z-index:9999999}.styles_Container__1iNFm iframe{border:0;height:100%;width:100%}.styles_Inline__27OAp{width:320px}.styles_Popup__13kBe{border:1px solid #e0e0e0;border-top-left-radius:5px;border-top-right-radius:5px;bottom:0;box-shadow:0 0 10px rgba(0,0,0,.2);display:flex;left:0;opacity:0;overflow:hidden;position:fixed;right:0;width:100%}@media (min-width:600px){.styles_Popup__13kBe{border-bottom-left-radius:5px;border-bottom-right-radius:5px;bottom:auto;left:auto;right:20px;top:80px;width:320px}}</style> <script src="./studdybuddy_files/manifest-bundle_9c4471ca.js.download"></script> <script src="./studdybuddy_files/vendor-bundle_9c4471ca.js.download"></script> <script src="./studdybuddy_files/universal-bundle_9c4471ca.js.download"></script><style data-styled="" data-styled-version="4.1.3"></style><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/272-chunk_9c4471ca.js.download"></script><style type="text/css">.nl-text {
+  font-size: 1.125rem;
+  line-height: 1.263;
+  margin-bottom: 16px;
+}
+
+.nl-avatar {
+  border-radius: 50%;
+  float: left;
+  margin-right: 8px;
+  overflow: hidden;
+}
+
+.nl-avatar img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.nl-brand-WP .nl-text {
+  font-size: 0.9375rem;
+  padding: 4px 12px 0;
+}
+
+.nl-box {
+  border-radius: 6px;
+  box-shadow: 0 1px 5px #c8c7cc;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 930px;
+  width: 100%;
+}
+
+.nl-box-image {
+  text-align: center;
+}
+
+.nl-box-image img {
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.nl-box-info {
+  min-height: 58px;
+  padding: 0 12px;
+  position: relative;
+}
+
+.nl-box-image:after {
+  background-color: #e5e6e9;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.nl-box-heading {
+  font-size: 0.8125rem;
+  line-height: 1.1;
+}
+
+.nl-box-disclaimer {
+  color: #8a8a8f;
+  font-size: 10px;
+  margin-top: 32px;
+}
+
+.nl-box-disclaimer--image {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Carousel */
+
+.NativeLinkCarousel {
+  height: 390px;
+}
+
+.nl-react-carousel-elements {
+  margin-right: 16px;
+  max-width: 300px;
+}
+
+.nl-carousel-elements .nl-box {
+  max-width: 300px;
+  height: 358px;
+}
+
+.nl-carousel-slider {
+  margin: 0 -16px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nl-carousel-elements {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nl-carousel-elements {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nl-carousel-elements li {
+  display: inline-block;
+  float: none;
+  padding: 8px 0 0 16px;
+  min-width: 128px;
+}
+
+.nl-form--carousel .nl-box-image {
+  height: 300px;
+  position: relative;
+  width: 300px;
+}
+
+.nl-form--carousel .nl-box-image img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.nl-form--carousel .nl-box-heading {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.nl-form--carousel .Attachments-prev:before,
+.nl-form--carousel .Attachments-next:before {
+  height: 48px;
+  width: 48px;
+  top: 2px;
+}
+
+.nl-form--carousel .Attachments-prev > i,
+.nl-form--carousel .Attachments-next > i {
+  margin: 0;
+}
+
+/* Feed */
+
+.nl-feed-elements .nl-box {
+  height: 364px;
+  position: relative;
+  width: 100%;
+}
+
+.nl-feed-elements {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nl-feed-elements li {
+  box-sizing: border-box;
+  flex: 1 33%;
+  padding: 8px;
+  min-width: 0;
+}
+
+.nl-form--feed .nl-box-image {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.nl-form--feed .nl-box-image:before {
+  content: '';
+  display: block;
+  padding-bottom: 90%;
+}
+
+.nl-form--feed .nl-box-image img {
+  height: auto;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.nl-form--feed .Button--nl {
+  bottom: 0;
+  left: 0;
+  margin: 12px;
+  position: absolute;
+  right: 0;
+}
+
+.nl-form--feed .nl-box-heading {
+  font-size: 14px;
+  line-height: 17px;
+  margin: 10px 0 5px;
+}
+
+.nl-box-feed-desc {
+  color: #8a8a8f;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.nl-box-feed-price {
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.nl-form--feed .nl-box-feed-price {
+  font-size: 16px;
+}
+
+.nl-box-feed-discount-price {
+  color: #8a8a8f;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  text-decoration-line: line-through;
+}
+
+.nl-form--feed .nl-box-feed-price {
+  font-size: 14px;
+}
+
+.nl-box-feed-discount {
+  background-color: #ed1c24;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: 5px;
+  padding: 2px;
+  position: relative;
+  text-align: center;
+  top: -2px;
+  vertical-align: middle;
+}
+
+.nl-form--image {
+  margin: 0 5px;
+}
+</style> <script src="./studdybuddy_files/bundle-bundle_9c4471ca.js.download"></script> <!--<base href="">--><base href="."> <script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/277-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/278-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/103-chunk_9c4471ca.js.download"></script><style type="text/css">.Options{border:1px solid #d0d0d0;border-radius:9px;padding:10px 0;position:relative}.OptionSection-heading-pro{color:#212121;font-size:21px;line-height:26px;margin-bottom:32px}.OptionSection-list{color:#757575;font-size:14px;line-height:18px;margin-bottom:22px;padding-left:16px}.OptionSection-list li{margin-bottom:10px;padding-left:4px}.OptionSection-list .Button--text{border-bottom-color:#008dff}.packages-pro{font-size:0}.package{background-color:#f6f5f4;border-radius:4px;border:2px solid transparent;box-shadow:0 1px 2px rgba(0,0,0,.14);color:#757575;cursor:pointer;display:inline-block;font-size:13px;margin-right:16px;margin-bottom:8px;outline:0;padding:20px;text-align:center;width:212px;max-width:30%}.package:hover{border-color:rgba(0,0,0,.28);box-shadow:0 1px 10px rgba(0,0,0,.18)}.package-period{font-size:18px;line-height:22px;margin-bottom:16px}.package-cost{color:#212121;font-size:32px;line-height:38px;letter-spacing:-1px;margin-bottom:6px}.package-tax{margin-bottom:15px}.OptionSection-input{border-radius:3px;border:1px solid #d3d3d3;display:block;font-size:16px;height:36px;line-height:36px;margin:10px 0;outline:0;padding:0 8px;width:230px}.OptionSection-input:focus{border:2px solid #008dff}.OptionSection-input.error{border:2px solid #ff4136}.Options{background-color:#fff;min-height:600px;padding-bottom:40px}.Options-title{background-color:#ededed;border-top:1px solid #d0d0d0;border-bottom:1px solid #d0d0d0;font-size:1rem;margin-bottom:12px;padding:11px 16px}.Options .Tabs,.Options .tabs{border-bottom:6px solid #d0d0d0}.OptionSection{padding:24px}.OptionSection-heading{background-color:#ededed;color:#434343;font-size:.9375rem;line-height:32px;margin:0 -24px 19px;padding:0 24px}.OptionSection-subheading{color:#212121;font-size:.875rem;font-weight:600;margin:0 0 10px}.OptionSection-icon{display:none;float:left;margin:-2px 16px 0 0}.OptionSubSection-icon{float:left;margin:-2px 10px 0 0}.OptionSection-desc{color:#727272;font-size:.75rem;line-height:1.42;padding:0 80px 0 0;margin-bottom:24px}.OptionSection-desc .Button{color:#464646;font-size:.75rem;text-decoration:underline}.OptionSection-desc p+p{margin-top:16px}.Option{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:4px 0 3px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.Option:hover{background-color:#fafafa}.Option-label{color:#272727;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;font-size:.8125rem;line-height:1.93;margin-right:16px;text-align:left;width:320px}.Option-label--middle{-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}.Option-contents{min-width:394px}.Option .DraftEditor-editorContainer{border:1px solid #f9f8f7;border-top:0;outline:none}.Option-info{color:#727272;font-size:13px;margin:12px 0 0;width:100%}.Option-editor{border:1px solid;border-color:#bfbfbf;border-radius:2px;max-width:100%}.text-size{font-size:.75rem;margin-top:4px}.text-size label{cursor:pointer;margin:0 8px 0 4px}.OptionSection .Button--plain{background-color:#84b941;color:#fff;font-size:12px;height:24px;line-height:24px;padding:0 14px}.options-aliases-item__options{margin-top:0!important}.options-aliases-item__options .options-aliases-item__placeholder{width:62px}.Protocol-enabled{color:#219653;font-weight:700}.Protocol-disabled{color:#000;font-weight:700}.Protocol-subText{color:#757575;font-size:13px;line-height:18px}.RadioGroup{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}.RadioGroup-img{display:block;margin-top:12px;position:absolute;bottom:0}.RadioGroup-item{color:#4d4d4d;cursor:pointer;display:inline-block;margin:6px 26px 0 0;width:274px}.RadioGroup-item:last-of-type{margin-right:0}.RadioGroup-description{color:#bebebe;font-size:.75rem;min-height:120px;margin-top:10px;position:relative;padding-left:22px}.Radio{border:1px solid #c1c1c1;border-radius:50%;float:left;height:16px;margin-right:6px;position:relative;width:16px}.Radio-input{cursor:pointer;height:100%;opacity:0;position:absolute;width:100%}.Radio-input:checked+.Radio-state{background-color:#4d4d4d;border-radius:50%;display:block;height:8px;margin:3px auto 0;width:8px}.Option .CheckboxWrap{font-size:.8125rem}.Option .Select{background-position:98%;width:100%}.Option-contents .List-options{width:auto}.Option .Checkbox{float:left;margin:0 6px 0 8px}.Link--option{color:#b6b5b5;font-size:.75rem}.error-text{color:red;display:block}.optionsGeneral .Option-contents{min-width:268px}.optionsAutoAnswer .Option-label{width:30%;max-width:320px}@media print{.OptionSection-heading{color:#000}.Option-control{display:none}}.Option-key{font-size:.75rem;font-weight:600;letter-spacing:1px;text-transform:uppercase}.version-info{font-size:13px;color:#757575;position:absolute;bottom:10px;left:20px}.options-aliases__primaryActions{font-size:.75rem;padding-left:0!important}.options-aliases__wrap{margin:0!important}.options-aliases-item__wrap{font-size:.75rem!important;padding:12px 0!important}.sounds li{font-size:.75rem}.OptionSection .external-addresses-label{margin:8px 0}.OptionSection-subText{color:#727272;font-size:.875rem;margin:0 16px 10px 0;text-align:left}.Alert{background:hsla(0,0%,100%,.6);top:0;height:160px;z-index:9}.Alert,.Alert-content{position:absolute;width:100%;left:0}.Alert-content{background:#fef5da;border:1px solid #ffe79f;box-sizing:border-box;box-shadow:0 0 20px #c8c8c8;border-radius:6px;font-size:13px;padding:8px;right:0;top:11px;z-index:10}</style><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/273-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/263-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/74-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/45-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/60-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/36-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/48-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/17-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/194-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/192-chunk_9c4471ca.js.download"></script><script charset="utf-8" src="./studdybuddy_files/xgemius.js.download" id="gemius" async=""></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/115-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/54-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/42-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/57-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/39-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/63-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/51-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/132-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/8-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/102-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/133-chunk_9c4471ca.js.download"></script><script charset="utf-8" src="./studdybuddy_files/MjExNDUyYgskGjh3egJvHmdCbCclERIZMRxsaHcMb1BnVzk0PwohAydVIysxCmIdNRI9KDwbYAcqHD1qPwpvFw" crossorigin="anonymous" id="mods" async=""></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/196-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/174-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/162-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/79-chunk_9c4471ca.js.download"></script><script type="text/javascript" charset="utf-8" async="" src="./studdybuddy_files/136-chunk_9c4471ca.js.download"></script></head> <body class="lvvl8y3" lvvl8y3="" data-new-gr-c-s-check-loaded="14.1043.0" data-gr-ext-installed=""><div class="ads headerAd text_ads AdSense top-banners" id="GoogleAd" style="display: none; visibility: visible;"></div> <dd-holder slot="PANEL_PREMIUM"><div slot="PANEL_PREMIUM" class="sc-bwzfXH bDSPOK kls4y7k" kls4y7k=""></div></dd-holder> <script type="text/ng-template" id="label-item-sub.html"> <div class="Labels-item" ng-class="{'is-active':LabelsController.isActive(label.id)}" nh-droppable id="folder-{{ ::label.id }}"> <div class="show-subfolders" ng-if="label.elements.length" ng-click="label.showSubfolders = !label.showSubfolders"> </div> <div class="LabelActions"> <button class="Button" ng-click="LabelsController.editLabel(label)" type="button"> <nh-icon name="settings-16px"></nh-icon> </button> </div> <div class="Label"> <div class="Label-name" ng-click="LabelsController.open(label)"> <nh-icon name="label-folder-20px"></nh-icon>{{ label.name }} </div> <div class="Label-number" ng-if="label.unread">({{ label.unread }})</div> </div> <ul class="sub-folders" ng-if="label.showSubfolders"> <li class="Labels-item" ng-repeat="label in label.elements" ng-include="'label-item-sub.html'"></li> </ul> </div> </script>  <!----><div ui-view="" class="app-wrapper is1login" ng-class="{
+        &#39;forward-active&#39;: CommonController.forwardActive,
+        &#39;is1login&#39;: CommonController.oneLoginEnabled
+      }" id="main"><nh-app-view><div ng-controller="CommonController as CommonController">
+  <nh-top-bar><div class="sc-bfYoXt lhZffe" style="position: fixed; top: 0px;"><div class="topbar__inner"><div class="sc-ifAKCX sc-EHOje dEVxVy"><div class="sc-ifAKCX sc-EHOje drcCzS"><a class="topbar__logo" href="https://poczta.wp.pl/w/#/mails/?label=1"><i class="icon-new" aria-hidden="true" style="width: 128px; height: 32px;"><svg width="204" height="43" viewBox="0 0 204 43" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M31.796 33.907l7.75-.375L33.362 9.8l-9.166-.611-.08-.257c-.314-1.028-.631-2.056-.9-3.096a4.048 4.048 0 0 1 .047-2.221c.302-.989.924-1.737 1.76-2.31 1.723-1.18 3.636-1.509 5.676-1.19 1.747.273 3.295.99 4.653 2.122 1.139.949 1.858 2.154 2.223 3.584.276 1.08.568 2.156.854 3.233.404 1.526.812 3.05 1.214 4.577.407 1.545.818 3.09 1.212 4.638.483 1.893.953 3.788 1.424 5.684.34 1.37.682 2.738 1.008 4.11.319 1.344.62 2.693.928 4.039.094.413.18.83.284 1.24.101.397.36.561.745.5.317-.049.456-.188.493-.53.053-.48.09-.962.135-1.444.127-1.345.256-2.69.38-4.036.153-1.64.301-3.281.452-4.921.19-2.073.382-4.146.571-6.219.147-1.611.287-3.223.44-4.834.116-1.228.265-2.452.642-3.635.336-1.053.82-2.026 1.52-2.89a6.999 6.999 0 0 1 3.715-2.407c2.808-.748 5.543-.5 8.151.798 1.814.902 3.103 2.343 4.012 4.136.593 1.17.945 2.423 1.203 3.702.574 2.853 1.142 5.706 1.707 8.56.619 3.126 1.231 6.252 1.847 9.377.041.213.078.427.13.637a.47.47 0 0 0 .537.356c.153-.02.258-.14.29-.365.036-.264.062-.529.082-.794.112-1.496.217-2.992.332-4.487.12-1.564.244-3.127.376-4.69.106-1.248.222-2.496.342-3.743.144-1.492.299-2.983.446-4.475.14-1.404.277-2.808.41-4.212.052-.542.14-1.074.326-1.59.623-1.723 2.326-2.436 3.753-2.283.677.073 1.356.117 2.035.173l2.094.17c.895.07 1.79.136 2.685.21.935.076 1.87.152 2.803.24.59.056 1.185.09 1.763.208 3.312.676 5.597 2.599 6.859 5.73.38.944.594 1.932.748 2.937.178 1.16.168 2.324.11 3.485-.075 1.507-.324 2.986-.858 4.412-.981 2.617-2.847 4.273-5.476 5.12-.66.212-1.345.311-2.03.4-1.066.14-2.134.266-3.202.397l-.823.098c-.583.066-1.067-.127-1.458-.56a3.15 3.15 0 0 1-.708-1.383c-.282-1.15-.205-2.274.342-3.338.142-.279.326-.542.523-.785.37-.457.85-.73 1.448-.768.887-.056 1.774-.102 2.66-.167a17.78 17.78 0 0 0 1.559-.166c2.66-.443 3.168-7.95-.347-8.214-.47-.053-.946-.05-1.42-.059-1.905-.033-3.81-.061-5.716-.091-.107-.002-.214 0-.348 0-.084.766-.166 1.49-.243 2.215-.117 1.118-.231 2.237-.346 3.355-.17 1.648-.335 3.297-.508 4.944-.207 1.962-.42 3.922-.629 5.883-.101.951-.17 1.906-.366 2.844-.357 1.702-1.093 3.204-2.352 4.426-1.057 1.027-2.32 1.692-3.722 2.11a9.112 9.112 0 0 1-3.19.359c-2.14-.132-3.824-1.074-5.037-2.848-.565-.826-.925-1.744-1.158-2.708-.47-1.945-.916-3.897-1.363-5.849-.447-1.951-.884-3.906-1.324-5.86-.485-2.155-.97-4.31-1.453-6.466-.165-.732-.327-1.463-.491-2.195a1.803 1.803 0 0 0-.064-.227c-.107-.29-.282-.408-.557-.38-.248.025-.396.177-.44.48-.04.283-.065.568-.094.853-.18 1.776-.36 3.553-.535 5.33-.153 1.551-.298 3.103-.451 4.654-.189 1.905-.383 3.809-.574 5.713-.144 1.433-.273 2.868-.432 4.299-.151 1.36-.45 2.682-1.054 3.924-.869 1.787-2.208 3.13-3.884 4.162-1.728 1.064-3.623 1.635-5.62 1.907-1.157.158-2.318.228-3.484.124-2.118-.19-4.075-.819-5.773-2.14-1.136-.884-1.973-2.004-2.572-3.309-.532-1.16-.905-2.375-1.267-3.595z" fill="#ED1C24"></path><mask id="a" maskUnits="userSpaceOnUse" x="0" y="0" width="44" height="43"><path d="M36.515 6.412l7.483 27.397L0 41.517V0l36.515 6.412z" transform="translate(0 .747)" fill="#fff"></path></mask><g mask="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.99 21.381L5.248 31.663V11.345L16.99 21.38zM8.474 9.752l27.69 1.886-12.57 11.261L8.474 9.752zm10.961 13.72l3.218 2.75a1.42 1.42 0 0 0 1.906-.04l3.127-2.848 8.751 8.078-28.065 1.912 11.063-9.853zM38.595 13.4v16.017l-8.664-8.127 8.664-7.89zm1.389-4.509L3.59 5.991a1.62 1.62 0 0 0-1.77 1.63v27.826a1.62 1.62 0 0 0 1.631 1.636c.046 0 .093-.002.14-.006l36.393-2.9c.718-.056 1.28-.738 1.28-1.55V10.442c0-.813-.562-1.495-1.28-1.552z" fill="#ED1C24"></path></g><path d="M109.24 32.66h3.264v-8.128c.8 1.28 2.24 2.08 4.704 2.08 4.608 0 6.656-2.624 6.656-6.976v-2.784c0-4.672-2.432-6.816-7.328-6.816-4.448 0-7.296 2.144-7.296 6.816V32.66zm11.328-12.96c0 2.496-.704 3.808-4 3.808-3.296 0-4.064-1.312-4.064-3.808v-2.752c0-2.496.768-3.84 4.064-3.84 3.328 0 4 1.344 4 3.84V19.7zm17.46 0c0 2.496-.736 3.808-4 3.808-3.296 0-4.064-1.312-4.064-3.808v-2.752c0-2.496.768-3.84 4.064-3.84 3.264 0 4 1.344 4 3.84V19.7zm-4 6.912c4.992 0 7.296-2.56 7.296-6.912v-2.752c0-4.48-2.112-6.912-7.296-6.912-5.024 0-7.36 2.528-7.36 6.912V19.7c0 4.48 2.144 6.912 7.36 6.912zm10.109-6.72c0 4.448 2.336 6.72 7.52 6.72 1.471 0 2.72-.288 3.935-.736v-3.072a10.555 10.555 0 0 1-3.776.704c-3.071 0-4.383-.896-4.383-3.712v-3.008c0-2.592 1.024-3.68 4.16-3.68 1.664 0 2.784.416 3.712.8v-3.104c-.96-.416-2.144-.768-3.776-.768-5.056 0-7.392 2.688-7.392 6.72v3.136zm14.294-6.528h8.32c.8 0 1.024.16 1.024.544 0 .32-.224.576-.768.928l-7.04 4.32c-2.016 1.248-2.432 2.528-2.432 3.84 0 2.272 1.216 3.264 3.68 3.264h9.568v-2.976h-9.216c-.768 0-1.024-.16-1.024-.576 0-.32.192-.576.672-.864l7.104-4.32c2.144-1.312 2.464-2.304 2.464-3.84 0-2.336-.928-3.296-3.712-3.296h-8.64v2.976zm13.902.096h2.784v7.232c0 4.448 2.432 5.888 5.76 5.888 1.504 0 2.848-.224 3.904-.672v-3.072c-.928.384-2.464.672-3.904.672-1.504 0-2.496-.672-2.496-2.784V13.46h5.824v-3.072h-5.824v-4.16h-2.72l-.544 4.16-2.784.512v2.56zM200 15.284c0-4-2.912-5.248-7.232-5.248-1.728 0-3.2.16-4.352.544v2.88c1.024-.384 2.656-.608 4.544-.608 2.272 0 3.776.448 3.776 2.432v1.568h-3.52c-4 0-6.528 1.248-6.528 4.832 0 3.392 2.336 4.928 6.496 4.928 4.736 0 6.816-1.6 6.816-5.12v-6.208zm-3.264 6.048c0 2.176-1.536 2.496-3.616 2.496-1.632 0-3.136-.32-3.136-2.208 0-1.632 1.056-2.272 3.232-2.272h3.52v1.984z" fill="#000"></path></svg>
+</i></a></div><div class="topbar__tabs"><a href="https://poczta.wp.pl/w/#/mails/?label=1" class="topbar__tab topbar__tab1 is-active">poczta</a><a href="https://poczta.wp.pl/w/#/abook/list?tab=all-contacts" class="topbar__tab topbar__tab2 ">kontakty</a><a href="https://poczta.wp.pl/w/#/options/list?tab=general" class="topbar__tab topbar__tab3 " id="highlight_notification_anchor">opcje</a><a class="topbar__tab topbar__tab4" href="https://pomoc.wp.pl/" target="_blank">pomoc</a></div></div><div class="sc-ifAKCX sc-EHOje dEVxVy"><div class="sc-ifAKCX sc-EHOje sc-gbOuXE fOhdGK"><a href="https://open.fm/" target="_blank" rel="noopener" class="sc-ifAKCX sc-EHOje sc-ejGVNB kJzCvx"><div class="sc-dREXXX fzFCQW"></div><div class="sc-ifAKCX bDaJgU"><span>Słuchaj radia<br>za darmo<div class="sc-kcbnda fvLCIf"><div class="sc-hcmgZB crkDwt"></div></div></span></div><div class="sc-dHmInP gWGkXm"><div></div></div></a></div><div><div><div id="olw-db-backdrop" class="styles-module_Backdrop__3E_yg"></div><div class="styles-module_Wrapper__3Ue2n"><button type="button" id="olw-db-button" class="olw__button styles-module_Button__3Bq4n"><div class="olw__button__avatar styles-module_AvatarWrapper__2IFqp"><img src="./studdybuddy_files/img_256_1_75_80.png" alt="avatar"></div><div class="olw__button__text styles-module_TextWrapper__3szJT"><span class="olw__button__text--overlay styles-module_Text__2N4ci styles-module_Overlay__aUjWP">kamil</span> <span class="olw__button__text--bold styles-module_Text__2N4ci styles-module_Bold__27ljj">kamil</span></div></button><div id="olw-db-dropdown" class="olw__dropdown styles-module_Dropdown__22z2G styles-module_Closed__12SQg"><div class="styles-module_Content__2QMnt"><div id="olw-db-user"><div class="styles-module_Wrapper__2g7OW"><div class="olw__avatarwrapper styles-module_AvatarWrapper__pJPgY"><img class="styles-module_Avatar__2n7RQ" src="./studdybuddy_files/img_256_1_75_80.png" alt="avatar"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" class="styles-module_OneLoginLogo__2RFnu"><g fill="none" fill-rule="evenodd" transform="translate(.754)"><ellipse cx="11.475" cy="11.4" fill="#FFF" rx="11.475" ry="11.4"></ellipse><g fill="#2019F5"><path d="M14.765 1.87c-.348 0-.672.108-.94.291-.104.059-.202.127-.294.21l-4.84 4.962c-.672.609-.718 1.651-.102 2.315.616.665 1.67.71 2.342.1l2.165-2.13v8.307c0 .907.751 1.65 1.67 1.65.918 0 1.669-.743 1.669-1.65V3.52c0-.907-.75-1.65-1.67-1.65" transform="translate(2.416 2.4)"></path><path d="M6.587 11.8c-.743-.586-1.222-1.278-1.441-2.16-.196-.796-.115-1.46.153-2.26.038-.094.042-.105.01-.032.022-.052.046-.103.07-.154.036-.075.074-.15.115-.223.108-.195.229-.385.365-.562-.084.109.068-.076.08-.088.073-.085.15-.165.23-.244.08-.08.163-.155.248-.228.021-.018.206-.162.092-.078.183-.136.377-.256.578-.361.217-.116.263-.133.43-.193.454-.16.823-.223 1.25-.238.46-.014.852-.376.852-.841 0-.446-.39-.859-.853-.843-1.784.057-3.385.902-4.429 2.331-1 1.368-1.27 3.245-.723 4.84.339.987.943 1.876 1.768 2.526.36.285.854.348 1.205 0 .297-.293.362-.905 0-1.192M10.223 12.288c-.644.222-1.281.288-1.959.209-.457-.054-.852.425-.852.842 0 .5.393.789.852.843.808.095 1.645-.005 2.412-.268.435-.15.723-.577.596-1.036-.116-.418-.612-.74-1.049-.59" transform="translate(2.416 2.4)"></path><path d="M1.774 9.804c-.129-.99-.085-1.865.132-2.728.055-.22.12-.437.194-.652.037-.106.076-.212.118-.317.02-.053.04-.106.063-.157-.058.134.051-.107.052-.108.19-.406.418-.796.676-1.165.064-.09.13-.183.198-.272-.064.084.096-.115.132-.156.164-.192.337-.378.52-.554.37-.361.603-.548.983-.799.836-.553 1.536-.847 2.515-1.06 1.296-.282 2.68-.173 3.966.271.435.15.933-.171 1.048-.589.13-.464-.158-.886-.594-1.036-2.452-.846-5.242-.568-7.47.754C2.443 2.343 1.035 4.126.39 6.178.023 7.343-.087 8.596.069 9.804c.059.452.35.843.853.843.415 0 .91-.387.852-.843M10.129 15.724c-1.498.27-3.112.04-4.43-.616-1.392-.692-2.444-1.715-3.177-3.06-.22-.401-.78-.527-1.166-.303-.41.237-.526.75-.307 1.153.864 1.584 2.234 2.915 3.872 3.706 1.774.856 3.725 1.095 5.66.746.455-.082.71-.626.597-1.037-.131-.472-.594-.67-1.049-.589" transform="translate(2.416 2.4)"></path></g></g></svg></div><div class="olw__personaldata styles-module_PersonalData__p1q4n">kamil plewka</div><div class="olw__email styles-module_Email__3ZhPR">kamilplewka12a@wp.pl</div><a class="olw__link styles-module_Link__1nZwl " href="https://1login.wp.pl/" target="_blank" rel="noreferrer noopener">Zarządzaj kontem </a><a class="olw__link styles-module_Link__1nZwl" id="olw-link-login">Przełącz konto</a></div></div><div class="styles-module_Placeholder__GOJhG" id="olw-db-user-actions-placeholder"><div class="sc-ifAKCX kTKteP"><div class="sc-ifAKCX sc-EHOje sc-fnwBNb knWIWJ"><a href="https://poczta.wp.pl/w/#/options/list?tab=general" class="sc-ifAKCX sc-EHOje sc-iNhVCk gBurfx"><div width="30" class="sc-ifAKCX sc-EHOje fjchZM"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 20 22"><g fill="none" fill-rule="evenodd" stroke="#2019F5" stroke-width="1.5" transform="translate(1)"><path stroke-linecap="round" stroke-linejoin="round" d="M0 3.506L2.182 3.506M8.1 3.506L17.918 3.506"></path><ellipse cx="4.95" cy="3.279" rx="2.25" ry="2.429"></ellipse><path stroke-linecap="round" stroke-linejoin="round" d="M0 18.506L2.182 18.506M8.1 18.506L17.918 18.506"></path><ellipse cx="4.95" cy="18.279" rx="2.25" ry="2.429"></ellipse><path stroke-linecap="round" stroke-linejoin="round" d="M15.818 11.506L18 11.506" transform="matrix(-1 0 0 1 33.818 0)"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.082 11.506L9.9 11.506" transform="matrix(-1 0 0 1 9.982 0)"></path><ellipse cx="13.05" cy="11.279" rx="2.25" ry="2.429" transform="matrix(-1 0 0 1 26.1 0)"></ellipse></g></svg></div>Opcje</a><div class="sc-ifAKCX sc-EHOje sc-iNhVCk gBurfx"><div width="30" class="sc-ifAKCX sc-EHOje fjchZM"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="19" viewBox="0 0 15 19"><path fill="#2019F5" d="M.892 18.44l.38-.814.059-.124.275-.553c.47-.973.628-1.623.575-2.379l-.005-.084c-.066-1.747 1.661-3.006 3.342-2.555.081.021.16.047.238.075L9.46 2.22C10.16.576 11.333.3 12.96 1.345c1.55.996 1.955 2.082 1.08 3.285l-.097.133-.015.011-6.486 8.429-.414-.249c.58.764.809 1.823.527 2.874-.227.85-.615 1.42-1.365 1.921-.269.18-.57.331-.905.455-1.161.432-2.79.595-3.577.418l-.816-.183zm7.141-8.374l4.839-6.286.049-.07c.242-.368.165-.582-.5-1.037l-.147-.097-.077-.05c-.858-.552-1.048-.545-1.353.13l-.05.113-2.76 7.297zm-5.095 7.188l.19-.016c.575-.056 1.235-.185 1.757-.379.239-.089.446-.192.622-.31.447-.299.625-.56.76-1.066.259-.965-.246-1.934-1.12-2.168-.869-.233-1.68.37-1.63 1.098.065.927-.098 1.736-.53 2.732l-.049.109z"></path></svg></div>Zmień wygląd</div><a href="https://poczta.wp.pl/profil/" class="sc-ifAKCX sc-EHOje sc-iNhVCk gBurfx"><div width="30" class="sc-ifAKCX sc-EHOje fjchZM"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#2019F5" d="M10.5 0C16.299 0 21 4.701 21 10.5c0 2.888-1.166 5.503-3.052 7.401.018.032.035.065.052.099h-.152c-1.894 1.856-4.487 3-7.348 3-2.86 0-5.454-1.144-7.348-3H3l.052-.099C1.166 16.003 0 13.388 0 10.5 0 4.701 4.701 0 10.5 0zm0 14.864c-2.06 0-3.915 1.022-5.218 2.659 1.456 1.085 3.262 1.727 5.218 1.727s3.762-.642 5.219-1.726c-1.304-1.638-3.16-2.66-5.219-2.66zm0-13.114c-4.832 0-8.75 3.918-8.75 8.75 0 2.264.86 4.327 2.271 5.881 1.106-1.438 2.554-2.505 4.193-3.026-1.253-.768-2.089-2.152-2.089-3.73 0-2.416 1.959-4.375 4.375-4.375s4.375 1.959 4.375 4.375c0 1.578-.836 2.962-2.09 3.731 1.64.52 3.088 1.587 4.194 3.024 1.411-1.553 2.271-3.616 2.271-5.88 0-4.832-3.918-8.75-8.75-8.75zm0 5.25C9.05 7 7.875 8.175 7.875 9.625S9.05 12.25 10.5 12.25s2.625-1.175 2.625-2.625S11.95 7 10.5 7z"></path></svg></div>Profil</a><a href="https://poczta.wp.pl/profil/payments-list" class="sc-ifAKCX sc-EHOje sc-iNhVCk gBurfx"><div width="30" class="sc-ifAKCX sc-EHOje fjchZM"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15"><path fill="#2019F5" d="M19 11.25c0 2.071-1.418 3.75-3.167 3.75H3.167C1.417 15 0 13.321 0 11.25V3h.063c.294-1.712 1.572-3 3.104-3h12.666c1.532 0 2.81 1.288 3.104 3H19v8.25zm-1.584-6.695H1.583v6.834c0 1.074.71 1.944 1.584 1.944h12.666c.875 0 1.584-.87 1.584-1.944l-.001-6.834zM5.937 7.667c.656 0 1.188.522 1.188 1.166 0 .645-.532 1.167-1.188 1.167-.304 0-.582-.113-.792-.298-.208.185-.486.298-.79.298-.657 0-1.188-.522-1.188-1.167 0-.644.531-1.166 1.187-1.166.305 0 .583.112.793.298.208-.186.486-.298.79-.298zm9.896-6H3.167c-.701 0-1.296.559-1.504 1.333h15.674c-.208-.774-.803-1.333-1.504-1.333z"></path></svg></div>Płatności za rachunki</a><a href="https://pomoc.wp.pl/" class="sc-ifAKCX sc-EHOje sc-iNhVCk gBurfx"><div width="30" class="sc-ifAKCX sc-EHOje fjchZM"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path fill="#2019F5" d="M9 0c4.97 0 9 4.03 9 9s-4.03 9-9 9-9-4.03-9-9 4.03-9 9-9zM6.638 13.266l-1.37 2.241c1.1.632 2.373.993 3.732.993.831 0 1.63-.135 2.378-.385l-.76-2.515c-.507.178-1.051.275-1.618.275-.857 0-1.662-.221-2.362-.61zm5.98-1c-.237.264-.504.502-.794.708l.787 2.601c.852-.469 1.603-1.099 2.213-1.849zm-7.7-.6l-2.504.924c.422.773.976 1.464 1.632 2.041l1.401-2.293c-.195-.207-.372-.432-.529-.672zM9 5.625C7.136 5.625 5.625 7.136 5.625 9S7.136 12.375 9 12.375 12.375 10.864 12.375 9 10.864 5.625 9 5.625zm7.13 1.043l-2.465.913c.137.449.21.925.21 1.419 0 .674-.137 1.317-.384 1.9l2.213 1.466c.51-1.012.796-2.156.796-3.366 0-.814-.13-1.598-.37-2.332zM2.296 5.634C1.786 6.646 1.5 7.79 1.5 9c0 .768.115 1.51.33 2.207l2.469-.912c-.114-.413-.174-.847-.174-1.295 0-.674.137-1.317.384-1.9zm11.41-2.474L12.32 5.43c.257.238.488.504.688.793l2.515-.929c-.467-.82-1.085-1.544-1.816-2.134zM5.39 2.424c-.852.47-1.604 1.1-2.214 1.85l2.205 1.46c.238-.264.504-.501.794-.707zM9 1.5c-.831 0-1.63.135-2.378.385l.762 2.514c.505-.177 1.05-.274 1.616-.274.742 0 1.446.166 2.076.463l1.375-2.249C11.418 1.803 10.244 1.5 9 1.5z"></path></svg></div>Pomoc</a></div></div></div><div id="olw-db-actions"><div class="olw__action--logout styles-module_Wrapper__28I5v"><a class="olw__action--link styles-module_Link__7LnyB" id="olw-actions-logout"><span class="olw__action--icon styles-module_Icon__2j5nC"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 19"><path fill="#2019F5" stroke="#2019F5" d="M7 1c4.791 0 8.675 3.884 8.675 8.675S11.791 18.35 7 18.35c-.373 0-.675-.302-.675-.675 0-.373.302-.675.675-.675 4.045 0 7.325-3.28 7.325-7.325S11.045 2.35 7 2.35c-.373 0-.675-.302-.675-.675C6.325 1.302 6.627 1 7 1zM4.632 5.873l.084-.071.092-.056c.252-.126.568-.084.779.127h0l.071.083c.19.264.166.634-.071.871h0L3.305 9.11h6.412l.1.008c.325.048.575.329.575.668 0 .372-.302.675-.675.675h0l-6.412-.001 2.282 2.283.071.084c.19.263.166.633-.071.87-.264.264-.691.264-.955 0h0l-3.448-3.448-.057-.07-.053-.085-.04-.095-.026-.11L1 9.784c0-.07.01-.137.03-.2h0l.038-.096.052-.088h0l.026-.036.044-.05 3.442-3.442z"></path></svg> </span>Wyloguj</a></div></div><button type="button" id="olw-db-x-button" class="styles-module_CloseButton__OZ9N-"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#A1A1A1" fill-rule="evenodd" d="M11.414 10l4.293-4.293c.391-.391.391-1.023 0-1.414-.39-.391-1.023-.391-1.414 0L10 8.586 5.707 4.293c-.39-.391-1.023-.391-1.414 0-.39.391-.39 1.023 0 1.414L8.586 10l-4.293 4.293c-.39.391-.39 1.023 0 1.414.195.195.451.293.707.293.256 0 .512-.098.707-.293L10 11.414l4.293 4.293c.195.195.451.293.707.293.256 0 .512-.098.707-.293.391-.391.391-1.023 0-1.414L11.414 10z"></path></svg></button></div></div></div></div></div><div class="sc-gZMcBi irilpd"><div class="sc-iwsKbI gPwDIM"></div></div></div></div></div></nh-top-bar>
+  <one-login-bar></one-login-bar>
+  <migration></migration>
+  <nh-forward-info></nh-forward-info>
+  <!---->
+  <!---->
+  <div class="app-wrapper__inner">
+    <div class="container flex">
+      <nh-sidebar class="sidebar shrink-none" style="height: 443.25px;"><div class="sidebar__inner" style="position: fixed; top: 72px;">
+  <div class="sidebar__outline">
+    <div class="sidebar__topButtons">
+      <nh-theme-wp-button><button class="Button Button1" type="button"><i class="icon-eye"></i>wygląd</button></nh-theme-wp-button>
+      <a class="Button Button2" href="https://pomoc.wp.pl/" target="_blank">
+        <i class="icon-ring"></i>
+        zgłoś błąd
+      </a>
+    </div>
+    <div class="sidebar__header">
+      foldery
+      <nh-drop-down template="folder-options-dropdown.html" position="bottom left" data="{
+        &#39;addNewLabel&#39;: LabelsController.addNewLabel
+      }">
+        <i class="bottom-borderArrow drop-target"></i>
+      </nh-drop-down>
+    </div>
+    <div>
+      <div class="sidebar__labels">
+        <div class="sidebar__link is-active" ng-class="{&#39;is-active&#39;:(LabelsController.isActive(1) || (LabelsController.showTabs &amp;&amp; LabelsController.currentLabel.isSegregator))}" nh-droppable="" id="folder-1" ng-click="LabelsController.fastOpen({&#39;id&#39; : 1}, $event, true)" role="button" tabindex="0">
+          <div class="sidebar__icon"><i class="icon-mail"></i></div>
+
+          <div title="Odebrane" class="sidebar__label text-truncate has-unread" ng-class="{&#39;has-unread&#39;: LabelsController.resource.elementsById[1].unread}">
+            Odebrane
+          </div>
+          <div class="sidebar__number">
+            1836/2501
+          </div>
+          <div class="sidebar__actions" aria-hidden="true">
+            <button type="button" class="Button sidebar__action is-visible" ng-click="LabelsController.refresh(1, $event)" aria-label="Odśwież listę wiadomości" ng-class="{ &#39;in-progress&#39;: LabelsController.refreshProgress }">
+              <i class="icon-new" aria-hidden="true" name="refresh-16" size="16" style="height: 16px; width: 16px;"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M12.23 3.763C11.142 2.675 9.65 2 7.992 2 4.678 2 2 4.685 2 8s2.678 6 5.992 6c2.798 0 5.13-1.912 5.798-4.5h-1.56c-.615 1.748-2.28 3-4.238 3-2.482 0-4.5-2.018-4.5-4.5s2.018-4.5 4.5-4.5c1.246 0 2.356.518 3.166 1.335L8.742 7.25h5.25V2L12.23 3.763z"></path></svg></i>
+            </button>
+          </div>
+        </div>
+        <!---->
+        <div class="sidebar__link sidebar__link--del" ng-class="{&#39;is-active&#39;:LabelsController.isActive(3)}" nh-droppable="" id="folder-3" ng-click="LabelsController.fastOpen({&#39;id&#39; : 3}, $event)" role="button" tabindex="0">
+          <div class="sidebar__icon"><i class="icon-mail-trash"></i></div>
+          <div class="sidebar__label">
+            Kosz
+          </div>
+          <span class="sidebar__label__delete">
+            <!---->
+            <!---->
+          </span>
+          <div class="sidebar__number">
+            0/0
+          </div>
+        </div>
+        <div class="sidebar__link" ng-class="{&#39;is-active&#39;:LabelsController.isActive(4)}" nh-droppable="" id="folder-4" ng-click="LabelsController.fastOpen({&#39;id&#39; : 4}, $event)" role="button" tabindex="0">
+          <div class="sidebar__icon"><i class="icon-mail-drafts"></i></div>
+          <div class="sidebar__label">
+            Robocze
+          </div>
+          <div class="sidebar__number">
+            0/69
+          </div>
+        </div>
+        <div class="sidebar__link" ng-class="{&#39;is-active&#39;:LabelsController.isActive(2)}" nh-droppable="" id="folder-2" ng-click="LabelsController.fastOpen({&#39;id&#39; : 2}, $event)" role="button" tabindex="0">
+          <div class="sidebar__icon"><i class="icon-mail-sent"></i></div>
+          <div class="sidebar__label">
+            Wysłane
+          </div>
+          <div class="sidebar__number">
+            0/146
+          </div>
+        </div>
+        <div class="sidebar__link sidebar__link--del" ng-class="{&#39;is-active&#39;:LabelsController.isActive(5)}" nh-droppable="" id="folder-5" ng-click="LabelsController.fastOpen({&#39;id&#39; : 5}, $event)" role="button" tabindex="0">
+          <div class="sidebar__icon"><i class="icon-mail-spam"></i></div>
+          <div class="sidebar__label">
+            Spam
+          </div>
+          <span class="sidebar__label__delete">
+            <!----><span ng-if="LabelsController.resource.elementsById[5].count" ng-click="LabelsController.deleteAll(5, $event)" role="button" tabindex="0">usuń</span><!---->
+            <!---->
+          </span>
+          <div class="sidebar__number">
+            61/64
+          </div>
+        </div>
+
+        <labels-list elements="LabelsController.resource.customElements" label-ctrl="LabelsController" template="sidebar"><!---->
+</labels-list>
+        <div class="sidebar__otherlink">
+          <nh-drop-down template="folder-options-dropdown.html" data="{
+            &#39;addNewLabel&#39;: LabelsController.addNewLabel
+          }">
+            <span class="drop-target">
+              zarządzaj folderami
+            </span>
+          </nh-drop-down>
+        </div>
+      </div>
+      <div class="sidebar__labels">
+        <a class="sidebar__link" ng-href="#/gallery?type=img" href="https://poczta.wp.pl/w/#/gallery?type=img">
+          <div class="sidebar__icon"><i class="icon-mail-images"></i></div>
+          <div class="sidebar__label">
+            Zdjęcia z listów
+          </div>
+        </a>
+        <a class="sidebar__link" ng-href="#/gallery?type=doc" href="https://poczta.wp.pl/w/#/gallery?type=doc">
+          <div class="sidebar__icon"><i class="icon-mail-docs"></i></div>
+          <div class="sidebar__label">
+            Dokumenty
+          </div>
+        </a>
+        <a class="sidebar__link" ng-href="#/gallery?type=other" href="https://poczta.wp.pl/w/#/gallery?type=other">
+          <div class="sidebar__icon"><i class="icon-mail-music"></i></div>
+          <div class="sidebar__label">
+            Inne
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <script type="text/ng-template" id="label-item-sub.html">
+      <div
+        class="sidebar__link"
+        ng-class="{'is-active':LabelsController.isActive(label.id)}"
+        nh-droppable
+        id="folder-{{ ::label.id }}"
+        ng-click="LabelsController.fastOpen(label, $event)">
+        <div class="sidebar__showSubfolders"
+             ng-if="label.elements.length"
+             ng-click="LabelsController.showSubfolders(label, !label.showSubfolders, $event)"
+             ng-class="{'isOpen': label.showSubfolders }"></div>
+        <div class="sidebar__icon"><i class="icon-mail"></i></div>
+        <div class="sidebar__label">{{ label.name }}</div>
+        <div class="sidebar__number" ng-if="label.unread">({{ label.unread }})</div>
+        <div class="sidebar__actions">
+          <div class="sidebar__action" ng-click="LabelsController.editLabel(label, $event)" type="button" aria-label="Edytuj folder">
+            <nh-icon name="settings-16px" size="16"></nh-icon>
+          </div>
+        </div>
+      </div>
+      <ul class="sidebar__subFolders" ng-show="label.showSubfolders">
+        <li ng-repeat="label in label.elements" ng-include="'label-item-sub.html'"></li>
+      </ul>
+    </script>
+
+    <dd-holder slot="BOX_LEFT_1"><div slot="BOX_LEFT_1" class="sc-bwzfXH bDSPOK qcf5h01" qcf5h01=""></div></dd-holder>
+    <dd-holder slot="BOX_LEFT_2"><div slot="BOX_LEFT_2" class="sc-bwzfXH bDSPOK zhiqfoa" zhiqfoa=""></div></dd-holder>
+
+    <nh-footer><div class="sidebar__footer"><span>© 2022 WP Media</span><a href="https://onas.wp.pl/" target="_blank">O&nbsp;nas</a><a href="http://reklama.wp.pl/" target="_blank">Reklama</a><a href="https://pomoc.wp.pl/" target="_blank">Pomoc</a><a href="https://pomoc.wp.pl/regulamin" target="_blank">Regulamin</a><a href="https://pomoc.wp.pl/polityka-prywatnosci" target="_blank">Prywatność</a></div></nh-footer>
+  </div>
+</div>
+</nh-sidebar>
+      <div class="app-main flex-max">
+        <!----><div class="UiView" ui-view="content"><!---->
+
+<!----><div class="Thread" ng-if="!ctrl.placeholder">
+  <div class="topActionBar flex" ng-controller="LabelsController as LabelsController">
+    <div class="topActionBar-left flex grow-1 shrink-0">
+      <button class="Button Button--primary" ng-click="LabelsController.refresh(1, $event)" ui-sref="app.mails2.index" href="#/mails">odbierz</button>
+
+      <button class="Button Button--primary" ui-sref="app.compose({type:&#39;new&#39;})" ui-sref-opts="{&#39;inherit&#39;:false}" href="#/draft?type=new">napisz</button>
+
+      <!----><button class="Button Button--secondary" ng-if="(!ctrl.element.isTrashLabel() &amp;&amp; !ctrl.element.isSpamLabel() &amp;&amp; (ctrl.element.isConversation || !ctrl.element.messages[0].isSending)) || ctrl.label.isSearch" ng-click="ctrl.removeMessage(ctrl.element.element)" type="button">
+        usuń
+      </button><!---->
+
+      <!---->
+
+      <!----><button class="Button Button--secondary" ng-click="ctrl.toggleConversationAsSpam()" ng-if="::((!ctrl.element.isSpamLabel() &amp;&amp; !ctrl.element.messages.visible[0].isSending) || ctrl.label.isSearch)" type="button">
+        zgłoś spam
+      </button><!---->
+      <!---->
+    </div>
+    <div class="topActionBar-right shrink-1">
+      <nh-search><div class="sc-dRFtgE IjIsk"><form><div class="sc-hUfwpO fxSOEd"><input class="search__input sc-fEUNkw kjgPht" type="text" id="searchInput" autocomplete="off" placeholder="Wyszukaj..." value=""><div role="button" tabindex="0" class="sc-imABML fIiHUU"><svg width="20" weight="20" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.64 15.536l-3.826-3.826c.577-.95.91-2.06.91-3.253 0-3.46-3-6.457-6.46-6.457S2 4.805 2 8.265c0 3.46 2.998 6.457 6.457 6.457 1.15 0 2.228-.31 3.155-.852l3.847 3.847c.37.377.98.377 1.36 0l.95-.954c.37-.376.24-.85-.14-1.227zM3.928 8.266c0-2.396 1.942-4.338 4.337-4.338 2.396 0 4.53 2.134 4.53 4.53 0 2.395-1.942 4.337-4.338 4.337-2.395 0-4.53-2.135-4.53-4.53z"></path></svg></div></div></form></div></nh-search>
+    </div>
+  </div>
+
+  <div class="topActionBar2">
+    <button class="Button Button--text" ng-click="ctrl.back()"><i class="icon-arrow-bottom3"></i> wróć do Odebrane</button>
+    <div class="Button">
+      <button class="Button--text Button--outlineNone" ng-click="ctrl.replyMessage(false, &#39;reply&#39;, true)">
+        <i class="icon-answered-16"></i> odpowiedz
+      </button>
+      <nh-drop-down template="send-to-dropdown.html" position="bottom left" data="{
+          &#39;replyMessage&#39;: ctrl.replyMessage
+        }">
+        <i class="icon-arrow-bottom2 drop-target"></i>
+      </nh-drop-down>
+    </div>
+    <button class="Button Button--text" ng-click="ctrl.replyMessage(false, &#39;forward&#39;, true);"><i class="icon-forwarded-16"></i>
+      prześlij dalej</button>
+    <nh-drop-down template="show-move-dropdown.html" data="{
+        &#39;moveElements&#39;: ctrl.setLabel,
+        &#39;labels&#39;: ctrl.labels,
+        &#39;segregator&#39;: ctrl.segregator,
+        &#39;systemLabels&#39;: ctrl.systemLabels,
+        &#39;currentLabel&#39;: ctrl.currentLabel,
+        &#39;label&#39;: ctrl.label
+      }">
+      <button class="Button Button--text drop-target" role="button" data-sel-elem="move_to_label_button">
+        przenieś do <i class="icon-arrow-bottom2"></i>
+      </button>
+    </nh-drop-down>
+    <a class="Button Button--text" ng-href="/api/v1/emls/45f0a18aad81e20c277e0ac1?att=Fwd%20logo" target="_blank" href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1?att=Fwd%20logo">zapisz</a>
+    <button class="Button Button--text" ng-click="ctrl.printMessage(ctrl.element.element)">drukuj</button>
+    <div class="topActionBar2-right">
+      <button class="Button Button1 Button-icon tooltip-theme-arrows tooltip-target" ng-class="{&#39;inactive&#39;: !ctrl.checkNeighborExist(&#39;new&#39;)}" nh-tooltip="Nowsza wiadomość" ng-click="ctrl.goToNeighbor(&#39;new&#39;)">
+        <i class="icon-new" aria-hidden="true" name="arrow-left-20px" style="height: 20px; width: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.382 10.897c-.205-.218-.205-.573 0-.79l4.388-4.675c.307-.328.307-.86 0-1.186-.308-.328-.807-.328-1.114 0l-5.502 5.858c-.205.218-.205.573 0 .79l5.502 5.86c.154.164.355.246.557.246.202 0 .403-.082.556-.246.3-.328.3-.86 0-1.186l-4.39-4.673"></path></svg>
+</i>
+      </button>
+      <button class="Button Button1 Button-icon tooltip-theme-arrows tooltip-target" ng-class="{&#39;inactive&#39;: !ctrl.checkNeighborExist(&#39;old&#39;)}" nh-tooltip="Starsza wiadomość" ng-click="ctrl.goToNeighbor(&#39;old&#39;)">
+        <i class="icon-new" aria-hidden="true" name="arrow-right-20px" style="height: 20px; width: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.618 10.897c.205-.218.205-.573 0-.79L7.23 5.432c-.307-.328-.307-.86 0-1.186.308-.328.807-.328 1.114 0l5.502 5.858c.205.218.205.573 0 .79l-5.502 5.86c-.154.164-.355.246-.557.246-.202 0-.403-.082-.556-.246-.3-.328-.3-.86 0-1.186l4.39-4.673"></path></svg>
+</i>
+      </button>
+    </div>
+  </div>
+
+
+  <!----><!----><nh-show-item class="MessageGroup MessageGroup--last" id="45f0a18aad81e20c277e0ac1" ng-repeat="message in ctrl.element.messages.visible track by message.uniqueId" ng-if="!ctrl.isHidden(message)" message="message" taggedhighlight="ctrl.taggedHighlight" layout="ctrl.element.messageLayout(message)" ng-class="{
+      &#39;MessageGroup--snippet&#39;: message.isSnippet,
+      &#39;MessageGroup--draft&#39;: message.isDraft,
+      &#39;MessageGroup--showMessages&#39;: message.isGroup,
+      &#39;MessageGroup--unread&#39;: message.isUnread,
+      &#39;MessageGroup--composer&#39;: message.isComposer,
+      &#39;MessageGroup--full&#39;: message.isExpanded,
+      &#39;MessageGroup--last&#39;: $last,
+      &#39;MessageGroup--deleted&#39;: message.isRemoved &amp;&amp; ctrl.label != ctrl.systemLabels.TRASH,
+      &#39;MessageGroup--spam&#39;: message.isSpam,
+      &#39;print-this&#39;: message.printing
+    }"><div ng-switch="item.layout" nh-me="">
+  <!---->
+  <!---->
+  <!----><div ng-switch-when="full">
+    <div class="Message Message--full" on-in-viewport="item.markMessageAsRead(item.message)" on-in-viewport-options="{
+        once: true,
+        sides: &#39;top&#39;,
+        container: &#39;.AppContainer&#39;
+      }">
+      <verified-sender verifiedsender="item.message.flags.verifiedSender" verifiedsenderpro="item.message.flags.verifiedSenderPro"></verified-sender>
+      <header class="Message-header" ng-click="item.collapseMessage(item.message, $index);" role="button" tabindex="0">
+        <div class="Message-date">
+          <!---->
+          <!----><i class="flag-outlines icon-new" aria-hidden="true" name="flag-outlines-20" ng-if="!item.message.isStarred" ng-click="item.markAsStarred(true)" role="button" tabindex="0" style="height: 20px; width: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 3.644V16.5h1v-5.43l.102-.136c.92-1.206 2.25-1.206 3.76-.1 1.087.798 2.492.838 4.27.08v-5.88c-1.924.48-3.554.258-4.86-.684C8.67 3.554 7.257 3.313 5.5 3.644z" stroke="#000" fill="#fff"></path></svg>
+</i><!---->
+          3 sty 2022 20:13
+          <!----><span ng-if="item.message.humanIncomingTime">(9 minut temu)</span><!---->
+        </div>
+        <div class="Message-info flex-max">
+          <div class="Message-from">
+            <dt>Od:</dt>
+            <span nh-contact-card="" contact="item.message" class="name">Kamil Schlagowski</span>
+            <!---->
+          </div>
+          <div class="Message-details Message-details--hide Message-details--show" ng-class="{&#39;Message-details--show&#39;: !item.message.__showDetails}">
+            <button class="Button Button--secondary Button-icon" ng-click="item.message.__showDetails = !item.message.__showDetails;" nh-event-mod="{sp: true}">
+              <i class="icon-arrow-bottom"></i>
+            </button>
+            <!----><dl class="Message-detailsList" ng-if="::item.message.recipients(&#39;to&#39;, &#39;*&#39;).length">
+              <dt>Do:</dt>
+              <dd>
+                <!----><span class="recipient" ng-repeat="contact in ::item.message.recipients(&#39;to&#39;, &#39;*&#39;)" nh-contact-card="" contact="contact">
+                  <span>mnie</span>
+                  kamilplewka12a@wp.pl
+                </span><!---->
+              </dd>
+            </dl><!---->
+            <!---->
+            <dl class="Message-detailsList">
+              <dt>Temat:</dt>
+              <dd>
+                <span ng-class="{&#39;print-this&#39;: ctrl.printing}" ng-bind-html="::item.element.subject || &#39;Brak tematu&#39;">Fwd: logo</span>
+                <!---->
+              </dd>
+            </dl>
+          </div>
+
+          <div class="Message-details Message-details--hide" ng-class="{&#39;print-this&#39;: item.printing, &#39;Message-details--show&#39;: item.message.__showDetails}">
+            <!----><dl class="Message-detailsList" ng-if="::item.message.recipients(&#39;to&#39;, &#39;*&#39;).length">
+              <dt>Do:</dt>
+              <dd>
+                <!----><span class="recipient" ng-repeat="contact in ::item.message.recipients(&#39;to&#39;, &#39;*&#39;)" nh-contact-card="" contact="contact">
+                  <span>mnie</span>
+                  kamilplewka12a@wp.pl
+                </span><!---->
+              </dd>
+            </dl><!---->
+
+            <!---->
+            <dl class="Message-detailsList">
+              <dt>Odpowiedz do:</dt>
+              <dd>
+                <!---->
+              </dd>
+              <button class="Button Button--secondary Button-icon" ng-click="item.message.__showDetails = !item.message.__showDetails" nh-event-mod="{sp: true}">
+                <i class="icon-arrow-bottom"></i>
+              </button>
+            </dl>
+            <dl class="Message-detailsList">
+              <dt>Temat:</dt>
+              <dd ng-class="{&#39;print-this&#39;: ctrl.printing}" ng-bind-html="::item.element.subject || &#39;Brak tematu&#39;">Fwd: logo</dd>
+            </dl>
+            <dl class="Message-detailsList">
+              <dt>Rozmiar:</dt>
+              <dd>
+                6.5 MB
+              </dd>
+            </dl>
+            <dl class="Message-detailsList">
+              <dt></dt>
+              <dd>
+                <button class="Button Button--plain" ng-click="item.showSource(item.message)" type="button">
+                  Pokaż źródło wiadomości
+                </button>
+              </dd>
+            </dl>
+            <button class="Button Button--secondary Button-icon hide" ng-click="item.message.__showDetails = !item.message.__showDetails;" nh-event-mod="{sp: true}">
+              <i class="icon-arrow-bottom"></i>
+            </button>
+            <!---->
+          </div>
+        </div>
+        <!---->
+      </header>
+      <!---->
+      <div class="Message-content">
+        <!----><nh-html-compile data="item.message.message" ng-if="!item.message.isMailing"><div id="gwpbd297be5"><div id="gwpbd297be5h"><div data-message-body="true" class="gwpbd297be5b"><div dir="ltr"><br><br><div class="gwpbd297be5_gmail_quote"><div class="gwpbd297be5_gmail_attr" dir="ltr">---------- Forwarded message ---------<br>Od: <b dir="auto" class="gwpbd297be5_gmail_sendername">Agata</b> <span dir="auto">&lt;<a rel="noopener noreferrer" href="https://poczta.wp.pl/w/#" nh-compose-link=""></a><a href="https://poczta.wp.pl/w/#" nh-compose-link="">agata123445578@gmail.com</a>&gt;</span><br>Date: pon., 3 sty 2022 o 15:07<br>Subject: logo<br>To:  &lt;<a rel="noopener noreferrer" href="https://poczta.wp.pl/w/#" nh-compose-link=""></a><a href="https://poczta.wp.pl/w/#" nh-compose-link="">kamilschlagowski@gmail.com</a>&gt;<br></div><br><br><div dir="ltr">Zrobiłam kilka wariantów tego co wybraliście. Niektóre mają biały napis (te które są na tym niebieskim), a niektóre mają przezroczysty napis, także jeśli chcielibyście podłożyć pod to inne tło to napis będzie w kolorze tła. Jakby coś było nierówne lub coś by nie pasowało to dajcie znać, spróbuję jakoś to naprawić.<div>Jeśli są jeszcze jakieś zażalenia to śmiało piszcie.</div><div><br></div></div>
+</div></div></div></div></div></nh-html-compile><!---->
+
+        <!---->
+      </div>
+
+      <!----><div class="Message-attachments" ng-if="item.message.attachments.length">
+        <h3>
+          <ng-pluralize count="12" when="{
+            &#39;one&#39;: &#39;1 załącznik&#39;,
+            &#39;few&#39;:&#39; {} załączniki&#39; ,
+            &#39;many&#39;:&#39; {} załączników&#39; ,
+            &#39;other&#39;:&#39; {} załączników&#39;
+          }"> 12 załączników</ng-pluralize>
+          <!----><span ng-if="item.message.attachments.length &gt; 1"><a ng-href="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments" href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments">pobierz wszystkie</a></span><!---->
+        </h3>
+        <div nh-attachments-list="" items="item.message.attachments">
+          <ul class="Attachments">
+            <!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGO)3.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      456.6 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.2" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="0" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.2" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(1)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGO.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      354.4 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.3" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="1" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.3" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(2)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGO2.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      395.8 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.4" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="2" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.4" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(3)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGO3.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      493.7 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.5" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="3" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.5" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(4)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGO4.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      502.0 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.6" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="4" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.6" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(5)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGO5.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      380.7 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.7" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="5" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.7" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(6)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGOO (2).png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      373.4 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.8" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="6" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.8" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(7)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGO7.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      382.6 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.9" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="7" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.9" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(8)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGO6.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      329.2 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.10" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="8" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.10" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(9)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGOO2.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      461.0 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.11" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="9" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.11" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(10)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGOO6.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      340.9 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.12" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="10" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.12" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!----><li ng-repeat="attachment in item.message.attachments">
+              <div class="Attachment Attachment--png">
+                <div class="Attachment-window">
+                  <!----><div class="Attachment-photo" ng-if="::(attachment.isImage &amp;&amp; attachment.thumbnail)">
+                    <img ng-attr-src="{{ ::attachment.getThumbnailBySize(&#39;256x160&#39;) }}" src="./studdybuddy_files/saved_resource(11)">
+                  </div><!---->
+                  <!---->
+                  <div class="Attachment-info">
+                    <!----><div class="Attachment-name" ng-if="::attachment.fileName">
+                      LOGOO4.png
+                    </div><!---->
+                    <!----><div class="Attachment-size" ng-if="::attachment.size">
+                      368.2 KB
+                    </div><!---->
+                  </div>
+                  <div class="Attachment-options">
+                    <a href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.13" nh-event-mod="{sp: true}">zapisz</a> |
+                    <span class="show-att" attachment-item="" data-index="11" data-id="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.13" ng-click="item.openLightbox(attachment, item.message.attachments)" role="button" tabindex="0">
+                      pokaż
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li><!---->
+          </ul>
+        </div>
+      </div><!---->
+    </div>
+  </div><!---->
+  <!---->
+</div>
+</nh-show-item><!----><!---->
+
+  <!---->
+
+  <!---->
+
+  <!---->
+
+  <div class="topActionBar2">
+    <button class="Button Button--text" ng-click="ctrl.back()"><i class="icon-arrow-bottom3"></i> wróć do Odebrane</button>
+    <div class="Button">
+      <button class="Button--text Button--outlineNone" ng-click="ctrl.replyMessage(false, &#39;reply&#39;, true)">
+        <i class="icon-answered-16"></i> odpowiedz
+      </button>
+      <nh-drop-down template="send-to-dropdown.html" position="bottom right" data="{
+          &#39;replyMessage&#39;: ctrl.replyMessage
+        }">
+        <i class="icon-arrow-bottom2 drop-target"></i>
+      </nh-drop-down>
+    </div>
+    <button class="Button Button--text" ng-click="ctrl.replyMessage(false, &#39;forward&#39;, true);"><i class="icon-forwarded-16"></i>
+      prześlij dalej </button>
+    <nh-drop-down template="show-move-dropdown.html" data="{
+        &#39;moveElements&#39;: ctrl.setLabel,
+        &#39;labels&#39;: ctrl.labels,
+        &#39;segregator&#39;: ctrl.segregator,
+        &#39;systemLabels&#39;: ctrl.systemLabels,
+        &#39;currentLabel&#39;: ctrl.currentLabel,
+        &#39;label&#39;: ctrl.label
+      }">
+      <button class="Button Button--text drop-target" role="button" data-sel-elem="move_to_label_button">
+        przenieś do <i class="icon-arrow-bottom2"></i>
+      </button>
+    </nh-drop-down>
+    <a class="Button Button--text" ng-href="/api/v1/emls/45f0a18aad81e20c277e0ac1?att=Fwd%20logo" target="_blank" href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1?att=Fwd%20logo">zapisz</a>
+    <button class="Button Button--text" ng-click="ctrl.printMessage(ctrl.element.element)">drukuj</button>
+    <div class="topActionBar2-right">
+      <button class="Button Button1 Button-icon tooltip-theme-arrows tooltip-target" ng-class="{&#39;inactive&#39;: !ctrl.checkNeighborExist(&#39;new&#39;)}" nh-tooltip="Nowsza wiadomość" ng-click="ctrl.goToNeighbor(&#39;new&#39;)">
+        <i class="icon-new" aria-hidden="true" name="arrow-left-20px" style="height: 20px; width: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.382 10.897c-.205-.218-.205-.573 0-.79l4.388-4.675c.307-.328.307-.86 0-1.186-.308-.328-.807-.328-1.114 0l-5.502 5.858c-.205.218-.205.573 0 .79l5.502 5.86c.154.164.355.246.557.246.202 0 .403-.082.556-.246.3-.328.3-.86 0-1.186l-4.39-4.673"></path></svg>
+</i>
+      </button>
+      <button class="Button Button1 Button-icon tooltip-theme-arrows tooltip-target" ng-class="{&#39;inactive&#39;: !ctrl.checkNeighborExist(&#39;old&#39;)}" nh-tooltip="Starsza wiadomość" ng-click="ctrl.goToNeighbor(&#39;old&#39;)">
+        <i class="icon-new" aria-hidden="true" name="arrow-right-20px" style="height: 20px; width: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.618 10.897c.205-.218.205-.573 0-.79L7.23 5.432c-.307-.328-.307-.86 0-1.186.308-.328.807-.328 1.114 0l5.502 5.858c.205.218.205.573 0 .79l-5.502 5.86c-.154.164-.355.246-.557.246-.202 0-.403-.082-.556-.246-.3-.328-.3-.86 0-1.186l4.39-4.673"></path></svg>
+</i>
+      </button>
+    </div>
+  </div>
+</div><!---->
+
+<nh-global-loader type="l2" ng-show="ctrl.loader" aria-hidden="true" class="ng-hide"><div class="BallBeat"><span></span><span></span><span></span></div></nh-global-loader>
+
+<dd-holder slot="BOTTOM_BOX"><div slot="BOTTOM_BOX" class="sc-bwzfXH SWRCe klom004" klom004=""></div></dd-holder>
+</div>
+      </div>
+
+      <div class="shrink-none mbox--main">
+        <nh-sticky-adv><div mode="full" class="sc-ifAKCX sc-EHOje sc-cHSUfg cQtgEm"><div class="sc-ifAKCX sc-EHOje sc-cTjmhe gTshkI"><div class="sc-ifAKCX sc-EHOje sc-cmjSyW dhivdz"><div class="sc-ifAKCX sc-EHOje sc-iYUSvU hKQyzy"><div slot="SKY" class="sc-bwzfXH bDSPOK u3t49i1" u3t49i1=""></div></div></div></div></div></nh-sticky-adv>
+      </div>
+    </div>
+  </div>
+
+  <!---->
+  <!---->
+</div>
+</nh-app-view></div> <!----> <script> wph('track', 'ViewContent', {
+        content_type: 'Site',
+        content_name: 'PocztaWP'
+      }) </script> <noscript> <style> #nojs-main{position:fixed;top:0;left:0;right:0;bottom:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;z-index:999}#nojs-content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:1.375rem;font-weight:400}#nojs-svg{margin-bottom:24px}#nojs-text{text-align:center}#nojs-retry{margin-top:24px;border-radius:3px;background-color:#00adef;color:#fff;cursor:pointer;font-size:12px;height:24px;line-height:24px;padding:0 16px;text-align:center;text-decoration:none;overflow:visible} </style> <div id="nojs-main"> <div id="nojs-content"> <div id="nojs-svg"> <svg width="204" height="43" viewBox="0 0 204 43" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M31.796 33.907l7.75-.375L33.362 9.8l-9.166-.611-.08-.257c-.314-1.028-.631-2.056-.9-3.096a4.048 4.048 0 0 1 .047-2.221c.302-.989.924-1.737 1.76-2.31 1.723-1.18 3.636-1.509 5.676-1.19 1.747.273 3.295.99 4.653 2.122 1.139.949 1.858 2.154 2.223 3.584.276 1.08.568 2.156.854 3.233.404 1.526.812 3.05 1.214 4.577.407 1.545.818 3.09 1.212 4.638.483 1.893.953 3.788 1.424 5.684.34 1.37.682 2.738 1.008 4.11.319 1.344.62 2.693.928 4.039.094.413.18.83.284 1.24.101.397.36.561.745.5.317-.049.456-.188.493-.53.053-.48.09-.962.135-1.444.127-1.345.256-2.69.38-4.036.153-1.64.301-3.281.452-4.921.19-2.073.382-4.146.571-6.219.147-1.611.287-3.223.44-4.834.116-1.228.265-2.452.642-3.635.336-1.053.82-2.026 1.52-2.89a6.999 6.999 0 0 1 3.715-2.407c2.808-.748 5.543-.5 8.151.798 1.814.902 3.103 2.343 4.012 4.136.593 1.17.945 2.423 1.203 3.702.574 2.853 1.142 5.706 1.707 8.56.619 3.126 1.231 6.252 1.847 9.377.041.213.078.427.13.637a.47.47 0 0 0 .537.356c.153-.02.258-.14.29-.365.036-.264.062-.529.082-.794.112-1.496.217-2.992.332-4.487.12-1.564.244-3.127.376-4.69.106-1.248.222-2.496.342-3.743.144-1.492.299-2.983.446-4.475.14-1.404.277-2.808.41-4.212.052-.542.14-1.074.326-1.59.623-1.723 2.326-2.436 3.753-2.283.677.073 1.356.117 2.035.173l2.094.17c.895.07 1.79.136 2.685.21.935.076 1.87.152 2.803.24.59.056 1.185.09 1.763.208 3.312.676 5.597 2.599 6.859 5.73.38.944.594 1.932.748 2.937.178 1.16.168 2.324.11 3.485-.075 1.507-.324 2.986-.858 4.412-.981 2.617-2.847 4.273-5.476 5.12-.66.212-1.345.311-2.03.4-1.066.14-2.134.266-3.202.397l-.823.098c-.583.066-1.067-.127-1.458-.56a3.15 3.15 0 0 1-.708-1.383c-.282-1.15-.205-2.274.342-3.338.142-.279.326-.542.523-.785.37-.457.85-.73 1.448-.768.887-.056 1.774-.102 2.66-.167a17.78 17.78 0 0 0 1.559-.166c2.66-.443 3.168-7.95-.347-8.214-.47-.053-.946-.05-1.42-.059-1.905-.033-3.81-.061-5.716-.091-.107-.002-.214 0-.348 0-.084.766-.166 1.49-.243 2.215-.117 1.118-.231 2.237-.346 3.355-.17 1.648-.335 3.297-.508 4.944-.207 1.962-.42 3.922-.629 5.883-.101.951-.17 1.906-.366 2.844-.357 1.702-1.093 3.204-2.352 4.426-1.057 1.027-2.32 1.692-3.722 2.11a9.112 9.112 0 0 1-3.19.359c-2.14-.132-3.824-1.074-5.037-2.848-.565-.826-.925-1.744-1.158-2.708-.47-1.945-.916-3.897-1.363-5.849-.447-1.951-.884-3.906-1.324-5.86-.485-2.155-.97-4.31-1.453-6.466-.165-.732-.327-1.463-.491-2.195a1.803 1.803 0 0 0-.064-.227c-.107-.29-.282-.408-.557-.38-.248.025-.396.177-.44.48-.04.283-.065.568-.094.853-.18 1.776-.36 3.553-.535 5.33-.153 1.551-.298 3.103-.451 4.654-.189 1.905-.383 3.809-.574 5.713-.144 1.433-.273 2.868-.432 4.299-.151 1.36-.45 2.682-1.054 3.924-.869 1.787-2.208 3.13-3.884 4.162-1.728 1.064-3.623 1.635-5.62 1.907-1.157.158-2.318.228-3.484.124-2.118-.19-4.075-.819-5.773-2.14-1.136-.884-1.973-2.004-2.572-3.309-.532-1.16-.905-2.375-1.267-3.595z" fill="#ED1C24"/><mask id="a" maskUnits="userSpaceOnUse" x="0" y="0" width="44" height="43"><path d="M36.515 6.412l7.483 27.397L0 41.517V0l36.515 6.412z" transform="translate(0 .747)" fill="#fff"/></mask><g mask="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.99 21.381L5.248 31.663V11.345L16.99 21.38zM8.474 9.752l27.69 1.886-12.57 11.261L8.474 9.752zm10.961 13.72l3.218 2.75a1.42 1.42 0 0 0 1.906-.04l3.127-2.848 8.751 8.078-28.065 1.912 11.063-9.853zM38.595 13.4v16.017l-8.664-8.127 8.664-7.89zm1.389-4.509L3.59 5.991a1.62 1.62 0 0 0-1.77 1.63v27.826a1.62 1.62 0 0 0 1.631 1.636c.046 0 .093-.002.14-.006l36.393-2.9c.718-.056 1.28-.738 1.28-1.55V10.442c0-.813-.562-1.495-1.28-1.552z" fill="#ED1C24"/></g><path d="M109.24 32.66h3.264v-8.128c.8 1.28 2.24 2.08 4.704 2.08 4.608 0 6.656-2.624 6.656-6.976v-2.784c0-4.672-2.432-6.816-7.328-6.816-4.448 0-7.296 2.144-7.296 6.816V32.66zm11.328-12.96c0 2.496-.704 3.808-4 3.808-3.296 0-4.064-1.312-4.064-3.808v-2.752c0-2.496.768-3.84 4.064-3.84 3.328 0 4 1.344 4 3.84V19.7zm17.46 0c0 2.496-.736 3.808-4 3.808-3.296 0-4.064-1.312-4.064-3.808v-2.752c0-2.496.768-3.84 4.064-3.84 3.264 0 4 1.344 4 3.84V19.7zm-4 6.912c4.992 0 7.296-2.56 7.296-6.912v-2.752c0-4.48-2.112-6.912-7.296-6.912-5.024 0-7.36 2.528-7.36 6.912V19.7c0 4.48 2.144 6.912 7.36 6.912zm10.109-6.72c0 4.448 2.336 6.72 7.52 6.72 1.471 0 2.72-.288 3.935-.736v-3.072a10.555 10.555 0 0 1-3.776.704c-3.071 0-4.383-.896-4.383-3.712v-3.008c0-2.592 1.024-3.68 4.16-3.68 1.664 0 2.784.416 3.712.8v-3.104c-.96-.416-2.144-.768-3.776-.768-5.056 0-7.392 2.688-7.392 6.72v3.136zm14.294-6.528h8.32c.8 0 1.024.16 1.024.544 0 .32-.224.576-.768.928l-7.04 4.32c-2.016 1.248-2.432 2.528-2.432 3.84 0 2.272 1.216 3.264 3.68 3.264h9.568v-2.976h-9.216c-.768 0-1.024-.16-1.024-.576 0-.32.192-.576.672-.864l7.104-4.32c2.144-1.312 2.464-2.304 2.464-3.84 0-2.336-.928-3.296-3.712-3.296h-8.64v2.976zm13.902.096h2.784v7.232c0 4.448 2.432 5.888 5.76 5.888 1.504 0 2.848-.224 3.904-.672v-3.072c-.928.384-2.464.672-3.904.672-1.504 0-2.496-.672-2.496-2.784V13.46h5.824v-3.072h-5.824v-4.16h-2.72l-.544 4.16-2.784.512v2.56zM200 15.284c0-4-2.912-5.248-7.232-5.248-1.728 0-3.2.16-4.352.544v2.88c1.024-.384 2.656-.608 4.544-.608 2.272 0 3.776.448 3.776 2.432v1.568h-3.52c-4 0-6.528 1.248-6.528 4.832 0 3.392 2.336 4.928 6.496 4.928 4.736 0 6.816-1.6 6.816-5.12v-6.208zm-3.264 6.048c0 2.176-1.536 2.496-3.616 2.496-1.632 0-3.136-.32-3.136-2.208 0-1.632 1.056-2.272 3.232-2.272h3.52v1.984z" fill="#000"/></svg> </div> <p id="nojs-text"> Włącz obsługę JavaScript w Twojej przeglądarce. </p> <a id="nojs-retry" href="https://poczta.wp.pl/"> Spróbuj ponownie </a> </div> </div> </noscript>   <a href="abp:subscribe?location=https%3A%2F%2Fstd.wpcdn.pl%2Fwpjslib%2Fwp-whitelist.txt&amp;title=wp.pl"></a><div id="draggableHelper" class="draggableHelper" style="display: none;"><span class="label label-info"></span></div><iframe id="gemius_hcconn_1641234109639_41540253" name="lsgetframe" width="0" height="0" scrolling="no" sandbox="allow-scripts allow-same-origin" style="display: none; visibility: hidden;" src="./studdybuddy_files/lsget.html"></iframe><div id="nh-modal"><div class="Overlay"><div class="Overlay__dismiss" aria-hidden="true"></div><div class="Overlay__content"><div class="Lightbox u-posFixed" provide="modal" role="dialog" style="opacity: 1;"><div class="LightboxImage"><div><div class="LightboxImage-overlay"></div><img class="LightboxImage-image" src="./studdybuddy_files/saved_resource(12)" style="display: block;"></div><div class="Lightbox-navigation"><button class="Button Lightbox-navigation-prev" title="poprzedni załącznik"><div class="Icon"><i class="icon-new" aria-hidden="true" style="width: 20px; height: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.382 10.897c-.205-.218-.205-.573 0-.79l4.388-4.675c.307-.328.307-.86 0-1.186-.308-.328-.807-.328-1.114 0l-5.502 5.858c-.205.218-.205.573 0 .79l5.502 5.86c.154.164.355.246.557.246.202 0 .403-.082.556-.246.3-.328.3-.86 0-1.186l-4.39-4.673"></path></svg>
+</i></div></button><button class="Button Lightbox-navigation-next" title="następny załącznik"><div class="Icon"><i class="icon-new" aria-hidden="true" style="width: 20px; height: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.618 10.897c.205-.218.205-.573 0-.79L7.23 5.432c-.307-.328-.307-.86 0-1.186.308-.328.807-.328 1.114 0l5.502 5.858c.205.218.205.573 0 .79l-5.502 5.86c-.154.164-.355.246-.557.246-.202 0-.403-.082-.556-.246-.3-.328-.3-.86 0-1.186l4.39-4.673"></path></svg>
+</i></div></button></div></div><div class="lightbox-thumbnails__wrap"><div class="Attachments sc-brqgnP cPzLzR" offset="400"><button class="sc-jWBwVP fSPmEi"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="#323233"><path d="M9.293 17.293a1 1 0 1 0 1.414 1.414l-1.414-1.414zM16 12l.707.707a1 1 0 0 0 0-1.414L16 12zm-5.293-6.707a1 1 0 0 0-1.414 1.414l1.414-1.414zm0 13.414l6-6-1.414-1.414-6 6 1.414 1.414zm6-7.414l-6-6-1.414 1.414 6 6 1.414-1.414z"></path></svg></button><div class="sc-cMljjf jlrkxP"><div id="child0" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.2" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource"></div></div></div></li></div><div id="child1" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.3" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(1)"></div></div></div></li></div><div id="child2" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.4" class="lightbox-thumbnails__item is-active"><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(2)"></div></div></div></li></div><div id="child3" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.5" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(3)"></div></div></div></li></div><div id="child4" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.6" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(4)"></div></div></div></li></div><div id="child5" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.7" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(5)"></div></div></div></li></div><div id="child6" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.8" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(6)"></div></div></div></li></div><div id="child7" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.9" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(7)"></div></div></div></li></div><div id="child8" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.10" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(8)"></div></div></div></li></div><div id="child9" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.11" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(9)"></div></div></div></li></div><div id="child10" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.12" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(10)"></div></div></div></li></div><div id="child11" class="sc-jAaTju jLmxnJ"><li value="/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.13" class="lightbox-thumbnails__item "><div class="Attachment Attachment--dark Attachment--png Attachment--image"><div class="Attachment-window u-posAbsoluteCenter"><div class="Attachment-photo u-posAbsoluteCenter"><img src="./studdybuddy_files/saved_resource(11)"></div></div></div></li></div></div></div></div><div class="lightbox-sidebar__wrap"><button class="Button lightbox-sidebar__close" title="zamknij podgląd załączników"><i class="icon-new" aria-hidden="true" style="width: 20px; height: 20px;"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.143 12.015l5.37-5.472c.344-.35.344-.932 0-1.28-.342-.35-.913-.35-1.256 0l-5.37 5.47-5.373-5.47c-.343-.35-.914-.35-1.257 0-.343.348-.343.93 0 1.28l5.372 5.472-5.38 5.47c-.35.35-.35.933 0 1.282.23.233.45.233.68.233.23 0 .45-.116.68-.233L12 13.295l5.37 5.472c.23.233.46.233.687.233.23 0 .457-.116.686-.233.343-.35.343-.93 0-1.28l-5.6-5.472z"></path></svg>
+</i></button><div class="lightbox-sidebar__details"><div class="lightbox-sidebar__pages"><span>3 </span>z<span> 12</span></div><dl class="lightbox-sidebar__info"><dt>Nazwa pliku</dt><dd>LOGO2.png</dd><dt>W konwersacji</dt><dd><span>Przejdź do źródła</span></dd></dl><div class="lightbox-sidebar__options"><a class="Button lightbox-sidebar__button" href="https://poczta.wp.pl/api/v1/emls/45f0a18aad81e20c277e0ac1/attachments/1.4" download="LOGO2.png"><i class="icon-new" aria-hidden="true" style="width: 20px; height: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M14 9h-2c.124.012-.068-.185 0 0V2c-.068.198-.26 0 0 0H8c.285 0 .093.198 0 0v7c.093-.185-.1.012 0 0H6c.077.012-.115.407 0 1l4 4c-.084.05.108.05 0 0l4-4c.14-.593.044-.988 0-1zM4 17h12c.603 0 1-.267 1-1s-.397-1-1-1H4c-.603 0-1 .267-1 1s.397 1 1 1z"></path></svg>
+</i></a><a class="Button lightbox-sidebar__button lightbox-sidebar__play"><i class="icon-new" aria-hidden="true" style="width: 20px; height: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 2v16l13-8L4 2z"></path></svg>
+</i></a><div class="lightbox-sidebar__autoplay"><div class="Select Select--dark"><select class="Select-options" name="autoplayInterval"><option value="3">3</option><option value="5">5</option><option value="10" selected="">10</option></select><div class="Select-arrow"><i class="icon-new" aria-hidden="true" style="width: 20px; height: 20px;"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.103 11.618c.218.205.573.205.79 0l4.675-4.388c.328-.307.86-.307 1.186 0 .328.308.328.807 0 1.114l-5.858 5.502c-.218.205-.573.205-.79 0l-5.86-5.502C4.082 8.19 4 7.99 4 7.787c0-.202.082-.403.246-.556.328-.3.86-.3 1.186 0l4.673 4.39"></path></svg>
+</i></div></div></div></div></div><div class="lightbox-sidebar__mbox"><div slot="LIGHTBOX_BOX" class="sc-bwzfXH bDSPOK s6ddzz1 vup8iz7 pnuztsn" s6ddzz1="" vup8iz7="" pnuztsn=""><div class="pliqksa mxuy6su" pliqksa="" mxuy6su=""><div class="wnb8r0h" wnb8r0h=""><div class="z21o1u1" z21o1u1=""><div class="z21o1u1" z21o1u1=""><iframe class="qgc9bvd z625xto" qgc9bvd="" scrolling="no" frameborder="0" sandbox="allow-same-origin allow-scripts allow-forms allow-popups" src="./studdybuddy_files/blackbox.html" z625xto=""></iframe></div></div></div></div><div class="o2rtp86" o2rtp86=""></div><div class="xs06cph" xs06cph=""></div></div></div></div></div></div></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

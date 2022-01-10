@@ -5,9 +5,6 @@ export const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
     marginTop: "50px",
     backgroundColor: "white",
-    transition: "all 0.8s ease",
-    WebkitTransition: "all 0.8s ease",
-    MozTransition: "all 0.8s ease",
   },
   submitButton: {
     marginTop: "50px",

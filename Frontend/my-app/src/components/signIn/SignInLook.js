@@ -8,50 +8,25 @@ import TextField from "@material-ui/core/TextField";
 import Link from "@material-ui/core/Link";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
-import logo from "../../photos/studdybuddy.png"
 import Box from "@material-ui/core/Box";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Avatar from "@material-ui/core/Avatar";
-
+import LogoLook from "../global/LogoLook";
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 const useStyles = makeStyles((theme) => ({
   root: {
+    position:"absolute",
+    zIndex:"2",
+    top:"0px",
     minHeight:"100vh",
     display: "flex",
     flexDirection: "column",
   },
-  imageBackground: {
-    display: "flex",
-    justifyContent: "center",
 
-    backgroundColor: theme.palette.primary.main,
-    width: "50vw",
-    height: "100vh",
-    [theme.breakpoints.down(780)]: {
-      width: "100vw",
-      height: "40vh",
-      alignItems:"center"
-    },
-  },
-  image: {
-    marginTop: "150px",
-    backgroundImage: `url(${logo})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center center",
-    backgroundColor: "white",
-    backgroundSize: "55%",
-    width: "600px",
-    height: "600px",
-    borderRadius: "100%",
-    [theme.breakpoints.down(780)]: {
-      width: "60vw",
-      height: "60vw",
-      margin:"0"
-    },
-  },
   paper: {
     minHeight:"60vh",
+    background:"white",
     [theme.breakpoints.up(780)]: {
       position: "absolute",
       top: 0,
@@ -100,9 +75,7 @@ export default function SignInLook() {
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <div className={classes.imageBackground}>
-        <Grid item className={classes.image} />
-      </div>{" "}
+      <LogoLook/>
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <Avatar className={classes.avatar}>

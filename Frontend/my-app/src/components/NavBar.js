@@ -2,12 +2,18 @@ import { AppBar, Toolbar, Typography, Button } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
 import Hamburger from "hamburger-react";
+import { useState } from "react";
 
-export const Navbar = ({ openMenu }) => {
+export const Navbar = () => {
   let history = useHistory();
+  const [activeMenu, setActiveMenu] = useState(false)
   const useStyles = makeStyles((theme) => ({
+    appBar:{
+      
+    },
     toolBar: {
       position: "absolute",
+      zIndex:"10",
       right: "0",
       gap: "10px",
       display: "flex",
@@ -32,7 +38,10 @@ export const Navbar = ({ openMenu }) => {
       right: "10px",
       top: "10px",
     },
-  
+    hamburger:{
+      position:"absolute"
+    }
+
   }));
 
   const classes = useStyles();
@@ -48,11 +57,24 @@ export const Navbar = ({ openMenu }) => {
   const navToYourGroups = () => {
     history.push("/yourGroups");
   };
+  const openMenu = () => {
+    if (activeMenu) {
+      history.goBack()
+      setActiveMenu(false)
+      console.log(activeMenu)
+    }
+    else {
 
+      history.push("/nativeMenu");
+      setActiveMenu(true)
+
+    }
+
+  }
   return (
     <>
       {" "}
-      <AppBar>
+      <AppBar  style={{zIndex:0}} >
         <Toolbar>
           <Typography
             className={classes.navBar}
@@ -63,7 +85,7 @@ export const Navbar = ({ openMenu }) => {
             STUDDY-BUDDY!
           </Typography>
           <div onClick={openMenu} >
-            <Hamburger />
+            <Hamburger className={classes.hamburger}/>
           </div>
 
           <Toolbar className={classes.toolBar}>
@@ -95,7 +117,7 @@ export const Navbar = ({ openMenu }) => {
           </Toolbar>
         </Toolbar>
       </AppBar>
-     
+
     </>
   );
 };

@@ -10,13 +10,17 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "100px",
     textAlign: "center",
     padding: "40px",
-    width: "900px",
+    width: "600px",
+    [theme.breakpoints.down(780)]: {
+      width:"80vw",
+      padding: "20px",
+    },
   },
   container: {
     display: "flex",
     justifyContent: "center",
   },
-  chooseSubject: {
+   chooseSubject: {
     width: "40%",
   },
   textFieldSection: {
@@ -33,6 +37,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "20px",
     background: theme.palette.primary.main,
   },
+  tittle:{
+    fontSize:"2.5em"
+  }
 }));
 
 export default function ModalSearching({setStatusOfSearching}) {
@@ -54,7 +61,7 @@ export default function ModalSearching({setStatusOfSearching}) {
     <>
       <div className={classes.container}>
         <Paper className={classes.paper} elevation={6}>
-          <Typography component="h5" variant="h3">
+          <Typography  className={classes.tittle} component="h5" variant="h3">
             What are you looking for
           </Typography>
 
