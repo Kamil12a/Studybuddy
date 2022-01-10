@@ -1,4 +1,4 @@
-# Studdybuddy
+# Studybuddy
 
 ## About us
 
