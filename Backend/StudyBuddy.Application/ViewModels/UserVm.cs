@@ -1,9 +1,10 @@
+using AutoMapper;
 using StudyBuddy.Application.Common.Mapping;
 using StudyBuddy.Domain.Models;
 
 namespace StudyBuddy.Application.ViewModels
 {
-    public class UserVm : IMapFrom<User>
+    public class UserVm : IMapFrom<StudyBuddy.Domain.Models.User>
     {
         public int Id { get; set; }
         public bool IsActive { get; set; }
@@ -12,9 +13,10 @@ namespace StudyBuddy.Application.ViewModels
         public string Course { get; set; }
         public string Fullname { get; set; }
 
-        public void Mapping(MappingProfile profile)
+        public void Mapping(Profile profile)
         {
-            profile.CreateMap<User, UserVm>();
+            profile.CreateMap<User, UserVm>()
+                .ReverseMap();
         }
     }
 }
