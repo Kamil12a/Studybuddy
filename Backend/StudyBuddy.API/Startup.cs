@@ -56,6 +56,7 @@ namespace StudyBuddy.API
                         Url = new Uri("https://example.com")
                     }
                 });
+                c.ResolveConflictingActions (apiDescriptions => apiDescriptions.First ());
             });
 
             services.AddMemoryCache(); //
