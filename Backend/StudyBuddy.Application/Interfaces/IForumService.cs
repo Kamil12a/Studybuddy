@@ -7,6 +7,6 @@ namespace StudyBuddy.Application.Interfaces
         PostVm GetPost(int postId);
         int AddPost(PostVm post);
         void UpdatePost(PostVm post);
-        void DeleteGroupProperty(int groupPropertyId);
+        void DeletePost(int postId);
     }
 }

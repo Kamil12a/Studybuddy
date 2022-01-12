@@ -9,13 +9,13 @@ namespace StudyBuddy.Application.Services
     {
         private readonly IForumRepository _forumRepo;
         private readonly IMapper _mapper;
-        
+
         public int AddPost(PostVm post)
         {
             throw new System.NotImplementedException();
         }
 
-        public void DeleteGroupProperty(int groupPropertyId)
+        public void DeletePost(int postId)
         {
             throw new System.NotImplementedException();
         }
