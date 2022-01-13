@@ -7,6 +7,7 @@ namespace StudyBuddy.Application.Interfaces
     {
         UserVm GetUserById(int userId);
         ListUserForListVm GetAllUsers();
+        ListUserForListVm GetAllUsers(int pageSize, int pageNo);
         ListUserForListVm GetAllUsers(int pageSize, int pageNo, string searchString);
         UserPropertyVm GetUserPropertyVm(int userPropertyId);
         int AddUser(UserVm userVm);

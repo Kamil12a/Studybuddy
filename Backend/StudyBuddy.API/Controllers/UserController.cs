@@ -32,7 +32,14 @@ namespace StudyBuddy.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAllUsers(int pageSize, int pageNo, string searchString)
+        public IActionResult GetAllUsersOrdered(int pageSize, int pageNo)
+        {
+            var users = _userService.GetAllUsers(pageSize, pageNo);
+            return new JsonResult(users);
+        }
+
+        [HttpGet]
+        public IActionResult GetAllUsersFiltered(int pageSize, int pageNo, string searchString)
         {
             var users = _userService.GetAllUsers(pageSize, pageNo, searchString);
             return new JsonResult(users);
