@@ -1,3 +1,8 @@
+-------------------------------------------------------------------------------------
+Information for development - to be deleted
+Branch with mocked API methods - "#23PrepareMockedControllersForFrontendDevelopment"
+-------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
