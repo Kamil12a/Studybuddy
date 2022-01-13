@@ -23,61 +23,84 @@ namespace StudyBuddy.API.Controllers
         [HttpPost]
         public IActionResult AddGroup([FromBody] GroupVm group)
         {
-            return new JsonResult(group.Id);
+            var id = _groupService.AddGroup(group);
+            return new JsonResult(id);
         }
 
         [HttpPost]
-        public IActionResult AddGroupProperty([FromBody] GroupPropertyVm gp)
+        public IActionResult AddGroupProperty([FromBody] GroupPropertyVm groupProperty)
         {
-            return new JsonResult(gp.Id);
+            var id = _groupService.AddGroupPropertyVm(groupProperty);
+            return new JsonResult(id);
         }
 
         [HttpDelete]
         public IActionResult DeleteGroup(int groupId)
         {
-            return new JsonResult(groupId);
+            try
+            {
+                _groupService.DeleteGroup(groupId);
+            }
+            catch
+            {
+                return NotFound();
+            }
+            return Ok();
         }
 
         [HttpDelete]
         public IActionResult DeleteGroupProperty(int groupPropertyId)
         {
-            return new JsonResult(groupPropertyId);
+            try
+            {
+                _groupService.DeleteGroupProperty(groupPropertyId);
+            }
+            catch
+            {
+                return NotFound();
+            }
+            return Ok();
         }
 
         [HttpGet]
         public IActionResult GetGroup(int groupId)
         {
-            var group = new GroupVm(){
-                Id = groupId,
-                TutorId = 10,
-                AdminId = 101
-            };
+            var group = _groupService.GetGroup(groupId);
             return new JsonResult(group);
         }
 
         [HttpGet]
         public IActionResult GetGroupProperty(int groupPropertyId)
         {
-            var groupProperty = new GroupPropertyVm(){
-                Id = groupPropertyId,
-                PublishDate = System.DateTime.MinValue,
-                ExpireDate = System.DateTime.MaxValue,
-                Description = "Sample description",
-                GroupId = 1
-            };
-
+            var groupProperty = _groupService.GetGroupPropertyVm(groupPropertyId);
             return new JsonResult(groupProperty);
         }
 
         [HttpPost]
-        public IActionResult EditGroup([FromBody] GroupVm modelg)
+        public IActionResult EditGroup([FromBody] GroupVm group)
         {
+            try
+            {
+                _groupService.UpdateGroup(group);
+            }
+            catch
+            {
+                return NotFound();
+            }   
             return Ok();
         }
 
         [HttpPost]
-        public IActionResult EditGroupProperty([FromBody] GroupPropertyVm modelgp)
+        public IActionResult EditGroupProperty([FromBody] GroupPropertyVm groupProperty)
         {
+            try
+            {
+                _groupService.UpdateGroupProperty(groupProperty);
+            }
+            catch
+            {
+                return NotFound();
+            }
             return Ok();
         }
 
