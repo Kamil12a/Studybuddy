@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------------
-Information for development - to be deleted
+Information for development - to be deleted.
 Branch with mocked API methods - "#23PrepareMockedControllersForFrontendDevelopment"
 -------------------------------------------------------------------------------------
 
