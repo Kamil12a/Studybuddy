@@ -20,72 +20,84 @@ namespace StudyBuddy.API.Controllers
         [HttpGet]
         public IActionResult GetUserById(int userId)
         {
-            return new JsonResult(new UserVm());
+            var user = _userService.GetUserById(userId);
+            return new JsonResult(user);
         }
         
         [HttpGet]
         public IActionResult GetAllUsers()
         {
-            return new JsonResult(new ListUserForListVm());
+            var users = _userService.GetAllUsers();
+            return new JsonResult(users);
         }
 
         [HttpGet]
         public IActionResult GetAllUsers(int pageSize, int pageNo, string searchString)
         {
-            return new JsonResult(new ListUserForListVm());
+            var users = _userService.GetAllUsers(pageSize, pageNo, searchString);
+            return new JsonResult(users);
         }
 
         [HttpGet]
         public IActionResult GetUserProperty(int userPropertyId)
         {
-            return new JsonResult(new UserPropertyVm());
+            var userProperty = _userService.GetUserPropertyVm(userPropertyId);
+            return new JsonResult(userProperty);
         }
 
         [HttpPost]
         public IActionResult AddUser([FromBody] UserVm userVm)
         {
-            return new JsonResult(1);
+            var id = _userService.AddUser(userVm);
+            return new JsonResult(id);
         }
 
         [HttpPost]
         public IActionResult AddUserProperty([FromBody] UserPropertyVm userPropertyVm)
         {
-            return new JsonResult(1);
+            var id = _userService.AddUserPropertyVm(userPropertyVm);
+            return new JsonResult(id);
         }
         
         [HttpPost]
         public IActionResult EditUser([FromBody] UserVm userVm)
         {
+            _userService.UpdateUser(userVm);
             return Ok();
         }
         
         [HttpPost]
         public IActionResult EditUserProperty([FromBody] UserPropertyVm userPropertyVm)
         {
+            _userService.UpdateUserProperty(userPropertyVm);
             return Ok();
         }
         
         [HttpDelete]
         public IActionResult DeleteUser(int userId)
         {
+            _userService.DeleteUser(userId);
             return Ok();
         }
 
         [HttpDelete]
         public IActionResult DeleteUserAbsolute(int userId)
         {
+            _userService.DeleteUserAbsolute(userId);
             return Ok();
         }
 
         [HttpDelete]
         public IActionResult DeleteUserProperty(int userPropertyId)
         {
+            _userService.DeleteUserProperty(userPropertyId);
             return Ok();
         }
 
         [HttpDelete]
         public IActionResult DeleteUserPropertyAbsolute(int userId)
         {
+            _userService.DeleteUserPropertyAbsolute(userId);
             return Ok();
         }
     }
