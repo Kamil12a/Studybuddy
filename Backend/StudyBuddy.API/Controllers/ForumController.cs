@@ -21,25 +21,43 @@ namespace StudyBuddy.API.Controllers
         [HttpGet]
         public IActionResult GetPost(int postId)
         {
-            return new JsonResult(new PostVm());
+            var post = _forumService.GetPost(postId);
+            return new JsonResult(post);
         }
 
         [HttpPost]
         public IActionResult AddPost(PostVm post)
         {
-            return new JsonResult(1);
+            var id = _forumService.AddPost(post);
+            return new JsonResult(id);
         }
 
         [HttpPost]
         public IActionResult EditPost(PostVm post)
         {
-            return new JsonResult(post);
+            try
+            {
+                _forumService.UpdatePost(post);
+            }
+            catch
+            {
+                return NotFound();
+            }
+            return Ok();
         }
 
         [HttpDelete]
         public IActionResult DeletePost(int postId)
         {
-            return new JsonResult(postId);
+            try
+            {
+                _forumService.DeletePost(postId);
+            }
+            catch
+            {
+                return NotFound();
+            }
+            return Ok();
         }
     }
 }
