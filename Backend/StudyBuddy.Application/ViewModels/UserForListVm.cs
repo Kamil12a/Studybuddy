@@ -6,7 +6,7 @@ namespace StudyBuddy.Application.ViewModels
     public class UserForListVm : IMapFrom<StudyBuddy.Domain.Models.User>
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Fullname { get; set; }
         
         public void Mapping(Profile profile)
         {

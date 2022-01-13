@@ -10,11 +10,11 @@ namespace StudyBuddy.Application.ViewModels
         public string Password { get; set; }
 
         public int UserId { get; set; }
-        public User User { get; set; }
 
         public void Mapping(MappingProfile profile)
         {
-            profile.CreateMap<UserProperty, UserPropertyVm>();
+            profile.CreateMap<UserProperty, UserPropertyVm>()
+                .ReverseMap();
         }
     }
 }

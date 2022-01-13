@@ -20,13 +20,13 @@ namespace StudyBuddy.API.Controllers
             _groupService = groupService;
         }
 
-        [HttpPut]
+        [HttpPost]
         public IActionResult AddGroup([FromBody] GroupVm group)
         {
             return new JsonResult(group.Id);
         }
 
-        [HttpPut]
+        [HttpPost]
         public IActionResult AddGroupProperty([FromBody] GroupPropertyVm gp)
         {
             return new JsonResult(gp.Id);

@@ -84,6 +84,22 @@ namespace StudyBuddy.Application.Services
             return usersList;
         }
 
+        public ListUserForListVm GetAllUsers(int pageSize, int pageNo)
+        {
+            var users = _userRepo.GetAllActiveUsers()
+                .ProjectTo<UserForListVm>(_mapper.ConfigurationProvider).ToList();
+            var usersToShow = users.Skip(pageSize*(pageNo - 1)).Take(pageSize).ToList();
+            var usersList = new ListUserForListVm()
+            {
+                PageSize = pageSize,
+                CurrentPage = pageNo,
+                Users = usersToShow,
+                Count = users.Count
+            };
+
+            return usersList;
+        }
+
         public UserVm GetUserById(int userId)
         {
             var user = _userRepo.GetUserById(userId);
