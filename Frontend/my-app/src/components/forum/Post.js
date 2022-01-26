@@ -1,9 +1,9 @@
-import { useContext } from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
-import { ThemeContext } from "../../context/UserContext"
+
 import Avatar from "@material-ui/core/Avatar";
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import CommentIcon from '@mui/icons-material/Comment';
@@ -86,7 +86,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Post({ title, question, userName }) {
   const classes = useStyles();
-  const { userDataAccount } = useContext(ThemeContext)
 
   return (
     <>
@@ -103,7 +102,9 @@ export default function Post({ title, question, userName }) {
             </Typography>
 
           </div>
-          {console.log(userDataAccount.username)}
+          <Typography>
+            25.12.2021 at 13:36
+          </Typography>
         </div>
 
         <div className={classes.informationAboutPost}>
@@ -136,6 +137,8 @@ export default function Post({ title, question, userName }) {
           />
           <TextField className={classes.commentAction}
             label="Write comment" variant="outlined" />
+
+
         </div>
 
       </Paper>

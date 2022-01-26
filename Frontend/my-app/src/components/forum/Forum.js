@@ -6,7 +6,7 @@ import { ThemeContext } from "../../context/UserContext"
 export default function Forum() {
   const [stateOfPosts, setStateOfPosts] = useState([]);
   const classes = useStyles();
-  const {setUserDataAccount} = useContext(ThemeContext)
+  const theme = useContext(ThemeContext)
   useEffect(() => {
     setStateOfPosts([])
   }, [])
@@ -48,7 +48,7 @@ export default function Forum() {
         })}
       </div>
       <button onClick={(()=>{
-        setUserDataAccount("xddd")
+        console.log(theme)
       })}>dadads</button>
     </>
   );

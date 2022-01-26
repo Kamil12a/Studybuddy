@@ -9,15 +9,17 @@ import SearchingGroups from "./components/searchingGroups/SearchingGroups";
 import { ToolBar } from "../src/components/global/ToolBar"
 import { Navbar } from "./components/NavBar";
 import { ThemeContext } from "./context/UserContext"
-import {useState} from "react"
+import { useState } from "react"
+import React from "react"
 function App() {
   const [userDataAccount, setUserDataAccount] = useState({username:""})
   return (
-    
+  
+
     <ThemeContext.Provider value={{userDataAccount,setUserDataAccount} }>
       <Router>
         <Navbar />
-        < Routes>
+         < Routes>
           <Route exact path="/" element={<SignIn />}></Route>
           <Route path="/signIn" element={<SignIn />}></Route>
           <Route path="/signUp" element={<PersonalDate />}></Route>
@@ -25,12 +27,12 @@ function App() {
             path="/universitySection"
             element={<UniversitySection />}
           ></Route>
-          <Route path="/aboutYouForm" element={<AboutYouForm />}></Route>
-          <Route path="/forum" element={<Forum />}></Route>
-          <Route path="/searchinggroups" element={<SearchingGroups />}></Route>
+           <Route path="/aboutYouForm" element={<AboutYouForm />}></Route> 
+           <Route path="/forum" element={<Forum />}></Route> 
+           <Route path="/searchinggroups" element={<SearchingGroups />}></Route>
           <Route path="/yourGroups" element={<YourGroups />}></Route>
-          <Route path="/nativeMenu" element={<ToolBar />}></Route>
-        </Routes>
+          <Route path="/nativeMenu" element={<ToolBar />}></Route> 
+        </Routes> 
       </Router>
       </ThemeContext.Provider>
   );
