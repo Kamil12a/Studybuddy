@@ -1,11 +1,8 @@
 import { Toolbar, Button } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
-import { useHistory } from "react-router-dom";
-import {useRef } from "react";
+import { useNavigate } from 'react-router-dom';
 export const ToolBar = () => {
-  let history = useHistory();
-  const containerNative = useRef(null);
-
+  const navigate = useNavigate();
   const useStyles = makeStyles((theme) => ({
     toolBarPhone: {
       marginTop: "100px",
@@ -20,31 +17,31 @@ export const ToolBar = () => {
       padding: 0,
       width: "200px",
       height: "50px",
-      backgroundColor:"#3f51b5",
-      color:"white"
+      backgroundColor: "#3f51b5",
+      color: "white"
     },
-    btnMenuLog:{
+    btnMenuLog: {
       margin: 0,
       padding: 0,
       width: "200px",
       height: "50px",
-      color:"white"
+      color: "white"
 
     }
   }));
   const classes = useStyles();
 
   const navToGroup = () => {
-    history.push("/searchingGroups");
+    navigate("/searchingGroups");
   };
   const navToForum = () => {
-    history.push("/forum");
+    navigate("/forum");
   };
   const navToProfile = () => {
-    history.push("/my-app");
+    navigate("/my-app");
   };
   const navToYourGroups = () => {
-    history.push("/yourGroups");
+    navigate("/yourGroups");
   };
   const createPost = () => {
 

@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
@@ -6,24 +6,26 @@ import Typography from "@material-ui/core/Typography";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { useStyles } from "./universitySectionStyles";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import InputLabel from "@material-ui/core/InputLabel";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import LogoLook from "../global/LogoLook";
 import FieldTofilled from "../global/FieldTofilled";
 export default function AboutYouForm() {
-  let history = useHistory();
-  const [checked, setChecked] = React.useState([false, false]);
-  const [checked1, setChecked1] = React.useState([false, false]);
-  const [checked2, setChecked2] = React.useState([false, false]);
-  const [drench, setdrench] = React.useState(false);
+  const navigate = useNavigate();
+  const [checked, setChecked] = useState([false, false]);
+  // const [checked1, setChecked1] = React.useState([false, false]);
+  const [checked2, setChecked2] = useState([false, false]);
+  const [drench, setdrench] = useState(false);
   const classes = useStyles();
-  
+  // useEffect(()=>{
+  //   console.log(checked1)
+  // },[])
 
   const submitPersonForm = (e) => {
     e.preventDefault();
-    history.push("/forum");
+    navigate("/forum");
   };
 
   const handleChangeCheckbox = (e) => {
@@ -33,13 +35,13 @@ export default function AboutYouForm() {
       setChecked([true, false]);
     }
   };
-  const handleChangeCheckbox1 = (e) => {
-    if (e.target.value === "1") {
-      setChecked1([false, true]);
-    } else {
-      setChecked1([true, false]);
-    }
-  };
+  // const handleChangeCheckbox1 = (e) => {
+  //   if (e.target.value === "1") {
+  //     setChecked1([false, true]);
+  //   } else {
+  //     setChecked1([true, false]);
+  //   }
+  // };
   const handleChangeCheckbox2 = (e) => {
     if (e.target.value === "1") {
       setChecked2([false, true]);
@@ -126,7 +128,7 @@ export default function AboutYouForm() {
                   fullWidth
                   name="password"
                   label="achieve"
-                  type="password"
+                  type="text"
                   id="password"
                   autoComplete="current-password"
                 />

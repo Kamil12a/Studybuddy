@@ -3,7 +3,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import TextField from "@material-ui/core/TextField";
 import Link from "@material-ui/core/Link";
 import Button from "@material-ui/core/Button";
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignInLook() {
-  let history = useHistory();
+  const navigate = useNavigate();
   const classes = useStyles();
 
   const MadeWithLove = () => (
@@ -69,7 +69,7 @@ export default function SignInLook() {
   );
   const submitPersonForm = (e) => {
     e.preventDefault();
-    history.push("/forum");
+    navigate("/forum");
   };
 
   return (

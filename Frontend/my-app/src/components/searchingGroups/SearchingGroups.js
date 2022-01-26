@@ -1,11 +1,17 @@
 import ModalSearching from "./ModalSearching";
-import { Navbar } from "../NavBar";
-import { useState } from "react";
+import { useState,useContext,useEffect } from "react";
 import Groups from "../global/Groups";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { ThemeContext } from "../../context/UserContext"
+
 export default function SearchingGroups() {
   const [statusOfSearching, setStatusOfSearching] = useState(false);
+  const theme = useContext(ThemeContext)
+  useEffect(() => {
+    
+    console.log(theme)
+  }, [])
   const useStyles = makeStyles((theme) => ({
     containerOfGroups: {
       display: "flex",
