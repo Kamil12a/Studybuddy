@@ -58,6 +58,7 @@ export const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
   },
   containerOfPost: {
+    marginTop:"120px",
     display: "flex",
     alignItems: "center",
     gap: "50px",

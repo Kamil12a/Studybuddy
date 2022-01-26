@@ -1,19 +1,18 @@
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import Hamburger from "hamburger-react";
 import { useState } from "react";
-
 export const Navbar = () => {
-  let history = useHistory();
+  const navigate = useNavigate();
   const [activeMenu, setActiveMenu] = useState(false)
   const useStyles = makeStyles((theme) => ({
-    appBar:{
-      
+    appBar: {
+
     },
     toolBar: {
       position: "absolute",
-      zIndex:"10",
+      zIndex: "10",
       right: "0",
       gap: "10px",
       display: "flex",
@@ -38,43 +37,40 @@ export const Navbar = () => {
       right: "10px",
       top: "10px",
     },
-    hamburger:{
-      position:"absolute"
+    hamburger: {
+      position: "absolute"
     }
 
   }));
 
   const classes = useStyles();
   const navToGroup = () => {
-    history.push("/searchingGroups");
+    navigate("/searchingGroups");
   };
   const navToForum = () => {
-    history.push("/forum");
+    navigate("/forum");
   };
   const navToProfile = () => {
-    history.push("/my-app");
+    navigate("/");
   };
   const navToYourGroups = () => {
-    history.push("/yourGroups");
+    navigate("/yourGroups");
   };
   const openMenu = () => {
     if (activeMenu) {
-      history.goBack()
       setActiveMenu(false)
-      console.log(activeMenu)
+      navigate(-1)
     }
     else {
-
-      history.push("/nativeMenu");
       setActiveMenu(true)
-
+      navigate("/nativeMenu");
     }
 
   }
   return (
     <>
       {" "}
-      <AppBar  style={{zIndex:0}} >
+      <AppBar style={{ zIndex: 0 }} >
         <Toolbar>
           <Typography
             className={classes.navBar}
@@ -85,7 +81,7 @@ export const Navbar = () => {
             STUDDY-BUDDY!
           </Typography>
           <div onClick={openMenu} >
-            <Hamburger className={classes.hamburger}/>
+            <Hamburger className={classes.hamburger} />
           </div>
 
           <Toolbar className={classes.toolBar}>

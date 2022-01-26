@@ -1,19 +1,19 @@
-import React from "react";
+import {useContext} from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import TextField from "@material-ui/core/TextField";
 import { useStyles } from "./personalDateStyles";
 import Button from "@material-ui/core/Button";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import LogoLook from "../global/LogoLook";
 import FieldTofilled from "../global/FieldTofilled";
+import { ThemeContext } from "../../context/UserContext";
 export default function PersonalDate() {
-  let history = useHistory();
-
+  const navigate = useNavigate();
+  const { setUserDataAccount } = useContext(ThemeContext)
   const classes = useStyles();
   const AvatartIcon = () => (
     <div className={classes.avatarIcon}>
@@ -45,12 +45,15 @@ export default function PersonalDate() {
   );
   const submitPersonForm = (e) => {
     e.preventDefault();
-    history.push("/universitySection");
+    navigate("/universitySection");
   };
+  const getName=(e)=>{
+    console.log(e.target.value)
+  }
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <LogoLook/>
+      <LogoLook />
 
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
@@ -59,12 +62,13 @@ export default function PersonalDate() {
               Let's get to know each other better!
             </Typography>
             <div className={classes.oneLaneToFill}>
-              <FieldTofilled question="Name" fill={"Name"} />
+              <FieldTofilled onChangeFunction={getName} question="Name" fill={"Name"} />
               <FieldTofilled question="Surname" fill={"surname"} />
             </div>
             <div className={classes.oneLaneToFill}>
               <FieldTofilled question="E-mail" fill={"email"} />
               <FieldTofilled question="Password" fill={"password"} />
+
             </div>
 
             <AvatartIcon />

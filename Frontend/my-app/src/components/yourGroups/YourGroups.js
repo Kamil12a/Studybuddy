@@ -1,12 +1,13 @@
-import { Navbar } from "../NavBar";
 import Groups from "../global/Groups";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import { useState } from "react";
+import { useState,useEffect,useContext } from "react";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import SubjectToChoose from "../global/subjectToChoose";
+import { ThemeContext } from "../../context/UserContext"
+
 const useStyles = makeStyles((theme) => ({
   containerOfGroups: {
     display: "flex",
@@ -63,6 +64,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export const YourGroups = () => {
+  const theme = useContext(ThemeContext)
   const classes = useStyles();
   const [createGroupStatus, setCreateGroupStatus] = useState(true);
   const [yourGroups, setYourGroups] = useState([
@@ -85,6 +87,10 @@ export const YourGroups = () => {
       btnText: "leave the group",
     },
   ]);
+  useEffect(() => {
+    
+    console.log(theme)
+  }, [])
   const deleteGroup = (e) => {
     let allGroups = yourGroups;
     allGroups = allGroups.filter((item, index) => {

@@ -1,63 +1,55 @@
-import React, { useEffect, useRef } from "react";
-import { Navbar } from "../NavBar";
-import { Button } from "@material-ui/core/";
+import { useEffect,useContext } from "react";
 import { useStyles } from "./ForumLook";
-import { ToolBar } from "../global/ToolBar";
 import Post from "./Post";
-import ModalToCreatePost from "./ModalToCreatePost";
 import { useState } from "react";
-
+import { ThemeContext } from "../../context/UserContext"
 export default function Forum() {
-  const [modalStatus, setModalStatus] = useState(false);
   const [stateOfPosts, setStateOfPosts] = useState([]);
-  const [menuStatus, setMenuStatus] = useState(false);
   const classes = useStyles();
-  const openModal = () => {
-    modalStatus ? setModalStatus(false) : setModalStatus(true);
-  };
+  const {setUserDataAccount} = useContext(ThemeContext)
+  useEffect(() => {
+    setStateOfPosts([])
+  }, [])
   return (
     <>
-      {/* <Navbar/> */}
-  
-      <div  className={classes.forum}>
-        <Button
-          onClick={openModal}
-          className={classes.submitButton}
-          variant="contained"
-        >
-          Create Post
-        </Button>
-        {modalStatus && (
-          <>
-            <ModalToCreatePost
-              setStateOfPosts={setStateOfPosts}
-              stateOfPosts={stateOfPosts}
-              setState={setModalStatus}
-            />
-          </>
-        )}
-        {!menuStatus &&  (
-          <div className={classes.containerOfPost}>
+
+
+      <div className={classes.containerOfPost}>
+        <Post
+          userName={"Patryk Kowalski"}
+          title={"What do you think about Pitagoras?"}
+          question={
+            "Does his statement work in all cases? Even if we take quantum space?"
+          }
+        />
+        <Post
+          userName={"Kamil Plewka"}
+          title={"philosophy group"}
+          question={
+            "Are you anyone willing to talk about existence? I am looking for people willing to join a philosophical group!"
+          }
+        />
+        <Post
+          userName={"Patryk Kowalski"}
+          title={"What do you think about Pitagoras?"}
+          question={
+            "Does his statement work in all cases? Even if we take quantum space?"
+          }
+        />
+        {stateOfPosts.map((item, index) => {
+          return (
             <Post
-              userName={"Patryk Kowalski"}
-              title={"What do you think about Pitagoras?"}
-              question={
-                "Does his statement work in all cases? Even if we take quantum space?"
-              }
+              userName={"Kamil Plewka"}
+              key={index}
+              title={item.title}
+              question={item.question}
             />
-            {stateOfPosts.map((item, index) => {
-              return (
-                <Post
-                  userName={"Kamil Plewka"}
-                  key={index}
-                  title={item.title}
-                  question={item.question}
-                />
-              );
-            })}
-          </div>
-        )}
+          );
+        })}
       </div>
+      <button onClick={(()=>{
+        setUserDataAccount("xddd")
+      })}>dadads</button>
     </>
   );
 }
