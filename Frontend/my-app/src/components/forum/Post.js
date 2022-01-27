@@ -5,8 +5,8 @@ import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 
 import Avatar from "@material-ui/core/Avatar";
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import CommentIcon from '@mui/icons-material/Comment';
+// import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+// import CommentIcon from '@mui/icons-material/Comment';
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: "40px",
@@ -117,13 +117,13 @@ export default function Post({ title, question, userName }) {
         </div>
         <div className={classes.counterReactionContainer}>
           <div className={classes.likeSection} >
-            <FavoriteBorderIcon className={classes.icon} />
+            {/* <FavoriteBorderIcon className={classes.icon} /> */}
             <Typography className={classes.likeCounter}  >
               5
             </Typography>
           </div>
           <div className={classes.likeSection} >
-            <CommentIcon className={classes.icon} />
+            {/* <CommentIcon className={classes.icon} /> */}
             <Typography className={classes.likeCounter}  >
               12
             </Typography>
