@@ -10,7 +10,7 @@ using StudyBuddy.Infrastructure;
 namespace StudyBuddy.Infrastructure.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220205211318_RecomposeGroupAndUserRelations")]
+    [Migration("20220205220149_RecomposeGroupAndUserRelations")]
     partial class RecomposeGroupAndUserRelations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

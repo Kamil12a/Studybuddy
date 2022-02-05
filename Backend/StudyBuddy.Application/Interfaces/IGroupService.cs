@@ -6,7 +6,7 @@ namespace StudyBuddy.Application.Interfaces
     {
         GroupVm GetGroup(int groupId);
         GroupPropertyVm GetGroupPropertyVm(int groupPropertyId);
-        int AddGroup(GroupVm group);
+        int AddGroup(NewGroupVm groupVm);
         int AddGroupPropertyVm(GroupPropertyVm groupProperty);
         void UpdateGroup(GroupVm group);
         void UpdateGroupProperty(GroupPropertyVm groupProperty);

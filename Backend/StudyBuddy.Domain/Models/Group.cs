@@ -8,7 +8,7 @@ namespace StudyBuddy.Domain.Models
         public bool IsActive { get; set; }
         public int TutorId { get; set; }
 
-        //public int GroupOwnerId { get; set; }
+        public int GroupOwnerId { get; set; }
         public virtual User GroupOwner { get; set; }
         public virtual ICollection<User> JoinedUsers { get; set; }
 

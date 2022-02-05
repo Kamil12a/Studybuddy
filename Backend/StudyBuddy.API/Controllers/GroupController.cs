@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using StudyBuddy.Application.Interfaces;
 using StudyBuddy.Application.ViewModels;
 using StudyBuddy.Domain.Models;
+using System;
 using System.Web;
 
 namespace StudyBuddy.API.Controllers
@@ -21,9 +22,19 @@ namespace StudyBuddy.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddGroup([FromBody] GroupVm group)
+        public IActionResult AddGroup([FromBody] NewGroupVm group)
         {
-            var id = _groupService.AddGroup(group);
+            int id = -1;
+
+            try
+            {
+                id = _groupService.AddGroup(group);
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
+
             return new JsonResult(id);
         }
 
