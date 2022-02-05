@@ -3,36 +3,23 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StudyBuddy.Infrastructure;
 
 namespace StudyBuddy.Infrastructure.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20220205132129_AddNumberGroupRelation")]
+    partial class AddNumberGroupRelation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .UseIdentityColumns()
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
-
-            modelBuilder.Entity("GroupUser", b =>
-                {
-                    b.Property<int>("JoinedGroupsId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("JoinedUsersId")
-                        .HasColumnType("int");
-
-                    b.HasKey("JoinedGroupsId", "JoinedUsersId");
-
-                    b.HasIndex("JoinedUsersId");
-
-                    b.ToTable("GroupUser");
-                });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.Group", b =>
                 {
@@ -41,7 +28,7 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int?>("GroupOwnerId")
+                    b.Property<int>("AdminId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
@@ -52,7 +39,7 @@ namespace StudyBuddy.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GroupOwnerId");
+                    b.HasIndex("AdminId");
 
                     b.ToTable("Groups");
                 });
@@ -91,7 +78,7 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("GroupId")
+                    b.Property<int?>("GroupId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -214,28 +201,15 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.ToTable("UserProperties");
                 });
 
-            modelBuilder.Entity("GroupUser", b =>
-                {
-                    b.HasOne("StudyBuddy.Domain.Models.Group", null)
-                        .WithMany()
-                        .HasForeignKey("JoinedGroupsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("StudyBuddy.Domain.Models.User", null)
-                        .WithMany()
-                        .HasForeignKey("JoinedUsersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("StudyBuddy.Domain.Models.Group", b =>
                 {
-                    b.HasOne("StudyBuddy.Domain.Models.User", "GroupOwner")
-                        .WithMany("CreatedGroups")
-                        .HasForeignKey("GroupOwnerId");
+                    b.HasOne("StudyBuddy.Domain.Models.User", "User")
+                        .WithMany("Groups")
+                        .HasForeignKey("AdminId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("GroupOwner");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.GroupProperty", b =>
@@ -252,10 +226,8 @@ namespace StudyBuddy.Infrastructure.Migrations
             modelBuilder.Entity("StudyBuddy.Domain.Models.Number", b =>
                 {
                     b.HasOne("StudyBuddy.Domain.Models.Group", "Group")
-                        .WithMany()
-                        .HasForeignKey("GroupId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .WithMany("StudentIds")
+                        .HasForeignKey("GroupId");
 
                     b.Navigation("Group");
                 });
@@ -307,6 +279,8 @@ namespace StudyBuddy.Infrastructure.Migrations
             modelBuilder.Entity("StudyBuddy.Domain.Models.Group", b =>
                 {
                     b.Navigation("GroupProperty");
+
+                    b.Navigation("StudentIds");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.GroupProperty", b =>
@@ -321,7 +295,7 @@ namespace StudyBuddy.Infrastructure.Migrations
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.User", b =>
                 {
-                    b.Navigation("CreatedGroups");
+                    b.Navigation("Groups");
 
                     b.Navigation("Posts");
 
