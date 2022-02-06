@@ -69,8 +69,8 @@ namespace StudyBuddy.Infrastructure.Repositories
         public Group GetGroupById(int groupId)
         {
             var group = _context.Groups.FirstOrDefault(i => i.Id == groupId);
-            ICollection<ICollection<User>> res = _context.Groups.Where(i => i.Id == groupId).Select(elem => elem.JoinedUsers).ToList();
-            group.JoinedUsers = res.FirstOrDefault();
+            ICollection<User> joinedGroups = _context.Groups.Where(i => i.Id == groupId).Select(elem => elem.JoinedUsers).FirstOrDefault();
+            group.JoinedUsers = joinedGroups;
 
             return group;
         }
