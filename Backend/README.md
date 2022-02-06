@@ -4,7 +4,16 @@ dotnet ef migrations add InitialCreate --project ..\StudyBuddy.Infrastructure\
 dotnet ef migrations add AddPosts --project ../StudyBuddy.Infrastructure 
 dotnet ef database update
 
+        // var foo = myICollection.OfType<YourType>().FirstOrDefault();
+        // // or use a query
+        // var bar = (from x in myICollection.OfType<YourType>() where x.SomeProperty == someValue select x)
+        // .FirstOrDefault();
+
+
+
 09.12 4h/5h
+05.02 3h
+06.02 4h
 
 
 

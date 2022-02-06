@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using StudyBuddy.Domain.Models;
 
@@ -6,6 +7,7 @@ namespace StudyBuddy.Domain.Interfaces
     public interface IGroupRepository
     {
         Group GetGroupById(int groupId);
+        ICollection<User> GetGroupJoinedUsersByGroupId(int groupId);
         IQueryable<Group> GetAllActiveGroups();
         GroupProperty GetGroupProperty(int groupPropertyId);
         int AddGroup(Group group);

@@ -124,8 +124,9 @@ namespace StudyBuddy.Application.Services
         public GroupVm GetGroupById(int groupId)
         {
             var group = _groupRepo.GetGroupById(groupId);
-            var groupVm = _mapper.Map<GroupVm>(group);
+            group.JoinedUsers = _groupRepo.GetGroupJoinedUsersByGroupId(groupId);
 
+            var groupVm = _mapper.Map<GroupVm>(group);
             return groupVm;
         }
 

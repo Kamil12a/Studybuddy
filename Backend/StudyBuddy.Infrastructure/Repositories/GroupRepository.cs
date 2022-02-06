@@ -68,17 +68,13 @@ namespace StudyBuddy.Infrastructure.Repositories
 
         public Group GetGroupById(int groupId)
         {
-            var group = _context.Groups.FirstOrDefault(i => i.Id == groupId);
-            ICollection<User> joinedGroups = _context.Groups.Where(i => i.Id == groupId).Select(elem => elem.JoinedUsers).FirstOrDefault();
-            group.JoinedUsers = joinedGroups;
-
-            return group;
+            return _context.Groups.FirstOrDefault(i => i.Id == groupId);;
         }
 
-        // var foo = myICollection.OfType<YourType>().FirstOrDefault();
-        // // or use a query
-        // var bar = (from x in myICollection.OfType<YourType>() where x.SomeProperty == someValue select x)
-        // .FirstOrDefault();
+        public ICollection<User> GetGroupJoinedUsersByGroupId(int groupId)
+        {
+            return _context.Groups.Where(i => i.Id == groupId).Select(elem => elem.JoinedUsers).FirstOrDefault();
+        }
 
         public GroupProperty GetGroupProperty(int groupPropertyId)
         {
