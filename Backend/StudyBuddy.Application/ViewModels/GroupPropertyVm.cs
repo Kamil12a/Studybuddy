@@ -14,7 +14,8 @@ namespace StudyBuddy.Application.ViewModels
 
         public void Mapping(MappingProfile profile)
         {
-            profile.CreateMap<GroupProperty, GroupPropertyVm>();
+            profile.CreateMap<GroupProperty, GroupPropertyVm>()
+                .ReverseMap();
         }
     }
 }

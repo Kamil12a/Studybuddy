@@ -10,7 +10,8 @@ namespace StudyBuddy.Application.ViewModels
         
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<StudyBuddy.Domain.Models.User, UserForListVm>();
+            profile.CreateMap<StudyBuddy.Domain.Models.User, UserForListVm>()
+                .ReverseMap();
         }
     }
 }

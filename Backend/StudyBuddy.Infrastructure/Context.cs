@@ -7,13 +7,13 @@ namespace StudyBuddy.Infrastructure
     {
         public DbSet<Group> Groups { get; set; }
         public DbSet<GroupProperty> GroupProperties { get; set; }
-        //public DbSet<Post> Post { get; set; }
-        public DbSet<Subject> Subject { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
         public DbSet<Topic> Topics { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserProperty> UserProperties { get; set; }
 
-        public Context(DbContextOptions options) : base(options)
+        public Context(DbContextOptions<Context> options) : base(options)
         {
         }
 
@@ -31,9 +31,12 @@ namespace StudyBuddy.Infrastructure
                 .HasForeignKey<UserProperty>(e => e.UserId);
 
             builder.Entity<User>()
-                .HasMany(g => g.Groups)
-                .WithOne(u => u.Admin)
-                .HasForeignKey(e => e.AdminId);
+                .HasMany(g => g.CreatedGroups)
+                .WithOne(u => u.GroupOwner);
+            
+            builder.Entity<Group>()
+                .HasMany(g => g.JoinedUsers)
+                .WithMany(n => n.JoinedGroups);
 
             builder.Entity<Group>()
                 .HasOne(g => g.GroupProperty)
@@ -49,6 +52,11 @@ namespace StudyBuddy.Infrastructure
                 .HasOne(s => s.Topic)
                 .WithOne(t => t.Subject)
                 .HasForeignKey<Topic>(t => t.SubjectId);
+
+            builder.Entity<User>()
+                .HasMany(u => u.Posts)
+                .WithOne(p => p.User)
+                .HasForeignKey(e => e.OwnerId);
         }
     }
 }

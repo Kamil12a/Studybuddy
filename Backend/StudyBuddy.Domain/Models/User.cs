@@ -11,7 +11,9 @@ namespace StudyBuddy.Domain.Models
         public string Course { get; set; }
         public string Fullname { get => $"{Name} {Surname}"; }
        
-        public virtual ICollection<Group> Groups { get; set; }
+        public virtual ICollection<Group> CreatedGroups { get; set; }
+        public virtual ICollection<Group> JoinedGroups { get; set; }
+        public virtual ICollection<Post> Posts { get; set; }
         public virtual UserProperty UserProperty { get; set; }
     }
 }

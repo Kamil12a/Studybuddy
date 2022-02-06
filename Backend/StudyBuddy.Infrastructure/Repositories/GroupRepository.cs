@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using StudyBuddy.Domain.Interfaces;
 using StudyBuddy.Domain.Models;
 
@@ -42,14 +44,22 @@ namespace StudyBuddy.Infrastructure.Repositories
 
         public void DeleteGroupAbsolute(int groupId)
         {
-            var item = _context.Groups.Find(groupId);
-            _context.Groups.Remove(item);
+            var group = _context.Groups.Find(groupId);
+            _context.Groups.Remove(group);
             _context.SaveChanges();
         }
 
         public void DeleteGroupProperty(int groupPropertyId)
         {
-            DeleteGroupPropertyAbsolute(groupPropertyId);
+            var result = _context.GroupProperties.SingleOrDefault(i => i.Id == groupPropertyId && i.IsActive);
+
+            if (result != null)
+            {
+                var item = result;
+                item.IsActive = false;
+                _context.Entry(result).CurrentValues.SetValues(item);
+                _context.SaveChanges();
+            }
         }
 
         public void DeleteGroupPropertyAbsolute(int groupPropertyId)
@@ -66,7 +76,12 @@ namespace StudyBuddy.Infrastructure.Repositories
 
         public Group GetGroupById(int groupId)
         {
-            return _context.Groups.FirstOrDefault(i => i.Id == groupId);
+            return _context.Groups.FirstOrDefault(i => i.Id == groupId);;
+        }
+
+        public ICollection<User> GetGroupJoinedUsersByGroupId(int groupId)
+        {
+            return _context.Groups.Where(i => i.Id == groupId).Select(elem => elem.JoinedUsers).FirstOrDefault();
         }
 
         public GroupProperty GetGroupProperty(int groupPropertyId)
@@ -76,7 +91,16 @@ namespace StudyBuddy.Infrastructure.Repositories
 
         public void UpdateGroup(Group group)
         {
-            throw new System.NotImplementedException();
+            _context.Attach(group);
+            _context.Entry(group).Property("TutorId").IsModified = true;
+            _context.Entry(group).Property("GroupOwnerId").IsModified = true;
+            //_context.Entry(group).Reference(x => x.JoinedUsers).EntityEntry<ICollection<User>>;
+            _context.Entry(group).State = EntityState.Modified;
+            //_context.Entry(group).Property("JoinedUsers").IsModified = true;
+            //_context.Entry(group).Collection("JoinedUsers").Load();
+            //_context.Entry(group).Collection("JoinedUsers");
+
+            _context.SaveChanges();
         }
 
         public void UpdateGroupProperty(GroupProperty groupProperty)

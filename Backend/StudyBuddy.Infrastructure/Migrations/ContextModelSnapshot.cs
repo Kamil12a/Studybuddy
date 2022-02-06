@@ -19,6 +19,21 @@ namespace StudyBuddy.Infrastructure.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
+            modelBuilder.Entity("GroupUser", b =>
+                {
+                    b.Property<int>("JoinedGroupsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("JoinedUsersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("JoinedGroupsId", "JoinedUsersId");
+
+                    b.HasIndex("JoinedUsersId");
+
+                    b.ToTable("GroupUser");
+                });
+
             modelBuilder.Entity("StudyBuddy.Domain.Models.Group", b =>
                 {
                     b.Property<int>("Id")
@@ -26,7 +41,7 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("AdminId")
+                    b.Property<int?>("GroupOwnerId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
@@ -37,9 +52,9 @@ namespace StudyBuddy.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AdminId");
+                    b.HasIndex("GroupOwnerId");
 
-                    b.ToTable("Group");
+                    b.ToTable("Groups");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.GroupProperty", b =>
@@ -58,6 +73,9 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.Property<int>("GroupId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("PublishDate")
                         .HasColumnType("datetime2");
 
@@ -67,6 +85,29 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("GroupProperties");
+                });
+
+            modelBuilder.Entity("StudyBuddy.Domain.Models.Post", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("OwnerId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OwnerId");
+
+                    b.ToTable("Posts");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.Subject", b =>
@@ -87,7 +128,7 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.HasIndex("GroupPropertyId")
                         .IsUnique();
 
-                    b.ToTable("Subject");
+                    b.ToTable("Subjects");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.Topic", b =>
@@ -108,7 +149,7 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.HasIndex("SubjectId")
                         .IsUnique();
 
-                    b.ToTable("Topic");
+                    b.ToTable("Topics");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.User", b =>
@@ -121,9 +162,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.Property<string>("Course")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("GroupId")
-                        .HasColumnType("int");
-
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
@@ -134,8 +172,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("GroupId");
 
                     b.ToTable("Users");
                 });
@@ -164,15 +200,28 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.ToTable("UserProperties");
                 });
 
-            modelBuilder.Entity("StudyBuddy.Domain.Models.Group", b =>
+            modelBuilder.Entity("GroupUser", b =>
                 {
-                    b.HasOne("StudyBuddy.Domain.Models.User", "Admin")
-                        .WithMany("Groups")
-                        .HasForeignKey("AdminId")
+                    b.HasOne("StudyBuddy.Domain.Models.Group", null)
+                        .WithMany()
+                        .HasForeignKey("JoinedGroupsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Admin");
+                    b.HasOne("StudyBuddy.Domain.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("JoinedUsersId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("StudyBuddy.Domain.Models.Group", b =>
+                {
+                    b.HasOne("StudyBuddy.Domain.Models.User", "GroupOwner")
+                        .WithMany("CreatedGroups")
+                        .HasForeignKey("GroupOwnerId");
+
+                    b.Navigation("GroupOwner");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.GroupProperty", b =>
@@ -184,6 +233,17 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Group");
+                });
+
+            modelBuilder.Entity("StudyBuddy.Domain.Models.Post", b =>
+                {
+                    b.HasOne("StudyBuddy.Domain.Models.User", "User")
+                        .WithMany("Posts")
+                        .HasForeignKey("OwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.Subject", b =>
@@ -208,13 +268,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.Navigation("Subject");
                 });
 
-            modelBuilder.Entity("StudyBuddy.Domain.Models.User", b =>
-                {
-                    b.HasOne("StudyBuddy.Domain.Models.Group", null)
-                        .WithMany("StudentIds")
-                        .HasForeignKey("GroupId");
-                });
-
             modelBuilder.Entity("StudyBuddy.Domain.Models.UserProperty", b =>
                 {
                     b.HasOne("StudyBuddy.Domain.Models.User", "User")
@@ -229,8 +282,6 @@ namespace StudyBuddy.Infrastructure.Migrations
             modelBuilder.Entity("StudyBuddy.Domain.Models.Group", b =>
                 {
                     b.Navigation("GroupProperty");
-
-                    b.Navigation("StudentIds");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.GroupProperty", b =>
@@ -245,7 +296,9 @@ namespace StudyBuddy.Infrastructure.Migrations
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.User", b =>
                 {
-                    b.Navigation("Groups");
+                    b.Navigation("CreatedGroups");
+
+                    b.Navigation("Posts");
 
                     b.Navigation("UserProperty");
                 });

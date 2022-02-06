@@ -5,16 +5,14 @@ using StudyBuddy.Domain.Models;
 
 namespace StudyBuddy.Application.ViewModels
 {
-    public class GroupVm : IMapFrom<StudyBuddy.Domain.Models.Group>
+    public class NewGroupVm : IMapFrom<StudyBuddy.Domain.Models.Group>
     {
-        public int Id { get; set; }
         public int TutorId { get; set; }
-        public List<UserVm> JoinedUsers { get; set; }
         public int GroupOwnerId { get; set; }
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<GroupVm, StudyBuddy.Domain.Models.Group>()
+            profile.CreateMap<NewGroupVm, StudyBuddy.Domain.Models.Group>()
                 .ReverseMap();
         }
     }
