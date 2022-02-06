@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace StudyBuddy.Infrastructure.Migrations
 {
-    public partial class RecomposeGroupAndUserRelations : Migration
+    public partial class _1_InitialMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -92,6 +92,7 @@ namespace StudyBuddy.Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false),
                     PublishDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ExpireDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -128,25 +129,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                         name: "FK_GroupUser_Users_JoinedUsersId",
                         column: x => x.JoinedUsersId,
                         principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Numbers",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    GroupId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Numbers", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Numbers_Groups_GroupId",
-                        column: x => x.GroupId,
-                        principalTable: "Groups",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -208,11 +190,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                 column: "JoinedUsersId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Numbers_GroupId",
-                table: "Numbers",
-                column: "GroupId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Posts_OwnerId",
                 table: "Posts",
                 column: "OwnerId");
@@ -240,9 +217,6 @@ namespace StudyBuddy.Infrastructure.Migrations
         {
             migrationBuilder.DropTable(
                 name: "GroupUser");
-
-            migrationBuilder.DropTable(
-                name: "Numbers");
 
             migrationBuilder.DropTable(
                 name: "Posts");

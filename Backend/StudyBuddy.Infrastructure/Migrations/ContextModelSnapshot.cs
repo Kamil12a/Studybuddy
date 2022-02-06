@@ -73,6 +73,9 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.Property<int>("GroupId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("PublishDate")
                         .HasColumnType("datetime2");
 
@@ -82,23 +85,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("GroupProperties");
-                });
-
-            modelBuilder.Entity("StudyBuddy.Domain.Models.Number", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int>("GroupId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("GroupId");
-
-                    b.ToTable("Numbers");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.Post", b =>
@@ -243,17 +229,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.HasOne("StudyBuddy.Domain.Models.Group", "Group")
                         .WithOne("GroupProperty")
                         .HasForeignKey("StudyBuddy.Domain.Models.GroupProperty", "GroupId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Group");
-                });
-
-            modelBuilder.Entity("StudyBuddy.Domain.Models.Number", b =>
-                {
-                    b.HasOne("StudyBuddy.Domain.Models.Group", "Group")
-                        .WithMany()
-                        .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

@@ -10,8 +10,8 @@ using StudyBuddy.Infrastructure;
 namespace StudyBuddy.Infrastructure.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220205220149_RecomposeGroupAndUserRelations")]
-    partial class RecomposeGroupAndUserRelations
+    [Migration("20220206201235_1_InitialMigration")]
+    partial class _1_InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -75,6 +75,9 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.Property<int>("GroupId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("PublishDate")
                         .HasColumnType("datetime2");
 
@@ -84,23 +87,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("GroupProperties");
-                });
-
-            modelBuilder.Entity("StudyBuddy.Domain.Models.Number", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int>("GroupId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("GroupId");
-
-                    b.ToTable("Numbers");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.Post", b =>
@@ -245,17 +231,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.HasOne("StudyBuddy.Domain.Models.Group", "Group")
                         .WithOne("GroupProperty")
                         .HasForeignKey("StudyBuddy.Domain.Models.GroupProperty", "GroupId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Group");
-                });
-
-            modelBuilder.Entity("StudyBuddy.Domain.Models.Number", b =>
-                {
-                    b.HasOne("StudyBuddy.Domain.Models.Group", "Group")
-                        .WithMany()
-                        .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
