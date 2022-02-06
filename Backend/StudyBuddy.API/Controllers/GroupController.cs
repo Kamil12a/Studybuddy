@@ -45,6 +45,13 @@ namespace StudyBuddy.API.Controllers
             return new JsonResult(id);
         }
 
+        [HttpPost]
+        public IActionResult AddUserToGroup(int groupId, int userId)
+        {
+            var success = _groupService.AddUserToGroup(groupId, userId);
+            return new JsonResult(id);
+        }
+
         [HttpDelete]
         public IActionResult DeleteGroup(int groupId)
         {
@@ -74,9 +81,30 @@ namespace StudyBuddy.API.Controllers
         }
 
         [HttpGet]
+        public IActionResult GetAllGroups()
+        {
+            var groups = _groupService.GetAllGroups();
+            return new JsonResult(groups);
+        }
+
+        [HttpGet]
+        public IActionResult GetAllGroupsOrdered(int pageSize, int pageNo)
+        {
+            var groups = _groupService.GetAllGroups(pageSize, pageNo);
+            return new JsonResult(groups);
+        }
+
+        [HttpGet]
+        public IActionResult GetAllGroupsFiltered(int pageSize, int pageNo, string searchString)
+        {
+            var groups = _groupService.GetAllGroups(pageSize, pageNo, searchString);
+            return new JsonResult(groups);
+        }
+
+        [HttpGet]
         public IActionResult GetGroup(int groupId)
         {
-            var group = _groupService.GetGroup(groupId);
+            var group = _groupService.GetGroupById(groupId);
             return new JsonResult(group);
         }
 

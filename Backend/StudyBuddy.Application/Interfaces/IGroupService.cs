@@ -4,12 +4,17 @@ namespace StudyBuddy.Application.Interfaces
 {
     public interface IGroupService
     {
-        GroupVm GetGroup(int groupId);
+        GroupVm GetGroupById(int groupId);
+       
+        ListGroupForListVm GetAllGroups();
+        ListGroupForListVm GetAllGroups(int pageSize, int pageNo);
+        ListGroupForListVm GetAllGroups(int pageSize, int pageNo, string searchString);
         GroupPropertyVm GetGroupPropertyVm(int groupPropertyId);
         int AddGroup(NewGroupVm groupVm);
-        int AddGroupPropertyVm(GroupPropertyVm groupProperty);
-        void UpdateGroup(GroupVm group);
-        void UpdateGroupProperty(GroupPropertyVm groupProperty);
+        int AddGroupPropertyVm(GroupPropertyVm groupPropertyVm);
+        int AddUserToGroup(int groupId, int userId);
+        void UpdateGroup(GroupVm groupVm);
+        void UpdateGroupProperty(GroupPropertyVm groupPropertyVm);
         void DeleteGroup(int groupId);
         void DeleteGroupProperty(int groupPropertyId);
     }
