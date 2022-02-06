@@ -50,16 +50,10 @@ namespace StudyBuddy.Application.Services
             var group = _groupRepo.GetGroupById(groupId);
             var user = _userRepo.GetUserById(userId);
 
-            // List<User> joinedUsers = new List<User>();
-            // foreach(var joinedUser in group.JoinedUsers)
-            // {
-            //     joinedUsers.Add(joinedUser);
-            // }
-            // group.JoinedUsers = joinedUsers;
-
             List<User> joinedUsers = new List<User>();
             joinedUsers.Add(user);
             group.JoinedUsers = joinedUsers;
+            
             _groupRepo.UpdateGroup(group);
             return 1;
         }
