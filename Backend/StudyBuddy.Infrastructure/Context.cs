@@ -12,7 +12,6 @@ namespace StudyBuddy.Infrastructure
         public DbSet<Topic> Topics { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserProperty> UserProperties { get; set; }
-        public DbSet<Number> Numbers { get; set; }
 
         public Context(DbContextOptions<Context> options) : base(options)
         {
@@ -31,14 +30,13 @@ namespace StudyBuddy.Infrastructure
                 .WithOne(up => up.User)
                 .HasForeignKey<UserProperty>(e => e.UserId);
 
-            builder.Entity<User>() //One User has many CreatedGroups
+            builder.Entity<User>()
                 .HasMany(g => g.CreatedGroups)
                 .WithOne(u => u.GroupOwner);
-                //.HasForeignKey(e => e.GroupOwnerId);
             
-            builder.Entity<Group>() //One Group has many JoinedUsers
+            builder.Entity<Group>()
                 .HasMany(g => g.JoinedUsers)
-                .WithMany(n => n.JoinedGroups); //User can join to many Groups
+                .WithMany(n => n.JoinedGroups);
 
             builder.Entity<Group>()
                 .HasOne(g => g.GroupProperty)
@@ -59,10 +57,6 @@ namespace StudyBuddy.Infrastructure
                 .HasMany(u => u.Posts)
                 .WithOne(p => p.User)
                 .HasForeignKey(e => e.OwnerId);
-
-            // builder.Entity<Number>()
-            //     .HasOne(n => n.Group)
-            //     .WithMany(g => g.StudentIds);
         }
     }
 }
