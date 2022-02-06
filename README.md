@@ -1,9 +1,70 @@
-# Studybuddy
+# Getting Started with Create React App
 
-## About us
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-"Study-Buddy!" is an app that allows students to help each other with problems related to studying or student life. Anyone involved in university life can sign up and share knowledge with those who have some shortcomings.
-“Study-Buddy!” aims to combine many forms of assistance. From the simplest questions on how to organise your studies, through questions for help with specific issues, to complex problems. Students will be able to find answers to all these problems on the forum. This will be the place for simple questions related to tasks, campus functioning, problems. We want to create possibilities for help as well as discussion.  However, the most important thing for us is to give students a platform to join groups. In "Study-Buddy!" everyone will be able to form their own team to study together, tutor or take part in tutoring, take part in competitions, do joint projects, etc. An important pillar of our application is precisely the students' willingness to act. It often happens that there are people who want to act at an early stage of their studies, but they don't know how to start, they don't know people, etc. We want "Study-Buddy!" to be a place that brings together such people and where even a person after only a few weeks of studies can find people with whom they share a passion, interests and goals that they can fulfill together.
-One of our main goals is also to increase the pass rate of students in their first year. Research shows that a large number of people who drop out of university do so because they have fallen behind at some stage in their studies and there is no room for making up for this with the specialised knowledge we have at university.
+## Available Scripts
 
-Our project is easy to implement in different universities, as it is based on any student aid. One of the successes of our project is winning the Sea-EU Makeathon competition at university level and advancing to the European stage, where we will face groups from all over Europe. The aim of the competition was to create all kinds of improvements and facilities for students in university life. The University of Gdansk was willing to cooperate with us and ensured that students would be able to tutor as part of their compulsory practice.
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

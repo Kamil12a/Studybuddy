@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { useStyles } from "./universitySectionStyles";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import Select from "@material-ui/core/Select";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -14,13 +14,12 @@ import Button from "@material-ui/core/Button";
 import FieldTofilled from "../global/FieldTofilled";
 import LogoLook from "../global/LogoLook";
 export default function UniversitySection() {
-  let history = useHistory();
+  const navigate = useNavigate();
   const [myState, setMyState] = React.useState("");
   const [checked, setChecked] = React.useState([false, false]);
   const classes = useStyles();
   const submitPersonForm = (e) => {
-    e.preventDefault();
-    history.push("/aboutYouForm");
+    navigate("/aboutYouForm");
   };
   const handleChange = (e) => {
     setMyState(e.target.value);

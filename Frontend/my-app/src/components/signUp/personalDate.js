@@ -8,11 +8,11 @@ import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import { useStyles } from "./personalDateStyles";
 import Button from "@material-ui/core/Button";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import LogoLook from "../global/LogoLook";
 import FieldTofilled from "../global/FieldTofilled";
 export default function PersonalDate() {
-  let history = useHistory();
+  const navigate = useNavigate();
 
   const classes = useStyles();
   const AvatartIcon = () => (
@@ -45,7 +45,7 @@ export default function PersonalDate() {
   );
   const submitPersonForm = (e) => {
     e.preventDefault();
-    history.push("/universitySection");
+    navigate("/universitySection");
   };
   return (
     <Grid container component="main" className={classes.root}>
@@ -64,7 +64,20 @@ export default function PersonalDate() {
             </div>
             <div className={classes.oneLaneToFill}>
               <FieldTofilled question="E-mail" fill={"email"} />
-              <FieldTofilled question="Password" fill={"password"} />
+              <Typography style={{marginLeft:"20px"}} className={classes.question} component="h1" variant="h5">
+                   password
+                </Typography>
+              <TextField
+                  style={{ marginLeft: "58px", width: "220px" }}
+                  variant="outlined"
+                  type="password"
+                  margin="normal"
+                  fullWidth
+                  name="password"
+                  label="password"
+                  id="password"
+                  autoComplete="current-password"
+                />
             </div>
 
             <AvatartIcon />
