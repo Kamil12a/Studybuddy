@@ -44,14 +44,22 @@ namespace StudyBuddy.Infrastructure.Repositories
 
         public void DeleteGroupAbsolute(int groupId)
         {
-            var item = _context.Groups.Find(groupId);
-            _context.Groups.Remove(item);
+            var group = _context.Groups.Find(groupId);
+            _context.Groups.Remove(group);
             _context.SaveChanges();
         }
 
         public void DeleteGroupProperty(int groupPropertyId)
         {
-            DeleteGroupPropertyAbsolute(groupPropertyId);
+            var result = _context.GroupProperties.SingleOrDefault(i => i.Id == groupPropertyId && i.IsActive);
+
+            if (result != null)
+            {
+                var item = result;
+                item.IsActive = false;
+                _context.Entry(result).CurrentValues.SetValues(item);
+                _context.SaveChanges();
+            }
         }
 
         public void DeleteGroupPropertyAbsolute(int groupPropertyId)

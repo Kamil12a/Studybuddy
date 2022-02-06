@@ -16,6 +16,8 @@ namespace StudyBuddy.Application.Interfaces
         void UpdateGroup(GroupVm groupVm);
         void UpdateGroupProperty(GroupPropertyVm groupPropertyVm);
         void DeleteGroup(int groupId);
+        void DeleteGroupAbsolute(int groupId);
         void DeleteGroupProperty(int groupPropertyId);
+        void DeleteGroupPropertyAbsolute(int groupPropertyId);       
     }
 }

@@ -63,9 +63,19 @@ namespace StudyBuddy.Application.Services
             _groupRepo.DeleteGroup(groupId);
         }
 
+        public void DeleteGroupAbsolute(int groupId)
+        {
+            _groupRepo.DeleteGroupAbsolute(groupId);
+        }
+
         public void DeleteGroupProperty(int groupPropertyId)
         {
             _groupRepo.DeleteGroupProperty(groupPropertyId);
+        }
+
+        public void DeleteGroupPropertyAbsolute(int groupPropertyId)
+        {
+            _groupRepo.DeleteGroupPropertyAbsolute(groupPropertyId);
         }
 
         public ListGroupForListVm GetAllGroups()
