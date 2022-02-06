@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using StudyBuddy.Domain.Interfaces;
 using StudyBuddy.Domain.Models;
 
@@ -66,8 +68,17 @@ namespace StudyBuddy.Infrastructure.Repositories
 
         public Group GetGroupById(int groupId)
         {
-            return _context.Groups.FirstOrDefault(i => i.Id == groupId);
+            var group = _context.Groups.FirstOrDefault(i => i.Id == groupId);
+            ICollection<ICollection<User>> res = _context.Groups.Where(i => i.Id == groupId).Select(elem => elem.JoinedUsers).ToList();
+            group.JoinedUsers = res.FirstOrDefault();
+
+            return group;
         }
+
+        // var foo = myICollection.OfType<YourType>().FirstOrDefault();
+        // // or use a query
+        // var bar = (from x in myICollection.OfType<YourType>() where x.SomeProperty == someValue select x)
+        // .FirstOrDefault();
 
         public GroupProperty GetGroupProperty(int groupPropertyId)
         {
@@ -76,7 +87,16 @@ namespace StudyBuddy.Infrastructure.Repositories
 
         public void UpdateGroup(Group group)
         {
-            throw new System.NotImplementedException();
+            _context.Attach(group);
+            _context.Entry(group).Property("TutorId").IsModified = true;
+            _context.Entry(group).Property("GroupOwnerId").IsModified = true;
+            //_context.Entry(group).Reference(x => x.JoinedUsers).EntityEntry<ICollection<User>>;
+            _context.Entry(group).State = EntityState.Modified;
+            //_context.Entry(group).Property("JoinedUsers").IsModified = true;
+            //_context.Entry(group).Collection("JoinedUsers").Load();
+            //_context.Entry(group).Collection("JoinedUsers");
+
+            _context.SaveChanges();
         }
 
         public void UpdateGroupProperty(GroupProperty groupProperty)

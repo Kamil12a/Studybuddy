@@ -49,7 +49,7 @@ namespace StudyBuddy.API.Controllers
         public IActionResult AddUserToGroup(int groupId, int userId)
         {
             var success = _groupService.AddUserToGroup(groupId, userId);
-            return new JsonResult(id);
+            return new JsonResult(success);
         }
 
         [HttpDelete]

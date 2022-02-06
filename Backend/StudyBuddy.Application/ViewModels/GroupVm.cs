@@ -9,7 +9,7 @@ namespace StudyBuddy.Application.ViewModels
     {
         public int Id { get; set; }
         public int TutorId { get; set; }
-        public List<User> StudentIds { get; set; }
+        public List<UserVm> JoinedUsers { get; set; }
         public int GroupOwnerId { get; set; }
 
         public void Mapping(Profile profile)
