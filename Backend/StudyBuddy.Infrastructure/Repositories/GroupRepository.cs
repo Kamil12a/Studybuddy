@@ -94,18 +94,16 @@ namespace StudyBuddy.Infrastructure.Repositories
             _context.Attach(group);
             _context.Entry(group).Property("TutorId").IsModified = true;
             _context.Entry(group).Property("GroupOwnerId").IsModified = true;
-            //_context.Entry(group).Reference(x => x.JoinedUsers).EntityEntry<ICollection<User>>;
             _context.Entry(group).State = EntityState.Modified;
-            //_context.Entry(group).Property("JoinedUsers").IsModified = true;
-            //_context.Entry(group).Collection("JoinedUsers").Load();
-            //_context.Entry(group).Collection("JoinedUsers");
 
             _context.SaveChanges();
         }
 
         public void UpdateGroupProperty(GroupProperty groupProperty)
         {
-            throw new System.NotImplementedException();
+            _context.Attach(groupProperty);
+            _context.Entry(groupProperty).State = EntityState.Modified;
+            _context.SaveChanges();
         }
     }
 }
