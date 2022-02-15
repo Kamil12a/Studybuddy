@@ -19,9 +19,10 @@ namespace StudyBuddy.Application.Services
             _mapper = mapper;
         }
 
-        public int AddUser(UserVm userVm)
+        public int AddUser(NewUserVm userVm)
         {
             var user = _mapper.Map<User>(userVm);
+            user.IsActive = true;
             var id = _userRepo.AddUser(user);
             return id; 
         }
@@ -114,7 +115,7 @@ namespace StudyBuddy.Application.Services
             return userPropertyVm;
         }
 
-        public void UpdateUser(UserVm userVm)
+        public void UpdateUser(NewUserVm userVm)
         {
             var user = _mapper.Map<User>(userVm);
             _userRepo.UpdateUser(user);
