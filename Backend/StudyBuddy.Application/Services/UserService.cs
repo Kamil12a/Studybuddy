@@ -122,8 +122,8 @@ namespace StudyBuddy.Application.Services
 
         public void UpdateUserProperty(UserPropertyVm userPropertyVm)
         {
-            var userProperty = _mapper.Map<User>(userPropertyVm);
-            _userRepo.UpdateUser(userProperty);
+            var userProperty = _mapper.Map<UserProperty>(userPropertyVm);
+            _userRepo.UpdateUserProperty(userProperty);
         }
     }
 }
