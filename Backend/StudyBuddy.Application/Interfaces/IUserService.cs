@@ -10,9 +10,9 @@ namespace StudyBuddy.Application.Interfaces
         ListUserForListVm GetAllUsers(int pageSize, int pageNo);
         ListUserForListVm GetAllUsers(int pageSize, int pageNo, string searchString);
         UserPropertyVm GetUserPropertyVm(int userPropertyId);
-        int AddUser(UserVm userVm);
+        int AddUser(NewUserVm userVm);
         int AddUserPropertyVm(UserPropertyVm userPropertyVm);
-        void UpdateUser(UserVm userVm);
+        void UpdateUser(NewUserVm userVm);
         void UpdateUserProperty(UserPropertyVm userPropertyVm);
         void DeleteUser(int userId);
         void DeleteUserProperty(int userPropertyId); 

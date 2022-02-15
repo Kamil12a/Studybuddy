@@ -53,7 +53,7 @@ namespace StudyBuddy.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddUser([FromBody] UserVm userVm)
+        public IActionResult AddUser([FromBody] NewUserVm userVm)
         {
             var id = _userService.AddUser(userVm);
             return new JsonResult(id);
@@ -67,7 +67,7 @@ namespace StudyBuddy.API.Controllers
         }
         
         [HttpPost]
-        public IActionResult EditUser([FromBody] UserVm userVm)
+        public IActionResult EditUser([FromBody] NewUserVm userVm)
         {
             _userService.UpdateUser(userVm);
             return Ok();
