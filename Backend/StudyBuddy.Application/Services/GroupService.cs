@@ -141,9 +141,10 @@ namespace StudyBuddy.Application.Services
             return groupVm;
         }
 
-        public void UpdateGroup(GroupVm groupVm)
+        public void UpdateGroup(NewGroupVm groupVm)
         {
             var group = _mapper.Map<Group>(groupVm);
+            group.IsActive = true;
             _groupRepo.UpdateGroup(group);
         }
 

@@ -13,7 +13,7 @@ namespace StudyBuddy.Application.Interfaces
         int AddGroup(NewGroupVm groupVm);
         int AddGroupPropertyVm(GroupPropertyVm groupPropertyVm);
         int AddUserToGroup(int groupId, int userId);
-        void UpdateGroup(GroupVm groupVm);
+        void UpdateGroup(NewGroupVm groupVm);
         void UpdateGroupProperty(GroupPropertyVm groupPropertyVm);
         void DeleteGroup(int groupId);
         void DeleteGroupAbsolute(int groupId);
