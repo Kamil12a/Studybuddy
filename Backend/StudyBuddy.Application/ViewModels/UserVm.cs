@@ -7,7 +7,6 @@ namespace StudyBuddy.Application.ViewModels
     public class UserVm : IMapFrom<StudyBuddy.Domain.Models.User>
     {
         public int Id { get; set; }
-        public bool IsActive { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Course { get; set; }
