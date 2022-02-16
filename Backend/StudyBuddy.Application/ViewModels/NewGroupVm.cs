@@ -7,6 +7,7 @@ namespace StudyBuddy.Application.ViewModels
 {
     public class NewGroupVm : IMapFrom<StudyBuddy.Domain.Models.Group>
     {
+        public int Id { get; set; }
         public int TutorId { get; set; }
         public int GroupOwnerId { get; set; }
 
