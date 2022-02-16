@@ -5,8 +5,8 @@ namespace StudyBuddy.Application.Interfaces
     public interface IForumService
     {
         PostVm GetPost(int postId);
-        int AddPost(PostVm post);
-        void UpdatePost(PostVm post);
+        int AddPost(NewPostVm postVm);
+        void UpdatePost(PostVm postVm);
         void DeletePost(int postId);
     }
 }

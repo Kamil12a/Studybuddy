@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using StudyBuddy.Domain.Interfaces;
 using StudyBuddy.Domain.Models;
 
@@ -5,24 +8,47 @@ namespace StudyBuddy.Infrastructure.Repositories
 {
     public class ForumRepository : IForumRepository
     {
+        private readonly Context _context;
+
+        public ForumRepository(Context context)
+        {
+            _context = context;
+        }
+
         public int AddPost(Post post)
         {
-            throw new System.NotImplementedException();
+            _context.Posts.Add(post);
+            _context.SaveChanges();
+            return post.Id;
         }
 
         public void DeletePost(int postId)
         {
-            throw new System.NotImplementedException();
+            var result = _context.Posts.SingleOrDefault(i => i.Id == postId && i.IsActive);
+
+            if (result != null)
+            {
+                var item = result;
+                item.IsActive = false;
+                _context.Entry(result).CurrentValues.SetValues(item);
+                _context.SaveChanges();
+            }
+            else
+            {
+                throw new KeyNotFoundException(string.Format("Cannot find post for Id: {0}", postId));
+            }
         }
 
         public Post GetPost(int postId)
         {
-            throw new System.NotImplementedException();
+            return _context.Posts.SingleOrDefault(i => i.Id == postId && i.IsActive);
         }
 
         public void UpdatePost(Post post)
         {
-            throw new System.NotImplementedException();
+            _context.Attach(post);
+            _context.Entry(post).Property("Description").IsModified = true;
+            _context.SaveChanges();
         }
     }
 }

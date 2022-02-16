@@ -26,7 +26,7 @@ namespace StudyBuddy.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddPost(PostVm post)
+        public IActionResult AddPost(NewPostVm post)
         {
             var id = _forumService.AddPost(post);
             return new JsonResult(id);
