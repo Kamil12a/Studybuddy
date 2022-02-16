@@ -79,7 +79,7 @@ namespace StudyBuddy.Application.Services
                 CurrentPage = pageNo,
                 SearchString = searchString,
                 Users = usersToShow,
-                Count = users.Count
+                Count = usersToShow.Count
             };
 
             return usersList;
@@ -95,7 +95,7 @@ namespace StudyBuddy.Application.Services
                 PageSize = pageSize,
                 CurrentPage = pageNo,
                 Users = usersToShow,
-                Count = users.Count
+                Count = usersToShow.Count
             };
 
             return usersList;
