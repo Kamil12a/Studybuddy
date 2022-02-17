@@ -12,11 +12,9 @@ import { ThemeContext } from "./context/UserContext"
 import { useState } from "react"
 import React from "react"
 function App() {
-  const [userDataAccount, setUserDataAccount] = useState({username:""})
+  const [userDataAccount, setUserDataAccount] = useState({})
   return (
-
-
-    <ThemeContext.Provider value={{userDataAccount,setUserDataAccount} }>
+    <ThemeContext.Provider value={{ userDataAccount, setUserDataAccount }}>
       <Router>
         <Navbar />
         < Routes>
@@ -34,7 +32,7 @@ function App() {
           <Route path="/nativeMenu" element={<ToolBar />}></Route>
         </Routes>
       </Router>
-      </ThemeContext.Provider>
+    </ThemeContext.Provider>
   );
 }
 

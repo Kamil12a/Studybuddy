@@ -5,7 +5,7 @@ import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 
 export default function FieldTofilled({
-    question, fill
+    question, fill,functionOnChange
 }) {
     const useStyles = makeStyles((theme) => ({
         question: {
@@ -35,6 +35,7 @@ export default function FieldTofilled({
                     {question}
                 </Typography>
                 <TextField
+                    onChange={functionOnChange}
                     className={classes.chooseName}
                     label={fill}
                     variant="outlined"

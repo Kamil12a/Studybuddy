@@ -13,29 +13,54 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
 import FieldTofilled from "../global/FieldTofilled";
 import LogoLook from "../global/LogoLook";
+import { ThemeContext } from "../../context/UserContext"
+import { useContext, useState } from "react";
+
 export default function UniversitySection() {
   const navigate = useNavigate();
-  const [myState, setMyState] = React.useState("");
   const [checked, setChecked] = React.useState([false, false]);
+  const [universityInfoState, setUniversityInfoState] = useState({})
   const classes = useStyles();
+  const theme = useContext(ThemeContext)
   const submitPersonForm = (e) => {
+    e.preventDefault();
+    theme.setUserDataAccount(prevState => ({
+      ...prevState,
+      universityDate: universityInfoState
+    })
+    )
     navigate("/aboutYouForm");
   };
   const handleChange = (e) => {
-    setMyState(e.target.value);
+    setUniversityInfoState(prevState => ({ ...prevState, university: e.target.value }))
+
   };
   const handleChangeCheckbox = (e) => {
     if (e.target.value === "1") {
       setChecked([false, true]);
+      setUniversityInfoState(prevState => ({ ...prevState, position: "Student" }))
+
     } else {
       setChecked([true, false]);
+      setUniversityInfoState(prevState => ({ ...prevState, position: "Scientist" }))
+
     }
   };
+  const getDepartment = (e) => {
+    setUniversityInfoState(prevState => ({ ...prevState, department: e.target.value }))
+  }
+  const getField = (e) => {
+    setUniversityInfoState(prevState => ({ ...prevState, field: e.target.value }))
+
+  }
+  const getSpecialization = (e) => {
+    setUniversityInfoState(prevState => ({ ...prevState, specialization: e.target.value }))
+  }
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <LogoLook/>
-        <Grid item component={Paper} elevation={6} square>
+      <LogoLook />
+      <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <form onSubmit={submitPersonForm} className={classes.rightSide}>
             <Typography className={classes.title} component="h5" variant="h3">
@@ -46,14 +71,14 @@ export default function UniversitySection() {
               <InputLabel className={classes.selectUrUniversity}>Select Your University</InputLabel>
               <Select
                 className={classes.selectUniversity}
-                value={myState}
+                value={universityInfoState.university}
                 displayEmpty
                 onChange={handleChange}
               >
                 <MenuItem value="" disabled>
                   Select University
                 </MenuItem>
-                <MenuItem value={1}>University Of Gdańsk</MenuItem>
+                <MenuItem name="University" value={"University of Gdańsk"}>University Of Gdańsk</MenuItem>
               </Select>
               <div className={classes.selectYourPosition}>
                 <InputLabel>Select Your Position</InputLabel>
@@ -75,14 +100,16 @@ export default function UniversitySection() {
               </div>
             </div>
             <div className={classes.oneLaneToFill}>
-              <FieldTofilled question="Your department" fill={"Department"} />
+              <FieldTofilled functionOnChange={getDepartment} question="Your department" fill={"Department"} />
 
               <FieldTofilled
+                functionOnChange={getField}
                 question="Field of study"
                 fill={"Field of study"}
               />
             </div>
             <FieldTofilled
+              functionOnChange={getSpecialization}
               question="Your specialization"
               fill={"Your specialization"}
             />

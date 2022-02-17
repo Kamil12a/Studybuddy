@@ -11,10 +11,14 @@ import Button from "@material-ui/core/Button";
 import { useNavigate } from 'react-router-dom';
 import LogoLook from "../global/LogoLook";
 import FieldTofilled from "../global/FieldTofilled";
+import { useContext, useState } from "react";
+import { ThemeContext } from "../../context/UserContext"
+
 export default function PersonalDate() {
   const navigate = useNavigate();
-
+  const theme = useContext(ThemeContext)
   const classes = useStyles();
+  const [personDateState, setPersonDateState] = useState({})
   const AvatartIcon = () => (
     <div className={classes.avatarIcon}>
       <div>
@@ -45,12 +49,41 @@ export default function PersonalDate() {
   );
   const submitPersonForm = (e) => {
     e.preventDefault();
+    theme.setUserDataAccount(prevState => ({
+      ...prevState,
+      personDate: personDateState
+    })
+    )
     navigate("/universitySection");
   };
+  const getName = (event) => {
+    setPersonDateState(prevState => ({
+      ...prevState,
+      username: event.target.value
+    }));
+  }
+  const getSurname = (event) => {
+    setPersonDateState(prevState => ({
+      ...prevState,
+      surname: event.target.value
+    }));
+  }
+  const getPassword = (event) => {
+    setPersonDateState(prevState => ({
+      ...prevState,
+      password: event.target.value
+    }));
+  }
+  const getEmail = (event) => {
+    setPersonDateState(prevState => ({
+      ...prevState,
+      email: event.target.value
+    }));
+  }
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <LogoLook/>
+      <LogoLook />
 
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
@@ -59,16 +92,23 @@ export default function PersonalDate() {
               Let's get to know each other better!
             </Typography>
             <div className={classes.oneLaneToFill}>
-              <FieldTofilled question="Name" fill={"Name"} />
-              <FieldTofilled question="Surname" fill={"surname"} />
+              <FieldTofilled functionOnChange={getName} question="Name" fill={"Name"} />
+              <FieldTofilled functionOnChange={getSurname} question="Surname" fill={"surname"} />
             </div>
             <div className={classes.oneLaneToFill}>
-              <FieldTofilled question="E-mail" fill={"email"} />
-              <Typography style={{marginLeft:"20px"}} className={classes.question} component="h1" variant="h5">
-                   password
+              <FieldTofilled functionOnChange={getEmail} question="E-mail" fill={"email"} />
+              <div className={classes.oneLaneToFillPassword}>
+                <Typography className={classes.password} component="h1" variant="h5">
+                  password
                 </Typography>
-              <TextField
-                  style={{ marginLeft: "58px", width: "220px" }}
+                <TextField
+                  inputProps={{
+                    autoComplete: 'new-password',
+                    form: {
+                      autocomplete: 'off',
+                    },
+                  }}
+                  onChange={getPassword}
                   variant="outlined"
                   type="password"
                   margin="normal"
@@ -78,6 +118,7 @@ export default function PersonalDate() {
                   id="password"
                   autoComplete="current-password"
                 />
+              </div>
             </div>
 
             <AvatartIcon />

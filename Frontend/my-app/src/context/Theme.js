@@ -1,3 +1,3 @@
-export const userTheme={
-    userInformatiom:{inf:0}
-}
+// export const userTheme={
+//     userInformatiom:{inf:0}
+// }

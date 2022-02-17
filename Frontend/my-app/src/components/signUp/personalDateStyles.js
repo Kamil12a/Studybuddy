@@ -2,8 +2,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
-    position:"absolute",
-    zIndex:"10",
+    position: "absolute",
+    zIndex: "10",
     display: "flex",
     flexDirection: "column",
     [theme.breakpoints.down(780)]: {
@@ -11,11 +11,11 @@ export const useStyles = makeStyles((theme) => ({
       backgroundColor: "white",
     },
   },
- 
+
 
   paper: {
     [theme.breakpoints.up(780)]: {
-      background:"white",
+      background: "white",
       position: "absolute",
       top: 0,
       right: 0,
@@ -44,7 +44,22 @@ export const useStyles = makeStyles((theme) => ({
   avatar: {
     margin: theme.spacing(1),
   },
-
+  oneLaneToFillPassword: {
+    display: "flex",
+    alignItems: "center",
+    [theme.breakpoints.down(780)]: {
+      marginLeft: "20px",
+    },
+  },
+  password: {
+    marginLeft: "20px",
+    marginRight: "55px",
+    [theme.breakpoints.down(780)]: {
+      marginLeft: "0",
+      fontSize: "1.3em",
+      marginRight: "82px"
+    },
+  },
   input: {
     display: "none",
   },
