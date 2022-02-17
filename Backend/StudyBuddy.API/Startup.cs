@@ -59,6 +59,13 @@ namespace StudyBuddy.API
                 c.ResolveConflictingActions (apiDescriptions => apiDescriptions.First ());
             });
 
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            }));
+
             services.AddMemoryCache(); //
             services.AddControllers() //
                 .AddControllersAsServices(); //
@@ -85,6 +92,8 @@ namespace StudyBuddy.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("MyPolicy");
 
             app.UseAuthorization();
 
