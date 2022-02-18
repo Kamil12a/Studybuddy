@@ -1,9 +1,8 @@
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
 import { useNavigate } from 'react-router-dom';
-import hamburger from "../photos/hamburger.png"
+// import Hamburger from "hamburger-react";
 import React from "react"
-import MenuIcon  from "@material-ui/core/Menu";
 import { useState } from "react";
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -40,7 +39,7 @@ export const Navbar = () => {
       top: "10px",
     },
     hamburger: {
-      width:"30px"
+      position: "absolute"
     }
 
   }));
@@ -83,8 +82,7 @@ export const Navbar = () => {
             STUDDY-BUDDY!
           </Typography>
           <div onClick={openMenu} >
-          <img  className={classes.hamburger} src={require('../photos/hamburger.png')} />
-
+            {/* <Hamburger className={classes.hamburger} /> */}
           </div>
 
           <Toolbar className={classes.toolBar}>

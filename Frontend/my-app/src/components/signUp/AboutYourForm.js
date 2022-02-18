@@ -12,7 +12,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import LogoLook from "../global/LogoLook";
 import { ThemeContext } from "../../context/UserContext"
-
+import { useEffect } from "react";
 export default function AboutYouForm() {
   const navigate = useNavigate();
   const [checked, setChecked] = useState([false, false]);
@@ -20,14 +20,21 @@ export default function AboutYouForm() {
   const [experienveOfTeachingState, setExperienceOfTeachingState] = useState({})
   const classes = useStyles();
   const theme = useContext(ThemeContext)
+
+
+  useEffect(() => {
+
+  }, [])
+
+
   const submitPersonForm = (e) => {
     e.preventDefault();
-
     theme.setUserDataAccount(prevState => ({
       ...prevState,
       experienceOfTeaching: experienveOfTeachingState
     })
     )
+    
     navigate("/forum");
   };
 
@@ -136,7 +143,7 @@ export default function AboutYouForm() {
                 className={classes.submitButton}
                 variant="contained"
               >
-                Next
+                Create account
               </Button>
             </div>
           </form>

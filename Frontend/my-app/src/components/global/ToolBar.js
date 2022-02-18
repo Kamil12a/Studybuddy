@@ -1,12 +1,11 @@
 import { Toolbar, Button } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
 import { useNavigate } from 'react-router-dom';
-import { useEffect } from "react";
 export const ToolBar = () => {
   const navigate = useNavigate();
   const useStyles = makeStyles((theme) => ({
     toolBarPhone: {
-      marginTop: "150px",
+      marginTop: "100px",
       display: "flex",
       flexDirection: "column",
       height: "100vh",
@@ -31,16 +30,7 @@ export const ToolBar = () => {
     }
   }));
   const classes = useStyles();
-  useEffect(()=>{
-    window.addEventListener('resize', handleResize)
-    
-  },[])
-  const handleResize = ()=>{
-    console.log(window.innerWidth)
-    if(window.innerWidth>800){
-      navigate("/forum")
-    }
-  }
+
   const navToGroup = () => {
     navigate("/searchingGroups");
   };
