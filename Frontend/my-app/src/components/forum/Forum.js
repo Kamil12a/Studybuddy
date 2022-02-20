@@ -1,4 +1,4 @@
-import { useEffect,useContext } from "react";
+import { useEffect, useContext } from "react";
 import { useStyles } from "./ForumLook";
 import Post from "./Post";
 import { useState } from "react";
@@ -10,10 +10,11 @@ export default function Forum() {
   useEffect(() => {
     setStateOfPosts([])
   }, [])
+  const changeContext = () => {
+    console.log(theme)
+  }
   return (
     <>
-
-
       <div className={classes.containerOfPost}>
         <Post
           userName={"Patryk Kowalski"}
@@ -47,8 +48,8 @@ export default function Forum() {
           );
         })}
       </div>
-      <button onClick={(()=>{
-        console.log(theme)
+      <button onClick={(() => {
+        changeContext()
       })}>dadads</button>
     </>
   );

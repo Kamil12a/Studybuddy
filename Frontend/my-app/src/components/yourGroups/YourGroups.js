@@ -1,12 +1,11 @@
 import Groups from "../global/Groups";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import { useState,useEffect,useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import SubjectToChoose from "../global/subjectToChoose";
-import { ThemeContext } from "../../context/UserContext"
 
 const useStyles = makeStyles((theme) => ({
   containerOfGroups: {
@@ -20,12 +19,12 @@ const useStyles = makeStyles((theme) => ({
   },
   titleOfGroupsSearching: {
     marginTop: "100px",
- 
-      [theme.breakpoints.down(780)]: {
-        fontSize:"2em"
-      },
-  
-  
+    fontSize: "2em",
+    [theme.breakpoints.down(780)]: {
+      fontSize: "2em"
+    },
+
+
   },
   groupsContainer: {
     textAlign: "center",
@@ -47,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   paper: {
-    marginTop: "100px",
+    marginTop: "50px",
     padding: "40px",
     width: "50vw",
     display: "flex",
@@ -64,22 +63,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export const YourGroups = () => {
-  const theme = useContext(ThemeContext)
   const classes = useStyles();
   const [createGroupStatus, setCreateGroupStatus] = useState(true);
   const [yourGroups, setYourGroups] = useState([
-    {
-      title: "Mathematical Discrete",
-      question:
-        "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online",
-      btnText: "leave the group",
-    },
-    {
-      title: "Mathematical ",
-      question:
-        "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online",
-      btnText: "leave the group",
-    },
+    // {
+    //   title: "Mathematical Discrete",
+    //   question:
+    //     "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online",
+    //   btnText: "leave the group",
+    // },
+    // {
+    //   title: "Mathematical ",
+    //   question:
+    //     "We study math in our sophomore year and it's super cool on campus on Fridays Saturdays online",
+    //   btnText: "leave the group",
+    // },
     {
       title: "Mathematical Discrete",
       question:
@@ -87,10 +85,6 @@ export const YourGroups = () => {
       btnText: "leave the group",
     },
   ]);
-  useEffect(() => {
-    
-    console.log(theme)
-  }, [])
   const deleteGroup = (e) => {
     let allGroups = yourGroups;
     allGroups = allGroups.filter((item, index) => {
@@ -108,7 +102,7 @@ export const YourGroups = () => {
   return (
     <>
 
-      <div className={classes.submitButtonSection}>
+      {/* <div className={classes.submitButtonSection}>
         <Button
           onClick={createGroupOpenModal}
           className={classes.submitButton}
@@ -116,7 +110,7 @@ export const YourGroups = () => {
         >
           Create a new group
         </Button>
-      </div>
+      </div> */}
       {createGroupStatus && (
         <>
           <div className={classes.groupsContainer}>

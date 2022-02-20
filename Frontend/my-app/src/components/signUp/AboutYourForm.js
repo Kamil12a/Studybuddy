@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
@@ -11,55 +11,64 @@ import InputLabel from "@material-ui/core/InputLabel";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import LogoLook from "../global/LogoLook";
-import FieldTofilled from "../global/FieldTofilled";
+import { ThemeContext } from "../../context/UserContext"
+import { useEffect } from "react";
 export default function AboutYouForm() {
   const navigate = useNavigate();
   const [checked, setChecked] = useState([false, false]);
-  // const [checked1, setChecked1] = React.useState([false, false]);
   const [checked2, setChecked2] = useState([false, false]);
-  const [drench, setdrench] = useState(false);
+  const [experienveOfTeachingState, setExperienceOfTeachingState] = useState({})
   const classes = useStyles();
-  // useEffect(()=>{
-  //   console.log(checked1)
-  // },[])
+  const theme = useContext(ThemeContext)
+
+
+  useEffect(() => {
+
+  }, [])
+
 
   const submitPersonForm = (e) => {
     e.preventDefault();
+    theme.setUserDataAccount(prevState => ({
+      ...prevState,
+      experienceOfTeaching: experienveOfTeachingState
+    })
+    )
+    
     navigate("/forum");
   };
 
   const handleChangeCheckbox = (e) => {
     if (e.target.value === "1") {
       setChecked([false, true]);
+      setExperienceOfTeachingState(prevState => ({ ...prevState, experienceOfTeaching: false }))
+
     } else {
       setChecked([true, false]);
+      setExperienceOfTeachingState(prevState => ({ ...prevState, experienceOfTeaching: true }))
     }
   };
-  // const handleChangeCheckbox1 = (e) => {
-  //   if (e.target.value === "1") {
-  //     setChecked1([false, true]);
-  //   } else {
-  //     setChecked1([true, false]);
-  //   }
-  // };
+  const getAchievements = (e) => {
+    setExperienceOfTeachingState(prevState => ({ ...prevState, achievements: e.target.value }))
+  }
   const handleChangeCheckbox2 = (e) => {
     if (e.target.value === "1") {
       setChecked2([false, true]);
-      setdrench(false);
+      setExperienceOfTeachingState(prevState => ({ ...prevState, failSubjecy: false }))
     } else {
       setChecked2([true, false]);
-      setdrench(true);
+      setExperienceOfTeachingState(prevState => ({ ...prevState, failSubjecy: true }))
     }
   };
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-    
-      <LogoLook/>
+
+      <LogoLook />
       <Grid item component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <form onSubmit={submitPersonForm} className={classes.rightSide}>
-            <Typography className={classes.title}  component="h5" variant="h3">
+            <Typography className={classes.title} component="h5" variant="h3">
               Let's get to know each other better!
             </Typography>
 
@@ -107,14 +116,7 @@ export default function AboutYouForm() {
                 />
               </div>
             </div>
-            {drench && (
-              <>
-                <FieldTofilled
-                  question={"What subject"}
-                  fill={"What subject"}
-                />
-              </>
-            )}
+
             <div className={classes.oneLaneToFill}>
               <div className={classes.selectYourPosition}>
                 <InputLabel>
@@ -122,6 +124,7 @@ export default function AboutYouForm() {
                 </InputLabel>
 
                 <TextField
+                  onChange={getAchievements}
                   style={{ marginLeft: "20px", width: "400px" }}
                   variant="outlined"
                   margin="normal"
@@ -140,7 +143,7 @@ export default function AboutYouForm() {
                 className={classes.submitButton}
                 variant="contained"
               >
-                Next
+                Create account
               </Button>
             </div>
           </form>

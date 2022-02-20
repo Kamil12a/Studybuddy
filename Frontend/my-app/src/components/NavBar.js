@@ -1,7 +1,7 @@
 import { AppBar, Toolbar, Typography, Button } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
 import { useNavigate } from 'react-router-dom';
-import Hamburger from "hamburger-react";
+// import Hamburger from "hamburger-react";
 import React from "react"
 import { useState } from "react";
 export const Navbar = () => {
@@ -82,7 +82,7 @@ export const Navbar = () => {
             STUDDY-BUDDY!
           </Typography>
           <div onClick={openMenu} >
-            <Hamburger className={classes.hamburger} />
+            {/* <Hamburger className={classes.hamburger} /> */}
           </div>
 
           <Toolbar className={classes.toolBar}>
