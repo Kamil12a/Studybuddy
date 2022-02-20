@@ -30,6 +30,7 @@ namespace StudyBuddy.Application.Services
         public int AddUserPropertyVm(UserPropertyVm userPropertyVm)
         {
             var userProperty = _mapper.Map<UserProperty>(userPropertyVm);
+            userProperty.IsActive = true;
             var id = _userRepo.AddUserProperty(userProperty);
             return id;
         }

@@ -51,7 +51,15 @@ namespace StudyBuddy.Infrastructure.Repositories
 
         public void DeleteUserProperty(int userPropertyId)
         {
-            DeleteUserPropertyAbsolute(userPropertyId);
+            var result = _context.UserProperties.SingleOrDefault(i => i.Id == userPropertyId && i.IsActive);
+
+            if (result != null)
+            {
+                var userProperty = result;
+                userProperty.IsActive = false;
+                _context.Entry(result).CurrentValues.SetValues(userProperty);
+                _context.SaveChanges();
+            }
         }
 
         public void DeleteUserPropertyAbsolute(int userPropertyId)
