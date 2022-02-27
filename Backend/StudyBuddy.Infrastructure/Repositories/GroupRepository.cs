@@ -89,6 +89,11 @@ namespace StudyBuddy.Infrastructure.Repositories
             return _context.GroupProperties.FirstOrDefault(i => i.Id == groupPropertyId);
         }
 
+        public bool GroupIsActive(int groupId)
+        {
+            return (_context.Groups.SingleOrDefault(i => i.Id == groupId && i.IsActive)) != null;
+        }
+
         public void UpdateGroup(Group group)
         {
             _context.Attach(group);

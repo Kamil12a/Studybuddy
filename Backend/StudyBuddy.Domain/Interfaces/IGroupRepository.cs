@@ -18,5 +18,6 @@ namespace StudyBuddy.Domain.Interfaces
         void DeleteGroupAbsolute(int groupId);
         void DeleteGroupProperty(int groupPropertyId);
         void DeleteGroupPropertyAbsolute(int groupPropertyId);         
+        bool GroupIsActive(int groupId);  
     }
 }
