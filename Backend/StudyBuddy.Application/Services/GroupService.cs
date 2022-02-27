@@ -129,6 +129,7 @@ namespace StudyBuddy.Application.Services
         {
             var group = _groupRepo.GetGroupById(groupId);
             group.JoinedUsers = _groupRepo.GetGroupJoinedUsersByGroupId(groupId);
+            group.Tutor = _userRepo.GetUserById(group.TutorId);
 
             var groupVm = _mapper.Map<GroupVm>(group);
             return groupVm;
@@ -141,10 +142,16 @@ namespace StudyBuddy.Application.Services
             return groupVm;
         }
 
-        public void UpdateGroup(NewGroupVm groupVm)
+        public void UpdateGroup(EditGroupVm groupVm)
         {
+            // if (!_groupRepo.GroupIsActive(groupVm.Id)) 
+            //     throw new KeyNotFoundException();
+            
             var group = _mapper.Map<Group>(groupVm);
+            group.GroupOwner = _userRepo.GetUserById(groupVm.GroupOwnerId);
+            group.Tutor = _userRepo.GetUserById(groupVm.TutorId);
             group.IsActive = true;
+
             _groupRepo.UpdateGroup(group);
         }
 

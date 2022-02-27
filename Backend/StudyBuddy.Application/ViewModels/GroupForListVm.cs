@@ -7,7 +7,7 @@ namespace StudyBuddy.Application.ViewModels
     {
         public int Id { get; set; }
         public int GroupOwnerId { get; set; }
-        public string ShortDescription { get; set; } = "ShortDescription - to be implemented";
+        public string ShortDescription { get; set; }
 
         public void Mapping(Profile profile)
         {

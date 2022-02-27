@@ -57,6 +57,11 @@ namespace StudyBuddy.Infrastructure
                 .HasMany(u => u.Posts)
                 .WithOne(p => p.User)
                 .HasForeignKey(e => e.OwnerId);
+
+            builder.Entity<User>()
+                .HasMany(u => u.TutoredGroups)
+                .WithOne(p => p.Tutor)
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }
