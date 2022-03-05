@@ -19,13 +19,16 @@ namespace StudyBuddy.Application.ViewModels
         public int JoinedUsersCount { get => JoinedUsers.Count; }
         public List<UserVm> JoinedUsers { get; set; }
         public int GroupOwnerId { get; set; }
+        public int SubjectId { get; set; }
+        public string SubjectName { get; set; }
         
         public void Mapping(Profile profile)
         {
             profile.CreateMap<GroupVm, StudyBuddy.Domain.Models.Group>()
                 .ReverseMap()
                 .ForMember(opt => opt.TutorName, conf => conf.MapFrom(x => x.Tutor.Fullname))
-                .ForMember(opt => opt.TutorId, conf => conf.MapFrom(x => x.Tutor.Id));
+                .ForMember(opt => opt.TutorId, conf => conf.MapFrom(x => x.Tutor.Id))
+                .ForMember(opt => opt.SubjectName, conf => conf.MapFrom(x => x.Subject.Name));
         }
     }
 }

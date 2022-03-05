@@ -14,6 +14,7 @@ namespace StudyBuddy.Application.ViewModels
         public string Description { get; set; }
         public DateTime MeetingDate { get; set; }
         public int GroupOwnerId { get; set; }
+        public int SubjectId { get; set; }
     
         public void Mapping(Profile profile)
         {

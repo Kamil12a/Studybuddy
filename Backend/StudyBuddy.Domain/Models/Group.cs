@@ -12,8 +12,10 @@ namespace StudyBuddy.Domain.Models
         public string Description { get; set; }
         public DateTime MeetingDate { get; set; }
 
+        public int SubjectId { get; set; }
         public int TutorId { get; set; }
         public int GroupOwnerId { get; set; }
+        public virtual Subject Subject { get; set; }
         public virtual User Tutor { get; set; }
         public virtual User GroupOwner { get; set; }
         public virtual ICollection<User> JoinedUsers { get; set; }

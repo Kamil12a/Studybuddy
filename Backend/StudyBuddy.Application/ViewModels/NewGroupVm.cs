@@ -10,6 +10,7 @@ namespace StudyBuddy.Application.ViewModels
         public int Id { get; set; }
         public int TutorId { get; set; }
         public int GroupOwnerId { get; set; }
+        public int SubjectId { get; set; }
 
         public void Mapping(Profile profile)
         {
