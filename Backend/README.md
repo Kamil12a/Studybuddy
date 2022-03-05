@@ -1,6 +1,10 @@
 dotnet tool install --global dotnet-ef
 
 dotnet ef migrations add InitialCreate --project ..\StudyBuddy.Infrastructure\
+
+dotnet ef database update 5_MoveSubjectFromGroupPropToGroup
+dotnet ef migrations remove --project ../StudyBuddy.Infrastructure 
+--
 dotnet ef migrations add AddPosts --project ../StudyBuddy.Infrastructure 
 dotnet ef database update
 
