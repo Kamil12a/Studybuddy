@@ -7,11 +7,11 @@ namespace StudyBuddy.Application.ViewModels
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int GroupPropertyId { get; set; }
 
         public void Mapping(MappingProfile profile)
         {
-            profile.CreateMap<Subject, SubjectVm>();
+            profile.CreateMap<Subject, SubjectVm>()
+                .ReverseMap();
         }
     }
 }
