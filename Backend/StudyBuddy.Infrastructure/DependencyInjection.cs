@@ -11,6 +11,7 @@ namespace StudyBuddy.Infrastructure
             services.AddTransient<IForumRepository, ForumRepository>();
             services.AddTransient<IGroupRepository, GroupRepository>();
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<ISubjectRepository, SubjectRepository>();
 
             return services;
         }
