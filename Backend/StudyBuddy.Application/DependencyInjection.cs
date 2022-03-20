@@ -12,6 +12,7 @@ namespace StudyBuddy.Application
             services.AddTransient<IForumService, ForumService>();
             services.AddTransient<IGroupService, GroupService>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ISubjectService, SubjectService>();
 
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             return services;
