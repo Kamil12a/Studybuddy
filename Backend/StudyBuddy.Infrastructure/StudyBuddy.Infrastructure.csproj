@@ -9,5 +9,6 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\StudyBuddy.Domain\StudyBuddy.Domain.csproj" />
+	  <ProjectReference Include="..\StudyBuddy.Application\StudyBuddy.Application.csproj" />
 	</ItemGroup>
 </Project>

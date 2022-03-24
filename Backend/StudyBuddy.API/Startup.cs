@@ -1,14 +1,18 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using StudyBuddy.API.Service;
 using StudyBuddy.Application;
+using StudyBuddy.Application.Interfaces;
 using StudyBuddy.Infrastructure;
 using System;
 using System.Collections.Generic;
@@ -72,6 +76,35 @@ namespace StudyBuddy.API
             services.AddHttpClient(); //
             services.AddMvc()
                 .AddXmlDataContractSerializerFormatters(); //
+
+            //IdentityServer by Duszyński
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy => policy.AllowAnyOrigin());
+            });
+
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>(); //One accessor for all users, sessions and requests
+
+            services.AddScoped(typeof(ICurrentUserService), typeof(CurrentUserService));
+
+            services.AddAuthentication("Bearer")
+                .AddJwtBearer("Bearer", options => 
+                {
+                    options.Authority = "https://localhost:5005";
+                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                    {
+                        ValidateAudience = false //don't validate tokens from other APIs
+                    };
+                });
+            
+            services.AddAuthorization(options =>
+            {
+               options.AddPolicy("ApiScope", policy =>
+               {
+                   policy.RequireAuthenticatedUser();
+                   policy.RequireClaim("scope", "api1");
+               });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -95,11 +128,12 @@ namespace StudyBuddy.API
 
             app.UseCors("MyPolicy");
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers().RequireAuthorization("ApiScope");
             });
 
             app.UseEndpoints(endpoints =>

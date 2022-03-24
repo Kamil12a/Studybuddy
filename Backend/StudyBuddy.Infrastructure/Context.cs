@@ -1,10 +1,15 @@
+using System.Threading;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using StudyBuddy.Application.Interfaces;
 using StudyBuddy.Domain.Models;
 
 namespace StudyBuddy.Infrastructure
 {
     public class Context : DbContext
     {
+        private readonly ICurrentUserService _userService;
+
         public DbSet<Group> Groups { get; set; }
         public DbSet<GroupProperty> GroupProperties { get; set; }
         public DbSet<Post> Posts { get; set; }
@@ -13,8 +18,9 @@ namespace StudyBuddy.Infrastructure
         public DbSet<User> Users { get; set; }
         public DbSet<UserProperty> UserProperties { get; set; }
 
-        public Context(DbContextOptions<Context> options) : base(options)
+        public Context(DbContextOptions<Context> options, ICurrentUserService userService) : base(options)
         {
+            _userService = userService;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -62,5 +68,17 @@ namespace StudyBuddy.Infrastructure
                 .WithOne(p => p.Tutor)
                 .OnDelete(DeleteBehavior.NoAction);
         }
+
+        // public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
+        // {
+        //     foreach(var entry in ChangeTracker.Entries<AuditableEntity>)
+        //     {
+        //         switch(entry.State)
+        //         {
+        //             case EntityState.Added:
+        //                 entry.Entity.CreatedBy = _userService.Email;
+        //         }
+        //     }
+        // }
     }
 }
