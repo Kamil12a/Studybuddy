@@ -12,7 +12,7 @@ namespace StudyBuddy.Domain.Models
         public string Description { get; set; }
         public DateTime MeetingDate { get; set; }
 
-        public int SubjectId { get; set; }
+        public int SubjectId { get; set; } //to make prop unrequired change int to int?
         public int TutorId { get; set; }
         public int GroupOwnerId { get; set; }
         public virtual Subject Subject { get; set; }
