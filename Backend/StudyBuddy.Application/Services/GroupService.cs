@@ -14,13 +14,15 @@ namespace StudyBuddy.Application.Services
     {
         private readonly IGroupRepository _groupRepo;
         private readonly IUserRepository _userRepo;
+        private readonly ISubjectRepository _subjectRepo;
         private readonly IMapper _mapper;
 
-        public GroupService(IGroupRepository groupRepo, IUserRepository userRepo, IMapper mapper)
+        public GroupService(IGroupRepository groupRepo, IUserRepository userRepo, ISubjectRepository subjectRepo, IMapper mapper)
         {
             _groupRepo = groupRepo;
             _userRepo = userRepo;
             _mapper = mapper;
+            _subjectRepo = subjectRepo;
         }
 
         public int AddGroup(NewGroupVm groupVm)
@@ -130,6 +132,7 @@ namespace StudyBuddy.Application.Services
             var group = _groupRepo.GetGroupById(groupId);
             group.JoinedUsers = _groupRepo.GetGroupJoinedUsersByGroupId(groupId);
             group.Tutor = _userRepo.GetUserById(group.TutorId);
+            group.Subject = _subjectRepo.GetSubjectById(group.SubjectId);
 
             var groupVm = _mapper.Map<GroupVm>(group);
             return groupVm;
