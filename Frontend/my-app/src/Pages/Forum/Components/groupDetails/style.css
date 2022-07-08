@@ -1,0 +1,35 @@
+.group-details {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.group-details-container-tutor {
+  border-radius: 20px;
+  background-color: #F8B195;
+  padding-left: 20px;
+  height: 50vh;
+  width: 450px;
+}
+.group-details-container-students {
+  border-radius: 20px;
+  background-color: #F67280;
+  padding-left: 20px;
+  height: 50vh;
+  width: 450px;
+}
+.group-details-container-aboutGroup {
+  border-radius: 20px;
+  background-color: #C06C84;
+  padding-left: 20px;
+  height: 50vh;
+  width: 450px;
+}
+.group-details-container-title {
+  text-align: center;
+}
+.group-details-joinToGroupBtn{
+    position: absolute;
+    top:80%
+}
