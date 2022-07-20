@@ -1,6 +1,7 @@
 import "./styles.css";
 import Button from "react-bootstrap/Button";
 import { createGroup } from "./fetchData/createGroup";
+import Navigation from "../../Navigation";
 function ModalCreateGroup() {
 
 
@@ -9,6 +10,7 @@ function ModalCreateGroup() {
   };
   return (
     <>
+     <Navigation />
       <div className="modal-container">
         <div className="modal-create-group">
           <h3 >Create Group</h3>

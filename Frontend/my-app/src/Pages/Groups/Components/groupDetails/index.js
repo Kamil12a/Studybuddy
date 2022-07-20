@@ -1,9 +1,11 @@
 import Button from "react-bootstrap/Button";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Navigation from "../../../../Navigation";
 function GroupDetails() {
   return (
     <>
+      <Navigation />
       <div className="group-details">
         <div className="group-details-container-tutor">
           <h3 className="group-details-container-title">Tutor Name</h3>
@@ -19,9 +21,10 @@ function GroupDetails() {
           <h3 className="group-details-container-title">About Group</h3>
           <h4>Description</h4>
         </div>
-        <Button className="group-details-joinToGroupBtn" variant="secondary">Join to Group</Button>
+        <Button className="group-details-joinToGroupBtn" variant="secondary">
+          Join to Group
+        </Button>
       </div>
-      
     </>
   );
 }

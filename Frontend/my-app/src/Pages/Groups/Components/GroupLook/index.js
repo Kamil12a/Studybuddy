@@ -2,7 +2,6 @@ import "./style.css";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
-
 function GroupLook({ description, id }) {
   let navigate = useNavigate();
 
