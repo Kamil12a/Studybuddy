@@ -43,10 +43,9 @@ namespace StudyBuddy.Infrastructure
                 .WithOne(gp => gp.Group)
                 .HasForeignKey<GroupProperty>(gp => gp.GroupId);
 
-            builder.Entity<GroupProperty>()
-                .HasOne(gp => gp.Subject)
-                .WithOne(s => s.GroupProperty)
-                .HasForeignKey<Subject>(s => s.GroupPropertyId);
+            builder.Entity<Subject>()
+                .HasMany(s => s.AssignedGroups)
+                .WithOne(g => g.Subject);
 
             builder.Entity<Subject>()
                 .HasOne(s => s.Topic)
@@ -57,6 +56,11 @@ namespace StudyBuddy.Infrastructure
                 .HasMany(u => u.Posts)
                 .WithOne(p => p.User)
                 .HasForeignKey(e => e.OwnerId);
+
+            builder.Entity<User>()
+                .HasMany(u => u.TutoredGroups)
+                .WithOne(p => p.Tutor)
+                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

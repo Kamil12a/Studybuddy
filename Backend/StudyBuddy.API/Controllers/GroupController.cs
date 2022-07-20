@@ -116,7 +116,7 @@ namespace StudyBuddy.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditGroup([FromBody] NewGroupVm group)
+        public IActionResult EditGroup([FromBody] EditGroupVm group)
         {
             try
             {

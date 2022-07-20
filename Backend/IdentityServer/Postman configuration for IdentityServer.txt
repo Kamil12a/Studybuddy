@@ -1,0 +1,17 @@
+***Postman configuration for IdentityServer***
+
+Authorization Category in Postman
+
+Authorization - OAuth2
+Add authori data to - Request Header
+Token Name - Token
+Grant Type - Password Credentials
+Access Token URL - https://localhost:5005/connect/token
+Client ID - client
+Client Secret - secret
+Username - alice
+Password - Pass123$
+Scope - api1 user
+
+*using*
+Get New Access Token -> Use Token

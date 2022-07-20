@@ -41,11 +41,26 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int?>("GroupOwnerId")
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("GroupOwnerId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
+
+                    b.Property<DateTime>("MeetingDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Place")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ShortDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SubjectId")
+                        .HasColumnType("int");
 
                     b.Property<int>("TutorId")
                         .HasColumnType("int");
@@ -53,6 +68,10 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("GroupOwnerId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.HasIndex("TutorId");
 
                     b.ToTable("Groups");
                 });
@@ -117,16 +136,10 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("GroupPropertyId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("GroupPropertyId")
-                        .IsUnique();
 
                     b.ToTable("Subjects");
                 });
@@ -222,9 +235,27 @@ namespace StudyBuddy.Infrastructure.Migrations
                 {
                     b.HasOne("StudyBuddy.Domain.Models.User", "GroupOwner")
                         .WithMany("CreatedGroups")
-                        .HasForeignKey("GroupOwnerId");
+                        .HasForeignKey("GroupOwnerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("StudyBuddy.Domain.Models.Subject", "Subject")
+                        .WithMany("AssignedGroups")
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("StudyBuddy.Domain.Models.User", "Tutor")
+                        .WithMany("TutoredGroups")
+                        .HasForeignKey("TutorId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
 
                     b.Navigation("GroupOwner");
+
+                    b.Navigation("Subject");
+
+                    b.Navigation("Tutor");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.GroupProperty", b =>
@@ -247,17 +278,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("StudyBuddy.Domain.Models.Subject", b =>
-                {
-                    b.HasOne("StudyBuddy.Domain.Models.GroupProperty", "GroupProperty")
-                        .WithOne("Subject")
-                        .HasForeignKey("StudyBuddy.Domain.Models.Subject", "GroupPropertyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("GroupProperty");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.Topic", b =>
@@ -287,13 +307,10 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.Navigation("GroupProperty");
                 });
 
-            modelBuilder.Entity("StudyBuddy.Domain.Models.GroupProperty", b =>
-                {
-                    b.Navigation("Subject");
-                });
-
             modelBuilder.Entity("StudyBuddy.Domain.Models.Subject", b =>
                 {
+                    b.Navigation("AssignedGroups");
+
                     b.Navigation("Topic");
                 });
 
@@ -302,6 +319,8 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.Navigation("CreatedGroups");
 
                     b.Navigation("Posts");
+
+                    b.Navigation("TutoredGroups");
 
                     b.Navigation("UserProperty");
                 });

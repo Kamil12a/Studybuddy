@@ -59,11 +59,14 @@ namespace StudyBuddy.API
                 c.ResolveConflictingActions (apiDescriptions => apiDescriptions.First ());
             });
 
+            services.AddHealthChecks();
+
             services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
             {
                 builder.AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader();
+                //builder.WithOrigins("https://localhost:5001, https://appstudybuddy.com");
             }));
 
             services.AddMemoryCache(); //
@@ -88,6 +91,8 @@ namespace StudyBuddy.API
                     c.RoutePrefix = string.Empty;
                 });
             }
+
+            app.UseHealthChecks("/hc");
 
             app.UseHttpsRedirection();
 
