@@ -19,7 +19,7 @@ function GroupDetails() {
           <h3 className="group-details-container-title">About Group</h3>
           <h4>Description</h4>
         </div>
-        <Button className="group-details-joinToGroupBtn" variant="secondary">Create Group</Button>
+        <Button className="group-details-joinToGroupBtn" variant="secondary">Join to Group</Button>
       </div>
       
     </>

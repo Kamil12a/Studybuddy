@@ -9,6 +9,7 @@ function GroupLook({ description, id }) {
   const navigateToGroupDetails = (e) => {
     navigate("/group/details/" + e.target.id);
   };
+
   return (
     <>
       <div className="group-look">

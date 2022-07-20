@@ -6,8 +6,9 @@ export async function createGroup() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      tutorId: 14,
-      groupOwnerId: 14,
+      tutorId: 15,
+      groupOwnerId: 15,
+      subjectId: 15,
     }),
   })
     .then((res) => res.json())
@@ -20,10 +21,10 @@ export async function createGroup() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      publishDate: "2022-07-08T08:33:35.765Z",
-      expireDate: "2022-07-08T08:33:35.765Z",
+      publishDate: "2022-07-08T12:59:20.527Z",
+      expireDate: "2022-07-08T12:59:20.527Z",
       description: "string",
       groupId: groupId,
     }),
-  })
+  });
 }
