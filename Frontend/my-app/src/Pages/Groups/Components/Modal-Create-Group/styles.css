@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 10px solid #89cff0;
 }
 .modal-create-group-label {
   font-weight: bolder;
@@ -25,10 +26,8 @@
 .modal-create-group-btn {
   margin-top: 300px;
 }
-@media (max-width: 720px) { 
-  .modal-create-group-btn{
+@media (max-width: 720px) {
+  .modal-create-group-btn {
     display: none;
   }
- }
-
-
+}
