@@ -27,14 +27,6 @@ namespace StudyBuddy.Application.Services
             return id; 
         }
 
-        public int AddUserPropertyVm(UserPropertyVm userPropertyVm)
-        {
-            var userProperty = _mapper.Map<UserProperty>(userPropertyVm);
-            userProperty.IsActive = true;
-            var id = _userRepo.AddUserProperty(userProperty);
-            return id;
-        }
-
         public void DeleteUser(int userId)
         {
             _userRepo.DeleteUser(userId);
@@ -43,16 +35,6 @@ namespace StudyBuddy.Application.Services
         public void DeleteUserAbsolute(int userId)
         {
             _userRepo.DeleteUserAbsolute(userId);
-        }
-
-        public void DeleteUserProperty(int userPropertyId)
-        {
-            _userRepo.DeleteUserProperty(userPropertyId);
-        }
-
-        public void DeleteUserPropertyAbsolute(int userPropertyId)
-        {
-            _userRepo.DeleteUserPropertyAbsolute(userPropertyId);
         }
 
         public ListUserForListVm GetAllUsers()
@@ -109,23 +91,10 @@ namespace StudyBuddy.Application.Services
             return userVm;
         }
 
-        public UserPropertyVm GetUserPropertyVm(int userPropertyId)
-        {
-            var userProperty = _userRepo.GetUserProperty(userPropertyId);
-            var userPropertyVm = _mapper.Map<UserPropertyVm>(userProperty);
-            return userPropertyVm;
-        }
-
         public void UpdateUser(NewUserVm userVm)
         {
             var user = _mapper.Map<User>(userVm);
             _userRepo.UpdateUser(user);
-        }
-
-        public void UpdateUserProperty(UserPropertyVm userPropertyVm)
-        {
-            var userProperty = _mapper.Map<UserProperty>(userPropertyVm);
-            _userRepo.UpdateUserProperty(userProperty);
         }
     }
 }

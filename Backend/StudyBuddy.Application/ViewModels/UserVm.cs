@@ -11,6 +11,8 @@ namespace StudyBuddy.Application.ViewModels
         public string Surname { get; set; }
         public string Course { get; set; }
         public string Fullname { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
 
         public void Mapping(Profile profile)
         {

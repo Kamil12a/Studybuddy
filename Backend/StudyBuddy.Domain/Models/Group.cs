@@ -11,6 +11,8 @@ namespace StudyBuddy.Domain.Models
         public string ShortDescription { get; set; }
         public string Description { get; set; }
         public DateTime MeetingDate { get; set; }
+        public DateTime PublishDate { get; set; }
+        public DateTime ExpireDate { get; set; }
 
         public int SubjectId { get; set; } //to make prop unrequired change int to int?
         public int TutorId { get; set; }
@@ -19,6 +21,5 @@ namespace StudyBuddy.Domain.Models
         public virtual User Tutor { get; set; }
         public virtual User GroupOwner { get; set; }
         public virtual ICollection<User> JoinedUsers { get; set; }
-        public virtual GroupProperty GroupProperty { get; set; }
     }
 }

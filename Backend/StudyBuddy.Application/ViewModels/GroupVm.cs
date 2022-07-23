@@ -16,6 +16,8 @@ namespace StudyBuddy.Application.ViewModels
         public string ShortDescription { get; set; }
         public string Description { get; set; }
         public DateTime MeetingDate { get; set; }
+        public DateTime PublishDate { get; set; }
+        public DateTime ExpireDate { get; set; }
         public int JoinedUsersCount { get => JoinedUsers.Count; }
         public List<UserVm> JoinedUsers { get; set; }
         public int GroupOwnerId { get; set; }

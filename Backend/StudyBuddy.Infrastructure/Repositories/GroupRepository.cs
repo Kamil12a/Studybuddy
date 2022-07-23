@@ -22,13 +22,6 @@ namespace StudyBuddy.Infrastructure.Repositories
             return group.Id;
         }
 
-        public int AddGroupProperty(GroupProperty groupProperty)
-        {
-            _context.GroupProperties.Add(groupProperty);
-            _context.SaveChanges();
-            return groupProperty.Id;
-        }
-
         public void DeleteGroup(int groupId)
         {
             var result = _context.Groups.SingleOrDefault(i => i.Id == groupId && i.IsActive);
@@ -49,26 +42,6 @@ namespace StudyBuddy.Infrastructure.Repositories
             _context.SaveChanges();
         }
 
-        public void DeleteGroupProperty(int groupPropertyId)
-        {
-            var result = _context.GroupProperties.SingleOrDefault(i => i.Id == groupPropertyId && i.IsActive);
-
-            if (result != null)
-            {
-                var item = result;
-                item.IsActive = false;
-                _context.Entry(result).CurrentValues.SetValues(item);
-                _context.SaveChanges();
-            }
-        }
-
-        public void DeleteGroupPropertyAbsolute(int groupPropertyId)
-        {
-            var groupProperty = _context.GroupProperties.Find(groupPropertyId);
-            _context.GroupProperties.Remove(groupProperty);
-            _context.SaveChanges();
-        }
-
         public IQueryable<Group> GetAllActiveGroups()
         {
             return _context.Groups.Where(i => i.IsActive);
@@ -84,11 +57,6 @@ namespace StudyBuddy.Infrastructure.Repositories
             return _context.Groups.Where(i => i.Id == groupId).Select(elem => elem.JoinedUsers).FirstOrDefault();
         }
 
-        public GroupProperty GetGroupProperty(int groupPropertyId)
-        {
-            return _context.GroupProperties.FirstOrDefault(i => i.Id == groupPropertyId);
-        }
-
         public bool GroupIsActive(int groupId)
         {
             return (_context.Groups.SingleOrDefault(i => i.Id == groupId && i.IsActive)) != null;
@@ -101,13 +69,6 @@ namespace StudyBuddy.Infrastructure.Repositories
             _context.Entry(group).Property("GroupOwnerId").IsModified = true;
             _context.Entry(group).State = EntityState.Modified;
 
-            _context.SaveChanges();
-        }
-
-        public void UpdateGroupProperty(GroupProperty groupProperty)
-        {
-            _context.Attach(groupProperty);
-            _context.Entry(groupProperty).State = EntityState.Modified;
             _context.SaveChanges();
         }
     }

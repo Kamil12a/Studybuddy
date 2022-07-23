@@ -40,13 +40,6 @@ namespace StudyBuddy.Application.Services
             return id;
         }
 
-        public int AddGroupPropertyVm(GroupPropertyVm groupPropertyVm)
-        {
-            var groupProperty = _mapper.Map<GroupProperty>(groupPropertyVm);
-            var id = _groupRepo.AddGroupProperty(groupProperty);
-            return id;
-        }
-
         public int AddUserToGroup(int groupId, int userId)
         {
             var group = _groupRepo.GetGroupById(groupId);
@@ -68,16 +61,6 @@ namespace StudyBuddy.Application.Services
         public void DeleteGroupAbsolute(int groupId)
         {
             _groupRepo.DeleteGroupAbsolute(groupId);
-        }
-
-        public void DeleteGroupProperty(int groupPropertyId)
-        {
-            _groupRepo.DeleteGroupProperty(groupPropertyId);
-        }
-
-        public void DeleteGroupPropertyAbsolute(int groupPropertyId)
-        {
-            _groupRepo.DeleteGroupPropertyAbsolute(groupPropertyId);
         }
 
         public ListGroupForListVm GetAllGroups()
@@ -138,13 +121,6 @@ namespace StudyBuddy.Application.Services
             return groupVm;
         }
 
-        public GroupPropertyVm GetGroupPropertyVm(int groupPropertyId)
-        {
-            var groupProperty = _groupRepo.GetGroupProperty(groupPropertyId);
-            var groupVm = _mapper.Map<GroupPropertyVm>(groupProperty);
-            return groupVm;
-        }
-
         public void UpdateGroup(EditGroupVm groupVm)
         {
             // if (!_groupRepo.GroupIsActive(groupVm.Id)) 
@@ -156,12 +132,6 @@ namespace StudyBuddy.Application.Services
             group.IsActive = true;
 
             _groupRepo.UpdateGroup(group);
-        }
-
-        public void UpdateGroupProperty(GroupPropertyVm groupPropertyVm)
-        {
-            var groupProperty = _mapper.Map<GroupProperty>(groupPropertyVm);
-            _groupRepo.UpdateGroupProperty(groupProperty);
         }
     }
 }
