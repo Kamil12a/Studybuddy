@@ -5,19 +5,27 @@ import CreateAccount from "./Pages/CreateAccount";
 import ModalCreateGroup from "./Pages/Groups/Components/Modal-Create-Group/index.js";
 import LogIn from "./Pages/logInSection";
 import Forum from "./Pages/Forum";
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<LogIn />}></Route>
-        <Route path="/forum" element={<Forum />}></Route>
+import { useState } from "react";
+import { ThemeContext } from "./Context/UserContext"
 
-        <Route path="/createAccount" element={<CreateAccount />}></Route>
-        <Route path="/groups" element={<Group />}></Route>
-        <Route path="/group/createGroup" element={<ModalCreateGroup />}></Route>
-        <Route path="/group/details/:id" element={<GroupDetails />}></Route>
-      </Routes>
-    </Router>
+function App() {
+  const [userDataAccount, setUserDataAccount] = useState({username:""})
+  return (
+    <ThemeContext.Provider value={{ userDataAccount, setUserDataAccount }}>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<LogIn />}></Route>
+          <Route path="/forum" element={<Forum />}></Route>
+          <Route path="/createAccount" element={<CreateAccount />}></Route>
+          <Route path="/groups" element={<Group />}></Route>
+          <Route
+            path="/group/createGroup"
+            element={<ModalCreateGroup />}
+          ></Route>
+          <Route path="/group/details/:id" element={<GroupDetails />}></Route>
+        </Routes>
+      </Router>
+    </ThemeContext.Provider>
   );
 }
 

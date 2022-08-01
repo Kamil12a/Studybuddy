@@ -1,11 +1,17 @@
 import "./styles.css";
+import { useEffect, useContext } from "react";
 import Button from "react-bootstrap/Button";
 import { createGroup } from "./fetchData/createGroup";
 import Navigation from "../../../../Navigation";
+import { ThemeContext } from "../../../../Context/UserContext";
 function ModalCreateGroup() {
   const createGroupHandle = () => {
     createGroup();
   };
+  const theme = useContext(ThemeContext);
+  useEffect(()=>{
+    console.log(theme)
+  },[])
   return (
     <>
       <Navigation />
