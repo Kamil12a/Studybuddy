@@ -11,7 +11,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<LogIn />}></Route>
         <Route path="/forum" element={<Forum />}></Route>
-
         <Route path="/createAccount" element={<CreateAccount />}></Route>
         <Route path="/groups" element={<Group />}></Route>
         <Route path="/group/createGroup" element={<ModalCreateGroup />}></Route>

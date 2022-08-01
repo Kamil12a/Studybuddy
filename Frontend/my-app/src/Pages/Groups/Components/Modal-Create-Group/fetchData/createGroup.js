@@ -6,25 +6,9 @@ export async function createGroup() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      tutorId: 15,
-      groupOwnerId: 15,
-      subjectId: 15,
+      tutorId: 1,
+      groupOwnerId: 1,
+      subjectId: 1,
     }),
-  })
-    .then((res) => res.json())
-    .then((id) => {
-      groupId = id;
-    });
-  await fetch("https://localhost:5001/Group/AddGroupProperty ", {
-    method: "POST", // or 'PUT'
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      publishDate: "2022-07-08T12:59:20.527Z",
-      expireDate: "2022-07-08T12:59:20.527Z",
-      description: "string",
-      groupId: groupId,
-    }),
-  });
+  }).then((res) => res.json());
 }
