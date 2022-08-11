@@ -39,13 +39,6 @@ namespace StudyBuddy.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddGroupProperty([FromBody] GroupPropertyVm groupProperty)
-        {
-            var id = _groupService.AddGroupPropertyVm(groupProperty);
-            return new JsonResult(id);
-        }
-
-        [HttpPost]
         public IActionResult AddUserToGroup(int groupId, int userId)
         {
             var success = _groupService.AddUserToGroup(groupId, userId);
@@ -58,20 +51,6 @@ namespace StudyBuddy.API.Controllers
             try
             {
                 _groupService.DeleteGroup(groupId);
-            }
-            catch
-            {
-                return NotFound();
-            }
-            return Ok();
-        }
-
-        [HttpDelete]
-        public IActionResult DeleteGroupProperty(int groupPropertyId)
-        {
-            try
-            {
-                _groupService.DeleteGroupProperty(groupPropertyId);
             }
             catch
             {
@@ -108,13 +87,6 @@ namespace StudyBuddy.API.Controllers
             return new JsonResult(group);
         }
 
-        [HttpGet]
-        public IActionResult GetGroupProperty(int groupPropertyId)
-        {
-            var groupProperty = _groupService.GetGroupPropertyVm(groupPropertyId);
-            return new JsonResult(groupProperty);
-        }
-
         [HttpPost]
         public IActionResult EditGroup([FromBody] EditGroupVm group)
         {
@@ -128,20 +100,5 @@ namespace StudyBuddy.API.Controllers
             }   
             return Ok();
         }
-
-        [HttpPost]
-        public IActionResult EditGroupProperty([FromBody] GroupPropertyVm groupProperty)
-        {
-            try
-            {
-                _groupService.UpdateGroupProperty(groupProperty);
-            }
-            catch
-            {
-                return NotFound();
-            }
-            return Ok();
-        }
-
     }
 }

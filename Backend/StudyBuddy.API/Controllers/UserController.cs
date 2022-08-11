@@ -45,24 +45,10 @@ namespace StudyBuddy.API.Controllers
             return new JsonResult(users);
         }
 
-        [HttpGet]
-        public IActionResult GetUserProperty(int userPropertyId)
-        {
-            var userProperty = _userService.GetUserPropertyVm(userPropertyId);
-            return new JsonResult(userProperty);
-        }
-
         [HttpPost]
         public IActionResult AddUser([FromBody] NewUserVm userVm)
         {
             var id = _userService.AddUser(userVm);
-            return new JsonResult(id);
-        }
-
-        [HttpPost]
-        public IActionResult AddUserProperty([FromBody] UserPropertyVm userPropertyVm)
-        {
-            var id = _userService.AddUserPropertyVm(userPropertyVm);
             return new JsonResult(id);
         }
         
@@ -70,13 +56,6 @@ namespace StudyBuddy.API.Controllers
         public IActionResult EditUser([FromBody] NewUserVm userVm)
         {
             _userService.UpdateUser(userVm);
-            return Ok();
-        }
-        
-        [HttpPost]
-        public IActionResult EditUserProperty([FromBody] UserPropertyVm userPropertyVm)
-        {
-            _userService.UpdateUserProperty(userPropertyVm);
             return Ok();
         }
         
@@ -91,20 +70,6 @@ namespace StudyBuddy.API.Controllers
         public IActionResult DeleteUserAbsolute(int userId)
         {
             _userService.DeleteUserAbsolute(userId);
-            return Ok();
-        }
-
-        [HttpDelete]
-        public IActionResult DeleteUserProperty(int userPropertyId)
-        {
-            _userService.DeleteUserProperty(userPropertyId);
-            return Ok();
-        }
-
-        [HttpDelete]
-        public IActionResult DeleteUserPropertyAbsolute(int userId)
-        {
-            _userService.DeleteUserPropertyAbsolute(userId);
             return Ok();
         }
     }

@@ -18,13 +18,6 @@ namespace StudyBuddy.Infrastructure.Repositories
             return user.Id;
         }
 
-        public int AddUserProperty(UserProperty userProperty)
-        {
-            _context.UserProperties.Add(userProperty);
-            _context.SaveChanges();
-            return userProperty.Id;
-        }
-
         public void DeleteUser(int userId)
         {
             var result = _context.Users.SingleOrDefault(i => i.Id == userId && i.IsActive);
@@ -49,30 +42,6 @@ namespace StudyBuddy.Infrastructure.Repositories
             }
         }
 
-        public void DeleteUserProperty(int userPropertyId)
-        {
-            var result = _context.UserProperties.SingleOrDefault(i => i.Id == userPropertyId && i.IsActive);
-
-            if (result != null)
-            {
-                var userProperty = result;
-                userProperty.IsActive = false;
-                _context.Entry(result).CurrentValues.SetValues(userProperty);
-                _context.SaveChanges();
-            }
-        }
-
-        public void DeleteUserPropertyAbsolute(int userPropertyId)
-        {
-            var userProperty = _context.UserProperties.Find(userPropertyId);
-
-            if (userProperty != null)
-            {
-                _context.UserProperties.Remove(userProperty);
-                _context.SaveChanges();
-            }
-        }
-
         public IQueryable<User> GetAllActiveUsers()
         {
             return _context.Users.Where(i => i.IsActive);
@@ -83,11 +52,6 @@ namespace StudyBuddy.Infrastructure.Repositories
             return _context.Users.FirstOrDefault(i => i.Id == userId);
         }
 
-        public UserProperty GetUserProperty(int userPropertyId)
-        {
-            return _context.UserProperties.FirstOrDefault(i => i.Id == userPropertyId);
-        }
-
         public void UpdateUser(User user)
         {
             _context.Attach(user);
@@ -95,15 +59,6 @@ namespace StudyBuddy.Infrastructure.Repositories
             _context.Entry(user).Property("Surname").IsModified = true;
             _context.Entry(user).Property("Course").IsModified = true;
 
-            _context.SaveChanges();
-        }
-
-        public void UpdateUserProperty(UserProperty userProperty)
-        {
-            _context.Attach(userProperty);
-            _context.Entry(userProperty).Property("Email").IsModified = true;
-            _context.Entry(userProperty).Property("Password").IsModified = true;
-            
             _context.SaveChanges();
         }
     }
