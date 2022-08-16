@@ -48,6 +48,5 @@
   border-radius: 5px;
 }
 .group-look-container-btn {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
 }

@@ -4,15 +4,12 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { ThemeContext } from "../../Context/UserContext";
-import { useContext } from "react";
 function LogIn() {
   let navigate = useNavigate();
-  const userTheme = useContext(ThemeContext);
+
   const logIn = (e) => {
     e.preventDefault();
     navigate("/groups");
-    userTheme.setUserDataAccount({ id: "1" });
   };
   return (
     <div className="log-in-component">
@@ -34,7 +31,8 @@ function LogIn() {
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
           <div className="log-in-component-container-form-section">
-            <Link to={"/createAccount"}>Don't have an account yet?</Link>
+            <Link to={"/createAccount"}>Don't have account yet?</Link>
+
             <Button
               className="log-in-component-container-form-section-submit"
               variant="primary"

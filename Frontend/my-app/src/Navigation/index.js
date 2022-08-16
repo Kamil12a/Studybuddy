@@ -1,5 +1,7 @@
 import "./styles.css";
 import Button from "react-bootstrap/Button";
+import "./styles.css";
+import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 function Navigation() {
@@ -11,7 +13,7 @@ function Navigation() {
     navigate("/groups");
   };
   const navigateToProfile = () => {
-    // navigate("/");
+    navigate("/");
   };
   return (
     <nav>

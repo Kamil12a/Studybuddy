@@ -1,13 +1,13 @@
-export async function createGroup(userTheme,groupInformation) {
-  let tutor=groupInformation.tutorChecked? userTheme.userDataAccount.id:"none"
+export async function createGroup() {
+  let groupId;
   await fetch("https://localhost:5001/Group/AddGroup", {
-    method: "POST", 
+    method: "POST", // or 'PUT'
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      tutorId: tutor ,
-      groupOwnerId: userTheme.userDataAccount.id,
+      tutorId: 1,
+      groupOwnerId: 1,
       subjectId: 1,
     }),
   }).then((res) => res.json());

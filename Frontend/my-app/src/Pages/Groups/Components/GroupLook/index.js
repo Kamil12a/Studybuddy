@@ -2,25 +2,17 @@ import "./style.css";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
-import { ThemeContext } from "../../../../Context/UserContext";
-import { useContext, useEffect, useState } from "react";
-
-function GroupLook({ description, id, groupOwnerId }) {
-  const [groupOwner, setGroupOwner] = useState(false);
+function GroupLook({ description, id }) {
   let navigate = useNavigate();
-  const userTheme = useContext(ThemeContext);
-  useEffect(() => {
-    setGroupOwner(userTheme.userDataAccount.id == groupOwnerId);
-  }, []);
-  let backgroundColor = groupOwner ? "#FAF9F6" : "white";
+
+  const navigateToGroupDetails = (e) => {
+    navigate("/group/details/" + e.target.id);
+  };
+
   return (
     <>
       <div className="group-look">
-        <div
-          style={{ background: backgroundColor }}
-          className="group-look-container"
-        >
-        
+        <div className="group-look-container">
           <div className="group-look-container-information-top">
             <p className="group-look-container-information-top-tutor">
               Korepetytor
@@ -49,24 +41,15 @@ function GroupLook({ description, id, groupOwnerId }) {
             przeprowadzonemu w Domu Dziecka nr 3 podlegało 19 osób. Większością
             byli chłopcy w ilości 11 osób co
           </p>
-          {groupOwner && (
-            <div className="group-look-container-btn">
-              <Button id={id} variant="secondary">
-                Left Group
-              </Button>
-              <Button id={id} variant="primary">
-              Edit Group
+          <div className="group-look-container-btn">
+            <Button
+              onClick={navigateToGroupDetails}
+              id={id}
+              variant="secondary"
+            >
+              Join To Group
             </Button>
-            </div>
-          )}
-          {!groupOwner && (
-            <div className="group-look-container-btn">
-              <Button id={id} variant="secondary">
-                Join to Group
-              </Button>
-    
-            </div>
-          )}
+          </div>
         </div>
       </div>
     </>
