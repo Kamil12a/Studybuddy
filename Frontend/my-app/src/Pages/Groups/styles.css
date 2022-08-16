@@ -3,6 +3,9 @@
   top: 100px;
   right: 100px;
 }
+.group-section{
+  padding-bottom: 100px;
+}
 @media (max-width: 720px) {
   .create-group {
     display: none;

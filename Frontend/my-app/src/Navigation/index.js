@@ -11,7 +11,7 @@ function Navigation() {
     navigate("/groups");
   };
   const navigateToProfile = () => {
-    navigate("/");
+    // navigate("/");
   };
   return (
     <nav>

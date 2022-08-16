@@ -1,30 +1,14 @@
-export async function createGroup() {
-  let groupId;
+export async function createGroup(userTheme,groupInformation) {
+  let tutor=groupInformation.tutorChecked? userTheme.userDataAccount.id:"none"
   await fetch("https://localhost:5001/Group/AddGroup", {
-    method: "POST", // or 'PUT'
+    method: "POST", 
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      tutorId: 15,
-      groupOwnerId: 15,
-      subjectId: 15,
+      tutorId: tutor ,
+      groupOwnerId: userTheme.userDataAccount.id,
+      subjectId: 1,
     }),
-  })
-    .then((res) => res.json())
-    .then((id) => {
-      groupId = id;
-    });
-  await fetch("https://localhost:5001/Group/AddGroupProperty ", {
-    method: "POST", // or 'PUT'
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      publishDate: "2022-07-08T12:59:20.527Z",
-      expireDate: "2022-07-08T12:59:20.527Z",
-      description: "string",
-      groupId: groupId,
-    }),
-  });
+  }).then((res) => res.json());
 }
