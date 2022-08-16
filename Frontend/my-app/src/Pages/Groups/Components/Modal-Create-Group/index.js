@@ -2,35 +2,69 @@ import "./styles.css";
 import Button from "react-bootstrap/Button";
 import { createGroup } from "./fetchData/createGroup";
 import Navigation from "../../../../Navigation";
+import Form from "react-bootstrap/Form";
+import { useNavigate } from "react-router-dom";
+
 function ModalCreateGroup() {
-  const createGroupHandle = () => {
-    createGroup();
+  let navigate = useNavigate();
+  const createGroupHandle = (e) => {
+    e.preventDefault();
+    createGroup().then(() => {
+      navigate("/groups");
+    });
   };
   return (
     <>
       <Navigation />
       <div className="modal-container">
-        <div className="modal-create-group">
-          <h3>Create Group</h3>
-          <div className="modal-create-group-box">
-            <label className="modal-create-group-label" htmlFor="textArea">
-              Description
-            </label>
-            <textarea
-              className="modal-create-group-textArea"
-              id="textArea"
-              name="textArea"
-              rows="4"
-            ></textarea>
-          </div>
-          <Button
-            onClick={createGroupHandle}
-            className="modal-create-group-btn"
-            variant="secondary"
-          >
-            Create Group
+        <Form onSubmit={createGroupHandle} className="modal-create-group">
+          <Form.Group className="mb-3 w-75">
+            <Form.Label>Enter subject</Form.Label>
+            <Form.Control type="text" placeholder="Enter subject" />
+          </Form.Group>
+
+          <Form.Group className="mb-3 w-75">
+            <Form.Label>Enter Title</Form.Label>
+            <Form.Control type="text" placeholder="Enter Title" />
+          </Form.Group>
+          <Form.Group className="mb-3 w-75">
+            <Form.Label>Enter cost</Form.Label>
+            <Form.Control min="0" type="number" placeholder="Enter cost" />
+          </Form.Group>
+          <Form.Group className="mb-3 w-75">
+            <Form.Label>Max amount of students</Form.Label>
+            <Form.Control
+              min="1"
+              type="number"
+              placeholder="Enter max amount of student"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3 w-75">
+            <Form.Label>Enter Place</Form.Label>
+            <Form.Control type="text" placeholder="Enter Place" />
+          </Form.Group>
+          <Form.Group className="mb-3 w-75">
+            <Form.Label>Enter Date</Form.Label>
+            <Form.Control type="date" placeholder="Enter Date" />
+          </Form.Group>
+          <Form.Group className="mb-3 w-75">
+            <Form.Label>Enter Hour </Form.Label>
+            <Form.Control type="time" placeholder="Enter Hour" />
+          </Form.Group>
+          <Form.Group className="modal-create-group-checkbox mb-3 w-75">
+            <Form.Label>Do you want to be a tutor? </Form.Label>
+
+            <Form.Check type="switch" id="custom-switch" />
+          </Form.Group>
+
+          <Form.Group className="mb-3 w-75">
+            <Form.Label>Description</Form.Label>
+            <Form.Control as="textarea" rows={3} />
+          </Form.Group>
+          <Button variant="primary" type="submit">
+            Submit
           </Button>
-        </div>
+        </Form>
       </div>
     </>
   );
