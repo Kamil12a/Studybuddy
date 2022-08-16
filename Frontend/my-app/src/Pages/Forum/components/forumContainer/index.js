@@ -13,7 +13,6 @@ function ForumContainer({ prop }) {
         <p className="forum-container-description">{prop.description}</p>
         <div className="forum-container-comment-section">
           <label for="forum-coment">comment</label>
-
           <textarea id="forum-coment" name="forum-coment" rows="2" cols="50"></textarea>
         </div>
       </div>
