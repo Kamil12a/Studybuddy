@@ -39,6 +39,11 @@ namespace StudyBuddy.Infrastructure.Repositories
             }
         }
 
+        public IQueryable<Post> GetAllActivePosts()
+        {
+            return _context.Posts.Where(i => i.IsActive);
+        }
+
         public Post GetPost(int postId)
         {
             return _context.Posts.SingleOrDefault(i => i.Id == postId && i.IsActive);

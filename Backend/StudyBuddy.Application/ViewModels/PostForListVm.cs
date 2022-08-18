@@ -1,12 +1,9 @@
 using System;
-using System.Collections.Generic;
 using AutoMapper;
-using StudyBuddy.Application.Common.Mapping;
-using StudyBuddy.Domain.Models;
 
 namespace StudyBuddy.Application.ViewModels
 {
-    public class PostVm : IMapFrom<Post>
+    public class PostForListVm
     {
         public int Id { get; set; }
         public int OwnerId { get; set; }
@@ -15,12 +12,10 @@ namespace StudyBuddy.Application.ViewModels
         public string Topic { get; set; }
         public string Content { get; set; }
         public int Likes { get; set; }
-        public List<Comment> Comments { get; set; }
-        public int CommentsCount { get => Comments.Count; }
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<Post, PostVm>()
+            profile.CreateMap<StudyBuddy.Domain.Models.Post, PostForListVm>()
                 .ReverseMap();
         }
     }
