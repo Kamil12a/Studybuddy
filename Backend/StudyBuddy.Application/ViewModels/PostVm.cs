@@ -10,7 +10,7 @@ namespace StudyBuddy.Application.ViewModels
     {
         public int Id { get; set; }
         public int OwnerId { get; set; }
-        //public byte[] OwnerLogo { get; set; }
+        public byte[] OwnerProfilePicture { get; set; }
         public DateTime PublishDate { get; set; }
         public string Topic { get; set; }
         public string Content { get; set; }

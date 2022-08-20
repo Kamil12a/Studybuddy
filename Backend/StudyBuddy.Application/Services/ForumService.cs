@@ -90,6 +90,15 @@ namespace StudyBuddy.Application.Services
         {
             var post = _forumRepo.GetPost(postId);
             var postVm = _mapper.Map<PostVm>(post);
+
+            post.User = _userRepo.GetUserById(postVm.OwnerId);
+            
+            if (post.User == null)
+            {
+                throw new KeyNotFoundException(string.Format("Cannot find User for Id: {0}", postVm.OwnerId));
+            }
+            postVm.OwnerProfilePicture = post.User.ProfilePicture;
+
             return postVm;
         }
 

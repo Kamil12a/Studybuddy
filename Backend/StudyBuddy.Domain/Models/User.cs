@@ -12,10 +12,12 @@ namespace StudyBuddy.Domain.Models
         public string Fullname { get => $"{Name} {Surname}"; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public byte[] ProfilePicture { get; set; }
        
         public virtual ICollection<Group> TutoredGroups { get; set; }
         public virtual ICollection<Group> CreatedGroups { get; set; }
         public virtual ICollection<Group> JoinedGroups { get; set; }
         public virtual ICollection<Post> Posts { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
     }
 }
