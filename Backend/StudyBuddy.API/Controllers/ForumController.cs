@@ -25,6 +25,27 @@ namespace StudyBuddy.API.Controllers
             return new JsonResult(post);
         }
 
+        [HttpGet]
+        public IActionResult GetAllPosts()
+        {
+            var groups = _forumService.GetAllPosts();
+            return new JsonResult(groups);
+        }
+
+        [HttpGet]
+        public IActionResult GetAllPostsOrdered(int pageSize, int pageNo)
+        {
+            var groups = _forumService.GetAllPosts(pageSize, pageNo);
+            return new JsonResult(groups);
+        }
+
+        [HttpGet]
+        public IActionResult GetAllPostsFiltered(int pageSize, int pageNo, string searchString)
+        {
+            var groups = _forumService.GetAllPosts(pageSize, pageNo, searchString);
+            return new JsonResult(groups);
+        }
+
         [HttpPost]
         public IActionResult AddPost(NewPostVm post)
         {

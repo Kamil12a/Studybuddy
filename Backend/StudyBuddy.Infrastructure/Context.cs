@@ -10,6 +10,7 @@ namespace StudyBuddy.Infrastructure
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<Topic> Topics { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Comment> Comments { get; set; }
 
         public Context(DbContextOptions<Context> options) : base(options)
         {
@@ -49,6 +50,15 @@ namespace StudyBuddy.Infrastructure
                 .HasMany(u => u.TutoredGroups)
                 .WithOne(p => p.Tutor)
                 .OnDelete(DeleteBehavior.NoAction);
+
+            builder.Entity<Post>()
+                .HasMany(c => c.Comments)
+                .WithOne(p => p.Post)
+                .HasForeignKey(a => a.PostId);
+
+            builder.Entity<Comment>()
+                .HasOne(u => u.User)
+                .WithMany(c => c.Comments);
         }
     }
 }

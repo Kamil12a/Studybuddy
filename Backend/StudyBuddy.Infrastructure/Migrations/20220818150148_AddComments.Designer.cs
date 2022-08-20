@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StudyBuddy.Infrastructure;
 
 namespace StudyBuddy.Infrastructure.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20220818150148_AddComments")]
+    partial class AddComments
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,7 +49,7 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.Property<int>("OwnerId")
                         .HasColumnType("int");
 
-                    b.Property<int>("PostId")
+                    b.Property<int?>("PostId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("PublishDate")
@@ -62,7 +64,7 @@ namespace StudyBuddy.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Comments");
+                    b.ToTable("Comment");
                 });
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.Group", b =>
@@ -203,9 +205,6 @@ namespace StudyBuddy.Infrastructure.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<byte[]>("ProfilePicture")
-                        .HasColumnType("varbinary(max)");
-
                     b.Property<string>("Surname")
                         .HasColumnType("nvarchar(max)");
 
@@ -231,17 +230,13 @@ namespace StudyBuddy.Infrastructure.Migrations
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.Comment", b =>
                 {
-                    b.HasOne("StudyBuddy.Domain.Models.Post", "Post")
+                    b.HasOne("StudyBuddy.Domain.Models.Post", null)
                         .WithMany("Comments")
-                        .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("PostId");
 
                     b.HasOne("StudyBuddy.Domain.Models.User", "User")
-                        .WithMany("Comments")
+                        .WithMany()
                         .HasForeignKey("UserId");
-
-                    b.Navigation("Post");
 
                     b.Navigation("User");
                 });
@@ -309,8 +304,6 @@ namespace StudyBuddy.Infrastructure.Migrations
 
             modelBuilder.Entity("StudyBuddy.Domain.Models.User", b =>
                 {
-                    b.Navigation("Comments");
-
                     b.Navigation("CreatedGroups");
 
                     b.Navigation("Posts");

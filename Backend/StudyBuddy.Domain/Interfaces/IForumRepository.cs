@@ -1,3 +1,4 @@
+using System.Linq;
 using StudyBuddy.Domain.Models;
 
 namespace StudyBuddy.Domain.Interfaces
@@ -8,5 +9,6 @@ namespace StudyBuddy.Domain.Interfaces
         int AddPost(Post post);
         void UpdatePost(Post post);
         void DeletePost(int postId);
+        IQueryable<Post> GetAllActivePosts();
     }
 }
