@@ -1,20 +1,16 @@
 {
   "files": {
-    "main.js": "/myapp/static/js/main.5146220c.chunk.js",
-    "main.js.map": "/myapp/static/js/main.5146220c.chunk.js.map",
-    "runtime-main.js": "/myapp/static/js/runtime-main.5e91e867.js",
-    "runtime-main.js.map": "/myapp/static/js/runtime-main.5e91e867.js.map",
-    "static/js/2.f517d3c8.chunk.js": "/myapp/static/js/2.f517d3c8.chunk.js",
-    "static/js/2.f517d3c8.chunk.js.map": "/myapp/static/js/2.f517d3c8.chunk.js.map",
-    "static/js/3.765a0a96.chunk.js": "/myapp/static/js/3.765a0a96.chunk.js",
-    "static/js/3.765a0a96.chunk.js.map": "/myapp/static/js/3.765a0a96.chunk.js.map",
-    "index.html": "/myapp/index.html",
-    "static/js/2.f517d3c8.chunk.js.LICENSE.txt": "/myapp/static/js/2.f517d3c8.chunk.js.LICENSE.txt",
-    "static/media/studdyBuddy.4d3904fd.png": "/myapp/static/media/studdyBuddy.4d3904fd.png"
+    "main.css": "/Studybuddy/static/css/main.0e37e52c.css",
+    "main.js": "/Studybuddy/static/js/main.cc6d0f1d.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Studybuddy/static/js/787.28cb0dcd.chunk.js",
+    "static/media/logo.png": "/Studybuddy/static/media/logo.a40ce06fedbc9d800671.png",
+    "index.html": "/Studybuddy/index.html",
+    "main.0e37e52c.css.map": "/Studybuddy/static/css/main.0e37e52c.css.map",
+    "main.cc6d0f1d.js.map": "/Studybuddy/static/js/main.cc6d0f1d.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Studybuddy/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.5e91e867.js",
-    "static/js/2.f517d3c8.chunk.js",
-    "static/js/main.5146220c.chunk.js"
+    "static/css/main.0e37e52c.css",
+    "static/js/main.cc6d0f1d.js"
   ]
 }
