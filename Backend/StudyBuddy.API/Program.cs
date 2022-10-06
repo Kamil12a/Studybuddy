@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using StudyBuddy.Application;
-using StudyBuddy.Infrastructure;
+using StudyBuddy.SQLite;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,9 +16,9 @@ builder.Services.AddInfrastructure();
 builder.Services.AddHealthChecks();
 
 builder.Services.AddDbContext<Context>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.BuildServiceProvider().GetService<Context>()?.Database.Migrate();
+//builder.Services.BuildServiceProvider().GetService<Context>()?.Database.Migrate();
 
 builder.Services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
 {
