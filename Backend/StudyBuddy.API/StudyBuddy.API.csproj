@@ -17,7 +17,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StudyBuddy.Application\StudyBuddy.Application.csproj" />
-    <ProjectReference Include="..\StudyBuddy.Infrastructure\StudyBuddy.Infrastructure.csproj" />
+    <ProjectReference Include="..\StudyBuddy.SQLite\StudyBuddy.SQLite.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>
