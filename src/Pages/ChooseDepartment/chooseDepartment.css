@@ -1,0 +1,118 @@
+.Container_department {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+.Container_Department_Header {
+  text-align: center;
+  margin-top: 115px;
+  margin-bottom: 58px;
+}
+.Container_Form_inputs_department {
+  background: url("./photos/departmentMain.png") no-repeat;
+  background-position: bottom 17px left 10px;
+}
+.Container_Form_inputs_yearOfStudy {
+  background: url("./photos/yearOfStudy.png") no-repeat;
+  background-position: bottom 10px left 10px;
+}
+.Container_Form_inputs_fieldOfStudy {
+  background: url("./photos/fieldOfStudy.png") no-repeat;
+  background-position: bottom 10px left 10px;
+}
+.Container_Form_department_section_Inputs {
+  margin-bottom: 13px;
+}
+.Container_Form_department_buttons > * {
+  margin-top: 15px;
+}
+.Container_Form_department_confirm {
+  padding-left: 40px;
+  position: absolute;
+  width: 86vw !important;
+  bottom: 20px;
+  background: #d9d9d9 url("./photos/confirm.png") 90px no-repeat !important;
+}
+.Container_Form_department_addField {
+  position: absolute;
+  width: 86vw !important;
+  bottom: 85px;
+}
+.chooseYourDepartment {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.chooseYourDepartment_Header,
+.chooseYourFieldOfStudy_Header,
+.chooseYourYearOfStudy_Header {
+  display: flex;
+  margin-top: 41px;
+  align-items: center;
+  margin-left: 21px;
+}
+.chooseYourDepartment_Header_arrow,
+.chooseYourField_Header_arrow {
+  height: 21.4px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+.chooseYourDepartment_allDepartments,
+.chooseYourYearOfStudy_AllYears {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.departmentBlock {
+  background: url("./photos/departmentMain.png") no-repeat;
+  background-position: bottom 17px left 10px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.departmentBlock:hover {
+  background-color: rgb(235, 233, 233);
+}
+.departmentBlockImage {
+  height: 41px;
+  object-fit: contain;
+}
+.chooseYourYearOfStudy,
+.chooseYourFieldOfStudy {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.chooseYourDepartment_button {
+  margin-top: 15px;
+}
+.YearOfStudyBlock {
+  background: url("./photos/yearOfStudy.png") no-repeat;
+  background-position: bottom 10px left 17px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blockYear {
+  width: 62px;
+  height: 60px;
+}
+.chooseYearOfStudyButton {
+  margin-left: 20px;
+  width: 85vw !important;
+  position: absolute;
+  bottom: 15px;
+}
+.chooseYourYearOfStudy_AllYearsInNumber {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.chooseFieldOfStudy {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  width: 100%;
+  background: url("./photos/fieldOfStudy.png") no-repeat;
+  background-position: bottom 10px left 17px;
+  margin-bottom: 17px;
+}

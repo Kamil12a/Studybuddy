@@ -1,0 +1,29 @@
+.section-yourProfile{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.section-yourProfile_Header{
+    display: flex;
+    align-items: center;
+    
+}
+.section-yourProfile_Header_arrow{
+    height: 21.4px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+.container_userName{
+    display: flex;
+    justify-content: center;
+}
+.aboutYourStudyImage{
+    height: 15px;
+    margin-right: 15px;
+}
+.block_aboutyourStudy{
+    display: flex;
+    align-items: center;
+}
+.boutYourStudyImage2{
+    height: 24px;
+}

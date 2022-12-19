@@ -1,0 +1,26 @@
+.section-writeAboutYou {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.section-writeAboutYou_Header {
+  display: flex;
+  align-items: center;
+}
+.section-writeAboutYou_Header_text {
+  margin-top: 0;
+}
+.section-writeAboutYou_Header_text_area {
+  margin-top: 20px;
+  height: 70vh;
+  width: 95%;
+  border: 1px solid black;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #000000;
+  outline: none;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.section-writeAboutYou_button {
+  margin-top: 20px;
+}
