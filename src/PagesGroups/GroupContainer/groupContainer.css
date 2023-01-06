@@ -1,0 +1,27 @@
+.groupContainer{
+    width: 50%;
+    border: 1px solid black;
+    height: 156px;
+    width: 156px;
+    padding-left: 9px;
+    padding-top: 11px;
+}
+.groupContainer_title{
+    margin-bottom: 18px;
+}
+.groupContainer_ellipses>*{
+    margin-right: 7px;
+}
+.footer_containerGroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:9px ;
+}
+.footer_containerGroup_text{
+    position: relative;
+    top: 5px;
+}
+.groupContainer_subject{
+    margin-bottom: 23px;
+}

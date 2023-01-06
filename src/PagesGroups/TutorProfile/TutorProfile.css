@@ -1,0 +1,87 @@
+.section_tutorProfileReady{
+    height: 110vh;
+}
+.section_tutorProfile_mainInformation {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reccomendation_Container {
+  border: 1px solid black;
+  padding: 8px;
+}
+.reccomendation_Container_name {
+  display: flex;
+  align-items: flex-start;
+}
+.reccomendation_Container_ellipse {
+  width: 30px;
+  height: 30px;
+}
+.reccomendation_Container_name_par {
+  margin: 4px;
+}
+.reccomendation_Container_stars {
+  display: flex;
+  align-items: center;
+}
+.section-recommendedTutor_recomendation {
+  margin: 0;
+  margin-left: 15px;
+}
+.section-recommendedTutor_description {
+  margin-top: 6px;
+}
+.section_tutorProfile_your_topic {
+  margin: 0;
+}
+.yourSubject {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 0;
+
+  height: 24px;
+}
+.section-yourProfile_Header_title {
+  margin-top: 19px;
+  margin-bottom: 12px;
+}
+.section-yourProfile_Header_title_name {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.section-yourProfile_Header_title_stars {
+  margin: 0px;
+}
+.yourDepartment_field_recommendation {
+  margin: 0;
+  margin-top: 12px;
+  height: 40px;
+}
+.buttons_recommendation{
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+.tutor_profile_sendInvitation_container{
+    margin-top: 250px;
+}
+.tutor_profile_sendInvitation{
+    border: 1px solid black;
+
+    padding-bottom: 22px; 
+
+}
+.tutor_profile_sendInvitation_Title{
+    text-align: center;
+}
+.tutor_profile_sendInvitation_btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.tutor_profile_sendInvitation_btn>*{
+    width: 134px;
+}

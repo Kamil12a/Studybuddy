@@ -1,0 +1,24 @@
+.section-recommendedTutor_tutorSingle {
+    padding-left: 11px;
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.section-recommendedTutor_tutorSingle_ellipse {
+  width: 50px;
+  height: 50px;
+}
+.section-recommendedTutor_tutorSingle_information{
+    margin-left: 11px;
+}
+.section-recommendedTutor_tutorSingle_information>*{
+    margin: 0;
+}
+.section-recommendedTutor_tutorSingle_container{
+  display: flex;
+}

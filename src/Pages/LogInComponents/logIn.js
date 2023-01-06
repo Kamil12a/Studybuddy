@@ -62,6 +62,7 @@ function LogIn() {
         </Formik>
 
         <SmallParagraph
+        style={{bottom:"10px"}}
           onClick={navigateToCreateAccount}
           className="LogInContainer-signUp"
         >

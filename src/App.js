@@ -10,6 +10,11 @@ import WriteAboutYou from "./Pages/WriteAboutYou/WriteAboutYou";
 import CreateYourProfile from "./Pages/CreateYourProfile/CreateYourProfile";
 import ProfilManagment from "./Pages/ProfilManagment/ProfilManagment";
 import ProfileSettings from "./Pages/ProfileSettings.js/ProfileSettings";
+import Groups from "./PagesGroups/Groups/Groups";
+import CreateGroup from "./PagesGroups/CreateGroup/CreateGroup";
+import RecoomendedTutor from "./PagesGroups/recommendedTutor/recommendedTutor";
+import ReadyTutorProfile from "./PagesGroups/TutorProfile/TutorProfile";
+import CreatedGroup from "./PagesGroups/CreatedGroup/CreatedGroup";
 function App() {
   const [userDataAccount, setUserDataAccount] = useState({ username: "" });
   return (
@@ -17,6 +22,7 @@ function App() {
       <ThemeContext.Provider value={{ userDataAccount, setUserDataAccount }}>
         <HashRouter>
           <Routes>
+
             <Route exact path="/" element={<LogIn />} />
             <Route path="/createAccount" element={<CreateAccount />} />
             <Route
@@ -35,6 +41,12 @@ function App() {
             <Route path="/writeAboutYou" element={<WriteAboutYou />} />
             <Route path="/yourProfile" element={<ProfilManagment />} />
             <Route path="/profileSettings" element={<ProfileSettings />} />
+            <Route path="/groupPanel" element={<Groups />} />
+            <Route path="/createGroup_ChooseSubject" element={<CreateGroup />} />
+            <Route path="/recommendedTutor" element={<RecoomendedTutor />} />
+            <Route path="/readyTutorProfile" element={<ReadyTutorProfile />} />
+            <Route path="/groupId" element={<CreatedGroup/>} />
+
           </Routes>
         </HashRouter>
       </ThemeContext.Provider>

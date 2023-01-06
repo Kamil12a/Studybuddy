@@ -1,0 +1,41 @@
+.section-groups {
+  margin-top: 29px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.section-groups_Sort {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section-groups-input-searchByName {
+  position: relative;
+  top: 1px;
+  height: 48px !important;
+  width: 65vw !important;
+  padding: 0 !important;
+}
+.section-groups_sort {
+  padding-left: 0 !important;
+}
+.section-groups_filter {
+  margin: 0;
+}
+.section-groups_sort_studyFields {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.section-groups_sort_studyFields > * {
+  padding: 0 !important;
+}
+.groupsContainer-block {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.section-groups_button{
+  position: fixed;
+  bottom: 75px;
+  width: 335px
+}

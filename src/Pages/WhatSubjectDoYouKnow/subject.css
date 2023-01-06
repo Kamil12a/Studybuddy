@@ -13,6 +13,7 @@
     margin-right: 12px;
 }
 .buttons_chooseSubject{
-    margin-top: 30px;
+    position: relative;
+    margin-top: 200px;
     margin-bottom: 15px;
 }

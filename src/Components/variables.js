@@ -4,7 +4,9 @@ import styled from "styled-components";
   url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400;1,500&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
 </style>;
 export const Button = styled.button`
-  width: 100%;
+
+  position: block!important;
+  width: 85vw;
   height: 50px;
   background-color: #d9d9d9;
   border: none;
