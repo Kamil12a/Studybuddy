@@ -26,15 +26,14 @@
   margin-top: 15px;
 }
 .Container_Form_department_confirm {
-  padding-left: 40px;
   position: absolute;
-  width: 86vw !important;
+  width: calc(100% - 40px)!important;
   bottom: 20px;
   background: #d9d9d9 url("./photos/confirm.png") 90px no-repeat !important;
 }
 .Container_Form_department_addField {
   position: absolute;
-  width: 86vw !important;
+  width: calc(100% - 40px)!important;
   bottom: 85px;
 }
 .chooseYourDepartment {

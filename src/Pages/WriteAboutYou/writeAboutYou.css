@@ -3,12 +3,12 @@
   margin-right: 20px;
 }
 .section-writeAboutYou_Header {
+  margin-top: 41px;
+  margin-bottom: 13px;
   display: flex;
   align-items: center;
 }
-.section-writeAboutYou_Header_text {
-  margin-top: 0;
-}
+
 .section-writeAboutYou_Header_text_area {
   margin-top: 20px;
   height: 70vh;
@@ -23,4 +23,5 @@
 }
 .section-writeAboutYou_button {
   margin-top: 20px;
+  width: 100%!important
 }

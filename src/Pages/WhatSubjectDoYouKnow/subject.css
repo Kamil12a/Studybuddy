@@ -1,19 +1,25 @@
-.subject_blockInput{
-    padding: 0;
-    width: 100%;
-    margin-top: 22px;
-    text-align: start;
-    padding-left: 12px;
+.subject_blockInput {
+  padding: 0;
+  width: 100%;
+  margin-top: 22px;
+  text-align: start;
+  padding-left: 12px;
 }
-.LogInContainer_Form_input_search{
-    padding: 0;
-    
+.LogInContainer_Form_input_search {
+  padding: 0;
 }
-.pen{
-    margin-right: 12px;
+.pen {
+  margin-right: 12px;
 }
-.buttons_chooseSubject{
-    position: relative;
-    margin-top: 200px;
-    margin-bottom: 15px;
+.buttons_chooseSubject {
+  position: absolute;
+  width: calc(100% - 40px) !important;
+  bottom: 85px;
+  left: 20px;
+}
+.buttons_chooseSubject_confirm{
+    position: absolute;
+  width: calc(100% - 40px) !important;
+  bottom: 20px;
+  left: 20px;
 }

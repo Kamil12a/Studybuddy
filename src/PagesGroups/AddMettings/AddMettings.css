@@ -1,0 +1,45 @@
+.add_mettings_section{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.add_mettings_section_options{
+    padding: 10px;
+    border: 1px solid black;
+}
+.add_mettings_section_options_location{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.add_mettings_section_options_datas_info{
+    margin-top: 17px;
+    display: flex;
+    gap: 87px;
+}
+.add_mettings_section_options_datas{
+    display: flex;
+    gap: 14px;
+}
+.add_mettings_section_options_note{
+    margin-top: 17px;
+    display: flex;
+    gap: 14px;
+}
+.calendar{
+    margin-top:11px ;
+}
+.add_mettings_section_btn{
+    width: calc(100vw - 40px)!important;
+    position: absolute;
+    bottom: 80px;
+    left: 20px;
+}
+.clock_calendar{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.time_input{
+    height: 30px;
+}

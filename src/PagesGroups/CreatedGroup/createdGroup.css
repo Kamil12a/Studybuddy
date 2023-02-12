@@ -1,4 +1,71 @@
 .created_group_section{
+   
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 200px;
+}
+
+.created_group_section_heart{
+    position: absolute;
+    top: 58px;
+    right: 31px;
+}
+.created_group_section_subjects{
+    display: flex;
+    gap: 15px;
+    margin-top: 12px;
+}
+.created_group_section_subjects>*{
+    width: 50%;
+}
+.created_group_section_Textarea{
+    padding:8px 10px 10px 14px ;
+    margin-top: 15px;
+    border: 1px solid black;
+}
+.created_group_section_users{
+    margin-top: 20px;
+    display: flex;
+    gap: 98px;
+}
+.created_group_section_users_info{
+    display: flex;
+    gap: 30px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.created_group_section_users_info_ellipses>*{
+    margin-right: 13px;
+}
+.created_group_section_mettingInfo{
+    border:1px solid black;
+    padding: 10px;
+}
+.created_group_section_mettingInfo_location{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.created_group_section_mettingInfo_data{
+    display: flex;
+}
+.created_group_section_mettingInfo_dataInfo{
+    display: flex;
+    width: 50%;
+    gap: 13px;
+}
+.created_group_section_buttons{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+
+    
+}
+.created_group_section_buttons>*{
+
+ height: 115px!important;
+}
+.created_group_section_button_chat{margin-top:20px ;
+    width: 100%;
 }

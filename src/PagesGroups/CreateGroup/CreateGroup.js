@@ -47,7 +47,7 @@ function CreateGroup() {
           id="description"
           name="description"
         />
-        <MedParagraph>dodaj spotkanie</MedParagraph>
+        <MedParagraph className="section-create_group_btns">dodaj spotkanie</MedParagraph>
         <MedParagraph>dodaj wynagrodzenie</MedParagraph>
         <SimpleBlockInput onClick={()=>{
           navigate("../recommendedTutor")

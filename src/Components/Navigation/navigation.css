@@ -1,5 +1,5 @@
 nav {
-  height: 62px;
+  height: 48px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -10,7 +10,7 @@ nav {
   left: 0;
 }
 .nav_item {
-  width: 35px;
-  height: 38px;
+  width: 28px;
+  height: 32px;
   object-fit: contain;
 }

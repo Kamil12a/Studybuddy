@@ -4,12 +4,13 @@
     margin-left: 110px;
 }
 .section_yourProfile_settingsPanel>*{
-    border-bottom: 0px;
+    border:1px solid black!important;
+    border-bottom: 0px!important;
     text-align: start;
     padding: 5px;
 }
-.section_yourProfile_settingsPanel:last-child{
-    border-bottom: 1px solid black;
+.lastOption{
+    border-bottom: 1px solid black!important;
 }
 .imageInsideButton{
     position: relative;

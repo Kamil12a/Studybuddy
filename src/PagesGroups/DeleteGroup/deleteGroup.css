@@ -1,0 +1,34 @@
+.section_delete_group{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.section_delete_group_container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+.section_delete_group_title{
+    font-size: 24px!important;
+}
+.section_delete_group_container_btn{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.section_delete_group_container_btn>*{
+    width: 131px;
+    height: 50px;   
+}
+.image_delete_group{
+    position: relative;
+    top: 2px;
+    right:10px;
+}
+.image_nodelete_group{
+    position: relative;
+    top: 6px;
+    right:10px;
+}

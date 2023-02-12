@@ -26,7 +26,7 @@ function LogIn() {
         <BigTitle className="LogInContainer_logInHeader">Logowanie</BigTitle>
         <Formik
           initialValues={{ userName: "", password: "" }}
-          onSubmit={(values) => navigate("./chooseDepartment")}
+          onSubmit={(values) => navigate("../groupPanel")}
         >
           {({ values, handleChange, handleSubmit }) => (
             <form
@@ -62,7 +62,7 @@ function LogIn() {
         </Formik>
 
         <SmallParagraph
-        style={{bottom:"10px"}}
+        
           onClick={navigateToCreateAccount}
           className="LogInContainer-signUp"
         >

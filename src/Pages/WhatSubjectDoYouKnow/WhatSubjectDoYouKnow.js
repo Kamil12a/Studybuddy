@@ -97,7 +97,8 @@ function WhatSubjectDoYouKnow() {
         <Button className="buttons_chooseSubject">
           Przedmioty spoza kierunku
         </Button>
-        <Button
+        <Button 
+         className="buttons_chooseSubject_confirm"
           onClick={() => {
             navigate("../writeAboutYou");
           }}

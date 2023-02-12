@@ -43,7 +43,7 @@ function ProfileSettings() {
             <img className="imageInsideButton" src={privacy} alt="pen" />
             zmień dane logowania
           </SimpleBlockInput>
-          <SimpleBlockInput>
+          <SimpleBlockInput className="lastOption">
             {" "}
             <img className="imageInsideButton" src={deleteImg} alt="pen" />
             zmień dane logowania

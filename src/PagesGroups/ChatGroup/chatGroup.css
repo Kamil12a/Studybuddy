@@ -1,0 +1,18 @@
+.groupChat_section {
+  margin-left: 20px;
+}
+.groupChat_section_chat {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+}
+.groupChat_section_chat_field {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 28px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  width: 253px;
+  height: 36px;
+}

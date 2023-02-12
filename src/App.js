@@ -15,6 +15,11 @@ import CreateGroup from "./PagesGroups/CreateGroup/CreateGroup";
 import RecoomendedTutor from "./PagesGroups/recommendedTutor/recommendedTutor";
 import ReadyTutorProfile from "./PagesGroups/TutorProfile/TutorProfile";
 import CreatedGroup from "./PagesGroups/CreatedGroup/CreatedGroup";
+import GroupSettings from "./PagesGroups/GroupSettings/GroupSettings";
+import ChatGroup from "./PagesGroups/ChatGroup/ChatGroup";
+import AddMettings from "./PagesGroups/AddMettings/AddMettings";
+import AddPayment from "./PagesGroups/AddPayment/AddPayment";
+import DeleteGroup from "./PagesGroups/DeleteGroup/DeleteGroup";
 function App() {
   const [userDataAccount, setUserDataAccount] = useState({ username: "" });
   return (
@@ -46,7 +51,13 @@ function App() {
             <Route path="/recommendedTutor" element={<RecoomendedTutor />} />
             <Route path="/readyTutorProfile" element={<ReadyTutorProfile />} />
             <Route path="/groupId" element={<CreatedGroup/>} />
+            <Route path="/groupSettingsId" element={<GroupSettings/>} />
+            <Route path="/chatGroupId" element={<ChatGroup/>} />
+            <Route path="/addMettingsId" element={<AddMettings/>} />
+            <Route path="/addPaymentId" element={<AddPayment/>} />
+            <Route path="/deleteGroupId" element={<DeleteGroup/>} />
 
+          
           </Routes>
         </HashRouter>
       </ThemeContext.Provider>

@@ -25,5 +25,6 @@
     bottom: 46px;
   }
   .createAcc_Button{
+    width: 100%!important;
     margin-top: 70px;
   }

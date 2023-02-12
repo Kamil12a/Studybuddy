@@ -18,6 +18,7 @@
 }
 .LogInContainer_Button {
   margin-top: 47px;
+  width: 100%!important;
 }
 .LogInContainer-signUp {
   position: absolute;

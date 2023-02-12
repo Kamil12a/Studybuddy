@@ -1,0 +1,9 @@
+.add_mettings_section_payment_title{
+    margin-top: 20px;
+}
+.add_mettings_section_payment_info{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 7px;
+}

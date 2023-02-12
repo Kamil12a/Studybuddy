@@ -36,6 +36,7 @@
 }
 .section-groups_button{
   position: fixed;
-  bottom: 75px;
-  width: 335px
+  width: calc(100% - 40px) !important;
+  bottom: 60px;
+  left: 20px;
 }

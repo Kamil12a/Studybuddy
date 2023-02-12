@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .section-yourProfile{
     margin-left: 20px;
     margin-right: 20px;
@@ -5,6 +9,7 @@
 .section-yourProfile_Header{
     display: flex;
     align-items: center;
+    margin-top: 41px;
     
 }
 .section-yourProfile_Header_arrow{
@@ -26,4 +31,10 @@
 }
 .boutYourStudyImage2{
     height: 24px;
+}
+.yourInformationAboutStudyInProfile{
+    margin-top: 23px;
+}
+.yourInformationAboutStudyInProfile>*{
+ margin-top: 13px;
 }

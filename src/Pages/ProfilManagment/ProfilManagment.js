@@ -17,7 +17,7 @@ function ProfilManagment() {
       <section className="section_tutorProfile">
         <div className="section_tutorProfile_title">
           <img src={book} alt="book" />
-          <MedParagraph>Korepetytor</MedParagraph>
+          <MedParagraph className="tutorTitle_sectionTutorProfile">Korepetytor</MedParagraph>
         </div>
         <SmallParagraph className="section_tutorProfile_description_text">
           Opis:

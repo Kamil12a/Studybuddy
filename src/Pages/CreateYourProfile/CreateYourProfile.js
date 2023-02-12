@@ -8,7 +8,7 @@ import department from "../ChooseDepartment/photos/departmentMain.png";
 import year from "../ChooseDepartment/photos/yearOfStudy.png";
 import field from "../ChooseDepartment/photos/fieldOfStudy.png";
 
-function CreateYourProfile({url}) {
+function CreateYourProfile({ url }) {
   const navigate = useNavigate();
   const theme = useContext(ThemeContext);
   const navigateBack = () => {
@@ -35,6 +35,8 @@ function CreateYourProfile({url}) {
         <div className="container_userName">
           <MediumTitle>{theme.userDataAccount.name}</MediumTitle>
         </div>
+
+        <div className="yourInformationAboutStudyInProfile">
         <div className="block_aboutyourStudy">
           <img
             className="aboutYourStudyImage"
@@ -43,22 +45,24 @@ function CreateYourProfile({url}) {
           />
           <MedParagraph>{theme.userDataAccount.yourDepartment}</MedParagraph>
         </div>
-        <div className="block_aboutyourStudy">
-          <img
-            className="aboutYourStudyImage boutYourStudyImage2"
-            src={field}
-            alt="department"
-          />
-          <MedParagraph>{theme.userDataAccount.field}</MedParagraph>
+          <div className="block_aboutyourStudy">
+            <img
+              className="aboutYourStudyImage boutYourStudyImage2"
+              src={field}
+              alt="department"
+            />
+            <MedParagraph>{theme.userDataAccount.field}</MedParagraph>
+          </div>
+          <div className="block_aboutyourStudy">
+            <img
+              className="aboutYourStudyImage boutYourStudyImage2"
+              src={year}
+              alt="department"
+            />
+            <MedParagraph>{theme.userDataAccount.yearOfStudy}</MedParagraph>
+          </div>
         </div>
-        <div className="block_aboutyourStudy">
-          <img
-            className="aboutYourStudyImage boutYourStudyImage2"
-            src={year}
-            alt="department"
-          />
-          <MedParagraph>{theme.userDataAccount.yearOfStudy}</MedParagraph>
-        </div>
+
         <Button
           onClick={() => {
             navigate(url);
